@@ -1,0 +1,743 @@
+import { GoogleGenAI, Modality } from "@google/genai";
+
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+
+// ─── Singleton AudioContext ──────────────────────────────────────────────────
+let audioCtx: AudioContext | null = null;
+const getAudioContext = () => {
+  if (!audioCtx) {
+    audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
+  }
+  return audioCtx;
+};
+
+export const initAudioContext = async () => {
+  const ctx = getAudioContext();
+  if (ctx.state === 'suspended') {
+    await ctx.resume();
+  }
+};
+
+// ─── In-memory audio cache ───────────────────────────────────────────────────
+// Keyed by "text|gender" so replays are instant and free.
+const audioCache = new Map<string, AudioBuffer>();
+
+const cacheKey = (text: string, gender: 'male' | 'female') =>
+  `${gender}|${text}`;
+
+// ─── Helpers ─────────────────────────────────────────────────────────────────
+const decode = (base64: string) => {
+  const binaryString = atob(base64);
+  const len = binaryString.length;
+  const bytes = new Uint8Array(len);
+  for (let i = 0; i < len; i++) {
+    bytes[i] = binaryString.charCodeAt(i);
+  }
+  return bytes;
+};
+
+const decodeAudioData = async (
+  data: Uint8Array,
+  ctx: AudioContext,
+  sampleRate: number = 24000,
+  numChannels: number = 1,
+): Promise<AudioBuffer> => {
+  // Always safely get the exact byte buffer segment
+  const exactBuffer = data.buffer.slice(data.byteOffset, data.byteOffset + data.byteLength);
+  const dataInt16 = new Int16Array(exactBuffer);
+  const frameCount = dataInt16.length / numChannels;
+  const buffer = ctx.createBuffer(numChannels, frameCount, sampleRate);
+
+  for (let channel = 0; channel < numChannels; channel++) {
+    const channelData = buffer.getChannelData(channel);
+    for (let i = 0; i < frameCount; i++) {
+      channelData[i] = dataInt16[i * numChannels + channel] / 32768.0;
+    }
+  }
+  return buffer;
+};
+
+// ─── AudioController ─────────────────────────────────────────────────────────
+export interface AudioController {
+  play: (startTime?: number) => Promise<void>;
+  pause: () => void;
+  resume: () => void;
+  stop: () => void;
+  seek: (time: number) => void;
+  getCurrentTime: () => number;
+  duration: number;
+  status: 'idle' | 'playing' | 'paused' | 'ended';
+}
+
+/**
+ * Creates a robust controller for a given AudioBuffer.
+ * Fixes:
+ *  - onended race: pending play() promise always resolves on stop()
+ *  - seek: works correctly from any state
+ *  - dispose: disconnects nodes
+ */
+const createAudioController = (
+  audioBuffer: AudioBuffer,
+  ctx: AudioContext,
+): AudioController => {
+  let source: AudioBufferSourceNode | null = null;
+  let gainNode: GainNode | null = null;
+  let startedAt = 0;   // ctx.currentTime when playback began (adjusted for offset)
+  let pausedAt = 0;     // ctx.currentTime when paused
+  let offset = 0;       // current playback offset in seconds
+  let _resolvePlay: (() => void) | null = null;
+
+  const teardownSource = () => {
+    if (source) {
+      try { source.onended = null; source.stop(); } catch (_) { }
+      try { source.disconnect(); } catch (_) { }
+      source = null;
+    }
+    if (gainNode) {
+      try { gainNode.disconnect(); } catch (_) { }
+      gainNode = null;
+    }
+  };
+
+  const controller: AudioController = {
+    status: 'idle',
+    duration: audioBuffer.duration,
+
+    play: async (startTime: number = 0) => {
+      // Stop any currently-running source first
+      teardownSource();
+
+      // Resolve any pending play promise so callers aren't stuck
+      if (_resolvePlay) { _resolvePlay(); _resolvePlay = null; }
+
+      offset = startTime;
+      gainNode = ctx.createGain();
+      gainNode.gain.value = 1.0;
+      gainNode.connect(ctx.destination);
+
+      source = ctx.createBufferSource();
+      source.buffer = audioBuffer;
+      source.connect(gainNode);
+
+      startedAt = ctx.currentTime - offset;
+      source.start(0, offset);
+      controller.status = 'playing';
+
+      return new Promise<void>((resolve) => {
+        _resolvePlay = resolve;
+        if (!source) { resolve(); return; }
+        source.onended = () => {
+          // Only mark as ended if we're still the active play (not stopped/paused externally)
+          if (controller.status === 'playing') {
+            controller.status = 'ended';
+          }
+          if (_resolvePlay) { _resolvePlay(); _resolvePlay = null; }
+        };
+      });
+    },
+
+    pause: () => {
+      if (controller.status === 'playing') {
+        pausedAt = ctx.currentTime;
+        offset = pausedAt - startedAt;
+        teardownSource();
+        controller.status = 'paused';
+      }
+    },
+
+    resume: () => {
+      if (controller.status === 'paused') {
+        // Re-create source from the paused offset — play() handles setup
+        const resumeOffset = offset;
+        // Don't await — this kicks off a new play and sets status to 'playing'
+        controller.play(resumeOffset);
+      }
+    },
+
+    stop: () => {
+      teardownSource();
+      // Resolve any pending play promise
+      if (_resolvePlay) { _resolvePlay(); _resolvePlay = null; }
+      controller.status = 'idle';
+      offset = 0;
+      startedAt = 0;
+      pausedAt = 0;
+    },
+
+    seek: (time: number) => {
+      const wasPlaying = controller.status === 'playing';
+      const wasPaused = controller.status === 'paused';
+      teardownSource();
+      if (_resolvePlay) { _resolvePlay(); _resolvePlay = null; }
+      offset = time;
+      if (wasPlaying || wasPaused) {
+        controller.play(time);
+      }
+    },
+
+    getCurrentTime: () => {
+      if (controller.status === 'playing') {
+        return ctx.currentTime - startedAt;
+      }
+      if (controller.status === 'paused') {
+        return offset;
+      }
+      if (controller.status === 'ended') {
+        return audioBuffer.duration;
+      }
+      return offset;
+    }
+  };
+  return controller;
+};
+
+// ─── TTS Fetch ───────────────────────────────────────────────────────────────
+
+/** Locked voice selection — exactly 2 voices for consistency */
+const getVoiceName = (gender: 'male' | 'female'): string =>
+  gender === 'female' ? 'Kore' : 'Puck';
+
+/**
+ * Fetches raw audio buffer for a single segment.
+ * Results are cached so replays are instant.
+ */
+const fetchAudioBuffer = async (
+  text: string,
+  gender: 'male' | 'female',
+): Promise<AudioBuffer> => {
+  const key = cacheKey(text, gender);
+
+  // Return cached buffer if available
+  const cached = audioCache.get(key);
+  if (cached) {
+    console.log(`[TTS] Cache hit for ${gender}: "${text.slice(0, 30)}…"`);
+    return cached;
+  }
+
+  const voiceName = getVoiceName(gender);
+  console.log(`[TTS] Fetching: ${voiceName} (${gender}) — "${text.slice(0, 40)}…"`);
+
+  try {
+    const prompt =
+      `You are a ${gender === 'female' ? 'female' : 'male'} Mandarin teacher reading a line to a beginner student. ` +
+      `Speak VERY slowly and deliberately — much slower than normal conversation. ` +
+      `Pause briefly between each phrase. Enunciate every single tone with extra clarity. ` +
+      `The student needs time to absorb each word. Keep a warm, patient, natural tone: ` +
+      `"${text}"`;
+
+    const response = await ai.models.generateContent({
+      model: "gemini-2.5-flash-preview-tts",
+      contents: [{ parts: [{ text: prompt }] }],
+      config: {
+        responseModalities: ["AUDIO"],
+        speechConfig: {
+          voiceConfig: {
+            prebuiltVoiceConfig: { voiceName },
+          },
+        },
+      },
+    } as any);
+
+    const base64Audio = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
+    if (!base64Audio) {
+      console.error("[TTS] No audio data in response", response);
+      throw new Error("No audio data returned from API");
+    }
+
+    const ctx = getAudioContext();
+    const buffer = await decodeAudioData(decode(base64Audio), ctx, 24000, 1);
+
+    // Store in cache
+    audioCache.set(key, buffer);
+    return buffer;
+  } catch (error) {
+    console.error("[TTS] Error in fetchAudioBuffer:", error);
+    throw error;
+  }
+};
+
+// ─── Crossfade helper ────────────────────────────────────────────────────────
+
+/** Apply a short fade-out at the end and fade-in at the start of a buffer's
+ *  channel data (in-place) to eliminate clicks/pops at segment boundaries. */
+const FADE_SAMPLES = 1200; // 50ms at 24kHz
+
+const applyFadeOut = (channelData: Float32Array, totalLength: number) => {
+  const fadeLen = Math.min(FADE_SAMPLES, totalLength);
+  const start = totalLength - fadeLen;
+  for (let i = 0; i < fadeLen; i++) {
+    // Raised-cosine fade for smooth curve
+    const t = i / fadeLen;
+    channelData[start + i] *= 0.5 * (1 + Math.cos(Math.PI * t));
+  }
+};
+
+const applyFadeIn = (channelData: Float32Array, offset: number, totalLength: number) => {
+  const fadeLen = Math.min(FADE_SAMPLES, totalLength);
+  for (let i = 0; i < fadeLen; i++) {
+    const t = i / fadeLen;
+    channelData[offset + i] *= 0.5 * (1 - Math.cos(Math.PI * t));
+  }
+};
+
+// ─── Speed normalization ─────────────────────────────────────────────────────
+
+/** Count only Chinese characters (each = 1 spoken syllable) for accurate rate calculation. */
+const countChineseChars = (text: string): number =>
+  (text.match(/[\u4e00-\u9fff\u3400-\u4dbf]/g) || []).length || text.length;
+
+/** Target speaking rate for beginner-friendly Mandarin (Chinese chars per second). */
+const TARGET_CHARS_PER_SEC = 2.6;
+
+/** Max playback rate adjustment (±15%) to keep pitch shifts imperceptible. */
+const MAX_RATE_ADJUSTMENT = 0.15;
+
+/**
+ * Adjusts a buffer's speed using OfflineAudioContext so that its speaking rate
+ * matches a target chars-per-second. Capped at ±15% to avoid pitch artifacts.
+ */
+const normalizeBufferSpeed = async (
+  buffer: AudioBuffer,
+  chineseCharCount: number,
+  targetCharsPerSec: number,
+): Promise<AudioBuffer> => {
+  const actualCharsPerSec = chineseCharCount / buffer.duration;
+  let rate = actualCharsPerSec / targetCharsPerSec;
+
+  // Clamp to ±15%
+  rate = Math.max(1 - MAX_RATE_ADJUSTMENT, Math.min(1 + MAX_RATE_ADJUSTMENT, rate));
+
+  // Skip processing if adjustment is negligible
+  if (Math.abs(rate - 1.0) < 0.02) return buffer;
+
+  console.log(`[TTS] Normalizing: ${actualCharsPerSec.toFixed(1)} → ${targetCharsPerSec.toFixed(1)} chars/sec (rate=${rate.toFixed(3)})`);
+
+  const newLength = Math.ceil(buffer.length / rate);
+  const offlineCtx = new OfflineAudioContext(buffer.numberOfChannels, newLength, buffer.sampleRate);
+  const source = offlineCtx.createBufferSource();
+  source.buffer = buffer;
+  source.playbackRate.value = rate;
+  source.connect(offlineCtx.destination);
+  source.start();
+  return await offlineCtx.startRendering();
+};
+
+// ─── Public API ──────────────────────────────────────────────────────────────
+
+/**
+ * Fetches TTS audio for a single line and returns a controller.
+ * Adds 1.2s of silence at the end for uniformity.
+ */
+export const prepareMandarinTTS = async (
+  text: string,
+  isSlow: boolean = true,
+  gender: 'male' | 'female' = 'female',
+  _storyId: string = 'default',
+  withDelay: boolean = true,
+): Promise<AudioController | null> => {
+  try {
+    const originalBuffer = await fetchAudioBuffer(text, gender);
+    const ctx = getAudioContext();
+
+    // Add 1.0s silence at start (if requested) and 1.2s silence at end (uniform tail)
+    const startSilenceDuration = withDelay ? 1.0 : 0.0;
+    const endSilenceDuration = 1.2;
+    const startSilenceSamples = Math.floor(ctx.sampleRate * startSilenceDuration);
+    const endSilenceSamples = Math.floor(ctx.sampleRate * endSilenceDuration);
+
+    const newLength = startSilenceSamples + originalBuffer.length + endSilenceSamples;
+    const extendedBuffer = ctx.createBuffer(originalBuffer.numberOfChannels, newLength, originalBuffer.sampleRate);
+
+    for (let c = 0; c < originalBuffer.numberOfChannels; c++) {
+      extendedBuffer.getChannelData(c).set(originalBuffer.getChannelData(c), startSilenceSamples);
+    }
+
+    // Smooth fade-out at the end of the speech (before silence)
+    for (let c = 0; c < originalBuffer.numberOfChannels; c++) {
+      applyFadeOut(extendedBuffer.getChannelData(c), startSilenceSamples + originalBuffer.length);
+    }
+
+    return createAudioController(extendedBuffer, ctx);
+  } catch (error) {
+    throw error;
+  }
+};
+
+// ─── Segment timing type ─────────────────────────────────────────────────────
+export type SegmentTiming = { index: number; start: number; end: number };
+
+/**
+ * Stitches multiple segments into one continuous conversation buffer.
+ * Crossfades at boundaries for smooth, continuous audio.
+ */
+export const prepareConversationTTS = async (
+  segments: { text: string; gender: 'male' | 'female' }[],
+  isSlow: boolean = true,
+  storyId: string = 'default',
+): Promise<{ controller: AudioController; timings: SegmentTiming[] }> => {
+
+  // 1. Fetch all buffers sequentially to avoid 429 rate-limit errors
+  const buffers: AudioBuffer[] = [];
+  for (const s of segments) {
+    const buf = await fetchAudioBuffer(s.text, s.gender);
+    buffers.push(buf);
+  }
+
+  const ctx = getAudioContext();
+
+  const gapDuration = 1.15;  // seconds between segments
+  const gapSamples = Math.floor(ctx.sampleRate * gapDuration);
+
+  // 2. Calculate total length & timings
+  let totalSamples = 0;
+  const timings: SegmentTiming[] = [];
+
+  for (let i = 0; i < buffers.length; i++) {
+    const buf = buffers[i];
+    const startSeconds = totalSamples / ctx.sampleRate;
+    totalSamples += buf.length;
+    const endSeconds = totalSamples / ctx.sampleRate;
+    timings.push({ index: i, start: startSeconds, end: endSeconds });
+
+    if (i < buffers.length - 1) {
+      totalSamples += gapSamples;
+    } else {
+      // 1s padding at end of conversation
+      totalSamples += Math.floor(ctx.sampleRate * 1.0);
+    }
+  }
+
+  // 3. Create stitched buffer (mono)
+  const stitchedBuffer = ctx.createBuffer(1, totalSamples, 24000);
+  const channelData = stitchedBuffer.getChannelData(0);
+
+  // 4. Copy data with crossfades
+  let currentOffset = 0;
+  for (let i = 0; i < buffers.length; i++) {
+    const buf = buffers[i];
+    const inputData = buf.getChannelData(0);
+    channelData.set(inputData, currentOffset);
+
+    // Fade-out end of this segment
+    applyFadeOut(channelData, currentOffset + buf.length);
+
+    // Fade-in start of this segment (skip first segment — starts clean)
+    if (i > 0) {
+      applyFadeIn(channelData, currentOffset, buf.length);
+    }
+
+    currentOffset += buf.length;
+    if (i < buffers.length - 1) {
+      currentOffset += gapSamples;
+    }
+  }
+
+  return {
+    controller: createAudioController(stitchedBuffer, ctx),
+    timings,
+  };
+};
+
+// ─── English TTS (for Spanish→English tab) ───────────────────────────────────
+
+/**
+ * Fetches English audio buffer for a single segment.
+ * Uses separate cache namespace via gender prefix.
+ */
+const fetchEnglishAudioBuffer = async (
+  text: string,
+  gender: 'male' | 'female',
+): Promise<AudioBuffer> => {
+  const key = `en_${cacheKey(text, gender)}`;
+
+  const cached = audioCache.get(key);
+  if (cached) {
+    console.log(`[TTS-EN] Cache hit for ${gender}: "${text.slice(0, 30)}…"`);
+    return cached;
+  }
+
+  const voiceName = getVoiceName(gender);
+  console.log(`[TTS-EN] Fetching: ${voiceName} (${gender}) — "${text.slice(0, 40)}…"`);
+
+  try {
+    const prompt =
+      `You are a ${gender === 'female' ? 'female' : 'male'} English teacher reading a line to a Spanish-speaking beginner student. ` +
+      `Speak VERY slowly and clearly — much slower than normal conversation. ` +
+      `Pause briefly between each phrase. Enunciate every single word with extra clarity. ` +
+      `The student needs time to absorb each word. Keep a warm, patient, natural tone: ` +
+      `"${text}"`;
+
+    const response = await ai.models.generateContent({
+      model: "gemini-2.5-flash-preview-tts",
+      contents: [{ parts: [{ text: prompt }] }],
+      config: {
+        responseModalities: ["AUDIO"],
+        speechConfig: {
+          voiceConfig: {
+            prebuiltVoiceConfig: { voiceName },
+          },
+        },
+      },
+    } as any);
+
+    const base64Audio = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
+    if (!base64Audio) {
+      console.error("[TTS-EN] No audio data in response", response);
+      throw new Error("No audio data returned from API");
+    }
+
+    const ctx = getAudioContext();
+    const buffer = await decodeAudioData(decode(base64Audio), ctx, 24000, 1);
+
+    audioCache.set(key, buffer);
+    return buffer;
+  } catch (error) {
+    console.error("[TTS-EN] Error in fetchEnglishAudioBuffer:", error);
+    throw error;
+  }
+};
+
+/**
+ * Fetches English TTS audio for a single line and returns a controller.
+ */
+export const prepareEnglishTTS = async (
+  text: string,
+  isSlow: boolean = true,
+  gender: 'male' | 'female' = 'female',
+  _storyId: string = 'default',
+  withDelay: boolean = true,
+): Promise<AudioController | null> => {
+  try {
+    const originalBuffer = await fetchEnglishAudioBuffer(text, gender);
+    const ctx = getAudioContext();
+
+    const startSilenceDuration = withDelay ? 1.0 : 0.0;
+    const endSilenceDuration = 1.2;
+    const startSilenceSamples = Math.floor(ctx.sampleRate * startSilenceDuration);
+    const endSilenceSamples = Math.floor(ctx.sampleRate * endSilenceDuration);
+
+    const newLength = startSilenceSamples + originalBuffer.length + endSilenceSamples;
+    const extendedBuffer = ctx.createBuffer(originalBuffer.numberOfChannels, newLength, originalBuffer.sampleRate);
+
+    for (let c = 0; c < originalBuffer.numberOfChannels; c++) {
+      extendedBuffer.getChannelData(c).set(originalBuffer.getChannelData(c), startSilenceSamples);
+    }
+
+    for (let c = 0; c < originalBuffer.numberOfChannels; c++) {
+      applyFadeOut(extendedBuffer.getChannelData(c), startSilenceSamples + originalBuffer.length);
+    }
+
+    return createAudioController(extendedBuffer, ctx);
+  } catch (error) {
+    throw error;
+  }
+};
+
+/**
+ * Stitches multiple English segments into one continuous conversation buffer.
+ */
+export const prepareEnglishConversationTTS = async (
+  segments: { text: string; gender: 'male' | 'female' }[],
+  isSlow: boolean = true,
+  storyId: string = 'default',
+): Promise<{ controller: AudioController; timings: SegmentTiming[] }> => {
+
+  const buffers: AudioBuffer[] = [];
+  for (const s of segments) {
+    const buf = await fetchEnglishAudioBuffer(s.text, s.gender);
+    buffers.push(buf);
+  }
+
+  const ctx = getAudioContext();
+  const gapDuration = 1.15;
+  const gapSamples = Math.floor(ctx.sampleRate * gapDuration);
+
+  let totalSamples = 0;
+  const timings: SegmentTiming[] = [];
+
+  for (let i = 0; i < buffers.length; i++) {
+    const buf = buffers[i];
+    const startSeconds = totalSamples / ctx.sampleRate;
+    totalSamples += buf.length;
+    const endSeconds = totalSamples / ctx.sampleRate;
+    timings.push({ index: i, start: startSeconds, end: endSeconds });
+
+    if (i < buffers.length - 1) {
+      totalSamples += gapSamples;
+    } else {
+      totalSamples += Math.floor(ctx.sampleRate * 1.0);
+    }
+  }
+
+  const stitchedBuffer = ctx.createBuffer(1, totalSamples, 24000);
+  const channelData = stitchedBuffer.getChannelData(0);
+
+  let currentOffset = 0;
+  for (let i = 0; i < buffers.length; i++) {
+    const buf = buffers[i];
+    const inputData = buf.getChannelData(0);
+    channelData.set(inputData, currentOffset);
+    applyFadeOut(channelData, currentOffset + buf.length);
+
+    if (i > 0) {
+      applyFadeIn(channelData, currentOffset, buf.length);
+    }
+
+    currentOffset += buf.length;
+    if (i < buffers.length - 1) {
+      currentOffset += gapSamples;
+    }
+  }
+
+  return {
+    controller: createAudioController(stitchedBuffer, ctx),
+    timings,
+  };
+};
+
+// ─── Learn Spanish TTS (for English→Spanish tab) ─────────────────────────────
+
+const fetchLearnSpanishAudioBuffer = async (
+  text: string,
+  gender: 'male' | 'female',
+): Promise<AudioBuffer> => {
+  const key = `ls_${cacheKey(text, gender)}`;
+
+  const cached = audioCache.get(key);
+  if (cached) {
+    console.log(`[TTS-LS] Cache hit for ${gender}: "${text.slice(0, 30)}…"`);
+    return cached;
+  }
+
+  const voiceName = getVoiceName(gender);
+  console.log(`[TTS-LS] Fetching: ${voiceName} (${gender}) — "${text.slice(0, 40)}…"`);
+
+  try {
+    const prompt =
+      `You are a ${gender === 'female' ? 'female' : 'male'} Spanish teacher reading a line to an English-speaking beginner student. ` +
+      `Speak VERY slowly and clearly — much slower than normal conversation. ` +
+      `Pause briefly between each phrase. Enunciate every single word with extra clarity. ` +
+      `The student needs time to absorb each word. Keep a warm, patient, natural tone: ` +
+      `"${text}"`;
+
+    const response = await ai.models.generateContent({
+      model: "gemini-2.5-flash-preview-tts",
+      contents: [{ parts: [{ text: prompt }] }],
+      config: {
+        responseModalities: ["AUDIO"],
+        speechConfig: {
+          voiceConfig: {
+            prebuiltVoiceConfig: { voiceName },
+          },
+        },
+      },
+    } as any);
+
+    const base64Audio = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
+    if (!base64Audio) {
+      console.error("[TTS-LS] No audio data in response", response);
+      throw new Error("No audio data returned from API");
+    }
+
+    const ctx = getAudioContext();
+    const buffer = await decodeAudioData(decode(base64Audio), ctx, 24000, 1);
+
+    audioCache.set(key, buffer);
+    return buffer;
+  } catch (error) {
+    console.error("[TTS-LS] Error in fetchLearnSpanishAudioBuffer:", error);
+    throw error;
+  }
+};
+
+export const prepareLearnSpanishTTS = async (
+  text: string,
+  isSlow: boolean = true,
+  gender: 'male' | 'female' = 'female',
+  _storyId: string = 'default',
+  withDelay: boolean = true,
+): Promise<AudioController | null> => {
+  try {
+    const originalBuffer = await fetchLearnSpanishAudioBuffer(text, gender);
+    const ctx = getAudioContext();
+
+    const startSilenceDuration = withDelay ? 1.0 : 0.0;
+    const endSilenceDuration = 1.2;
+    const startSilenceSamples = Math.floor(ctx.sampleRate * startSilenceDuration);
+    const endSilenceSamples = Math.floor(ctx.sampleRate * endSilenceDuration);
+
+    const newLength = startSilenceSamples + originalBuffer.length + endSilenceSamples;
+    const extendedBuffer = ctx.createBuffer(originalBuffer.numberOfChannels, newLength, originalBuffer.sampleRate);
+
+    for (let c = 0; c < originalBuffer.numberOfChannels; c++) {
+      extendedBuffer.getChannelData(c).set(originalBuffer.getChannelData(c), startSilenceSamples);
+    }
+
+    for (let c = 0; c < originalBuffer.numberOfChannels; c++) {
+      applyFadeOut(extendedBuffer.getChannelData(c), startSilenceSamples + originalBuffer.length);
+    }
+
+    return createAudioController(extendedBuffer, ctx);
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const prepareLearnSpanishConversationTTS = async (
+  segments: { text: string; gender: 'male' | 'female' }[],
+  isSlow: boolean = true,
+  storyId: string = 'default',
+): Promise<{ controller: AudioController; timings: SegmentTiming[] }> => {
+
+  const buffers: AudioBuffer[] = [];
+  for (const s of segments) {
+    const buf = await fetchLearnSpanishAudioBuffer(s.text, s.gender);
+    buffers.push(buf);
+  }
+
+  const ctx = getAudioContext();
+  const gapDuration = 1.15;
+  const gapSamples = Math.floor(ctx.sampleRate * gapDuration);
+
+  let totalSamples = 0;
+  const timings: SegmentTiming[] = [];
+
+  for (let i = 0; i < buffers.length; i++) {
+    const buf = buffers[i];
+    const startSeconds = totalSamples / ctx.sampleRate;
+    totalSamples += buf.length;
+    const endSeconds = totalSamples / ctx.sampleRate;
+    timings.push({ index: i, start: startSeconds, end: endSeconds });
+
+    if (i < buffers.length - 1) {
+      totalSamples += gapSamples;
+    } else {
+      totalSamples += Math.floor(ctx.sampleRate * 1.0);
+    }
+  }
+
+  const stitchedBuffer = ctx.createBuffer(1, totalSamples, 24000);
+  const channelData = stitchedBuffer.getChannelData(0);
+
+  let currentOffset = 0;
+  for (let i = 0; i < buffers.length; i++) {
+    const buf = buffers[i];
+    const inputData = buf.getChannelData(0);
+    channelData.set(inputData, currentOffset);
+    applyFadeOut(channelData, currentOffset + buf.length);
+
+    if (i > 0) {
+      applyFadeIn(channelData, currentOffset, buf.length);
+    }
+
+    currentOffset += buf.length;
+    if (i < buffers.length - 1) {
+      currentOffset += gapSamples;
+    }
+  }
+
+  return {
+    controller: createAudioController(stitchedBuffer, ctx),
+    timings,
+  };
+};
