@@ -49,7 +49,7 @@ export const WordSpan: React.FC<WordSpanProps> = ({ word, onSave, isSaved }) => 
             onTouchEnd={handleEnd}
             onMouseLeave={handleEnd}
             onClick={handleClick}
-            className="text-slate-500 text-sm font-medium tracking-[0.05em] hover:text-violet-400 transition-colors cursor-pointer select-none active:text-violet-300 relative group inline-block"
+            className="text-violet-400 text-sm font-medium tracking-[0.05em] hover:text-violet-300 transition-colors cursor-pointer select-none active:text-violet-200 relative group inline-block"
         >
             {word.pinyin}
 

@@ -487,7 +487,7 @@ const App: React.FC<AppProps> = ({ onBackToSelection }) => {
           {hasAnswered && (
             <div className="w-full bg-slate-900/40 p-6 rounded-3xl border border-slate-800/50 mb-8 animate-in fade-in slide-in-from-top-4 duration-500">
               <p className="text-lg font-medium text-slate-200 mb-1">{question.questionMandarin}</p>
-              <p className="text-xs text-violet-400/60 font-bold tracking-widest uppercase mb-2">{question.questionPinyin}</p>
+              <p className="text-xs text-violet-400 font-bold tracking-widest uppercase mb-2">{question.questionPinyin}</p>
               <p className="text-sm text-slate-500 italic">"{question.questionTranslation}"</p>
             </div>
           )}
@@ -627,7 +627,7 @@ const App: React.FC<AppProps> = ({ onBackToSelection }) => {
                         if (matchIndex !== -1) {
                           if (matchIndex > 0) {
                             elements.push(
-                              <span key={`text-before-${index}`} className="text-slate-500 text-sm font-medium tracking-[0.05em] whitespace-pre">
+                              <span key={`text-before-${index}`} className="text-violet-400 text-sm font-medium tracking-[0.05em] whitespace-pre">
                                 {remainingPinyin.substring(0, matchIndex)}
                               </span>
                             );
@@ -658,7 +658,7 @@ const App: React.FC<AppProps> = ({ onBackToSelection }) => {
 
                       if (remainingPinyin.length > 0) {
                         elements.push(
-                          <span key="text-end" className="text-slate-500 text-sm font-medium tracking-[0.05em] whitespace-pre">
+                          <span key="text-end" className="text-violet-400 text-sm font-medium tracking-[0.05em] whitespace-pre">
                             {remainingPinyin}
                           </span>
                         );
@@ -667,7 +667,7 @@ const App: React.FC<AppProps> = ({ onBackToSelection }) => {
                       return elements;
                     })()
                   ) : (
-                    <p className="text-slate-500 text-sm font-medium tracking-[0.1em]">{selectedStory.sentences[currentSentenceIndex].pinyin}</p>
+                    <p className="text-violet-400 text-sm font-medium tracking-[0.1em]">{selectedStory.sentences[currentSentenceIndex].pinyin}</p>
                   )}
                 </div>
                 <p className="text-slate-200 text-lg leading-relaxed font-sans max-w-lg mx-auto">{selectedStory.sentences[currentSentenceIndex].translation}</p>
@@ -741,14 +741,14 @@ const App: React.FC<AppProps> = ({ onBackToSelection }) => {
                     {vocabSort === 'hanzi' && (
                       <>
                         <div className="text-violet-400 font-bold text-2xl min-w-[60px]">{word.hanzi}</div>
-                        <div className="text-slate-200 font-mono font-light min-w-[80px] border-l border-slate-700 pl-4">{word.pinyin}</div>
+                        <div className="text-violet-400 font-mono font-light min-w-[80px] border-l border-slate-700 pl-4">{word.pinyin}</div>
                         <div className="text-slate-500 italic text-sm border-l border-slate-700 pl-4">{word.meaning}</div>
                       </>
                     )}
                     {vocabSort === 'meaning' && (
                       <>
                         <div className="text-violet-400 font-bold text-sm min-w-[100px]">{word.meaning}</div>
-                        <div className="text-slate-200 font-mono font-light min-w-[80px] border-l border-slate-700 pl-4">{word.pinyin}</div>
+                        <div className="text-violet-400 font-mono font-light min-w-[80px] border-l border-slate-700 pl-4">{word.pinyin}</div>
                         <div className="text-slate-400 text-lg font-light min-w-[50px] border-l border-slate-700 pl-4">{word.hanzi}</div>
                       </>
                     )}

@@ -55,9 +55,9 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 questionEnglish: 'What did the man order to drink?',
                 questionSpanish: '¿Qué pidió el hombre para tomar?',
                 options: [
-                    { text: 'Iced tea (Té helado)', isCorrect: false },
-                    { text: 'A glass of water (Un vaso de agua)', isCorrect: true },
-                    { text: 'Coffee (Café)', isCorrect: false }
+                    { text: 'Té helado (Iced tea)', isCorrect: false },
+                    { text: 'Un vaso de agua (A glass of water)', isCorrect: true },
+                    { text: 'Café (Coffee)', isCorrect: false }
                 ],
                 answerExplanation: 'He said "I\'ll have a glass of water" — pidió un vaso de agua.'
             },
@@ -66,9 +66,9 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 questionEnglish: 'What did the woman order to drink?',
                 questionSpanish: '¿Qué pidió la mujer para tomar?',
                 options: [
-                    { text: 'A glass of water (Un vaso de agua)', isCorrect: false },
-                    { text: 'Lemonade (Limonada)', isCorrect: false },
-                    { text: 'Iced tea (Té helado)', isCorrect: true }
+                    { text: 'Un vaso de agua (A glass of water)', isCorrect: false },
+                    { text: 'Limonada (Lemonade)', isCorrect: false },
+                    { text: 'Té helado (Iced tea)', isCorrect: true }
                 ],
                 answerExplanation: 'He said "she\'ll have an iced tea" — ella quiere un té helado.'
             },
@@ -77,9 +77,9 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 questionEnglish: 'What food did the man order?',
                 questionSpanish: '¿Qué comida pidió el hombre?',
                 options: [
-                    { text: 'Caesar salad (Ensalada César)', isCorrect: false },
-                    { text: 'Grilled chicken sandwich (Sándwich de pollo a la parrilla)', isCorrect: true },
-                    { text: 'Hamburger (Hamburguesa)', isCorrect: false }
+                    { text: 'Ensalada César (Caesar salad)', isCorrect: false },
+                    { text: 'Sándwich de pollo a la parrilla (Grilled chicken sandwich)', isCorrect: true },
+                    { text: 'Hamburguesa (Hamburger)', isCorrect: false }
                 ],
                 answerExplanation: 'He ordered the grilled chicken sandwich — el sándwich de pollo a la parrilla.'
             },
@@ -88,9 +88,9 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 questionEnglish: 'Were they ready to order right away?',
                 questionSpanish: '¿Estaban listos para ordenar de inmediato?',
                 options: [
-                    { text: 'No, they needed more time (No, necesitaban más tiempo)', isCorrect: false },
-                    { text: 'Yes, they were ready (Sí, estaban listos)', isCorrect: true },
-                    { text: 'Only the man was ready (Solo el hombre estaba listo)', isCorrect: false }
+                    { text: 'No, necesitaban más tiempo (No, they needed more time)', isCorrect: false },
+                    { text: 'Sí, estaban listos (Yes, they were ready)', isCorrect: true },
+                    { text: 'Solo el hombre estaba listo (Only the man was ready)', isCorrect: false }
                 ],
                 answerExplanation: 'He said "We\'re ready" — Estamos listos.'
             }
@@ -170,15 +170,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le pregunta María a David?",
                 "options": [
                     {
-                        "text": "Where he works (Dónde trabaja)",
+                        "text": "Dónde trabaja (Where he works)",
                         "isCorrect": false
                     },
                     {
-                        "text": "What his name is (Cuál es su nombre)",
+                        "text": "Cuál es su nombre (What his name is)",
                         "isCorrect": true
                     },
                     {
-                        "text": "If he is busy (Si está ocupado)",
+                        "text": "Si está ocupado (If he is busy)",
                         "isCorrect": false
                     }
                 ],
@@ -190,15 +190,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué dice David después de que María se presenta?",
                 "options": [
                     {
-                        "text": "Goodbye (Adiós)",
+                        "text": "Adiós (Goodbye)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Nice to meet you (Mucho gusto)",
+                        "text": "Mucho gusto (Nice to meet you)",
                         "isCorrect": true
                     },
                     {
-                        "text": "I'm sorry (Lo siento)",
+                        "text": "Lo siento (I'm sorry)",
                         "isCorrect": false
                     }
                 ],
@@ -210,15 +210,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué significa 'El gusto es mío también'?",
                 "options": [
                     {
-                        "text": "The pleasure is all mine too (El gusto es mío también)",
+                        "text": "El gusto es mío también (The pleasure is all mine too)",
                         "isCorrect": true
                     },
                     {
-                        "text": "I don't understand (No entiendo)",
+                        "text": "No entiendo (I don't understand)",
                         "isCorrect": false
                     },
                     {
-                        "text": "I'm hungry (Tengo hambre)",
+                        "text": "Tengo hambre (I'm hungry)",
                         "isCorrect": false
                     }
                 ],
@@ -230,15 +230,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De dónde le pregunta María a David si es?",
                 "options": [
                     {
-                        "text": "After they introduce themselves (Después de presentarse)",
+                        "text": "Después de presentarse (After they introduce themselves)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Before they introduce themselves (Antes de presentarse)",
+                        "text": "Antes de presentarse (Before they introduce themselves)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Never (Nunca)",
+                        "text": "Nunca (Never)",
                         "isCorrect": false
                     }
                 ],
@@ -327,15 +327,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A qué lugar están pidiendo direcciones?",
                 "options": [
                     {
-                        "text": "The park (El parque)",
+                        "text": "El parque (The park)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The library (La biblioteca)",
+                        "text": "La biblioteca (The library)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The restaurant (El restaurante)",
+                        "text": "El restaurante (The restaurant)",
                         "isCorrect": false
                     }
                 ],
@@ -347,15 +347,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿En qué dirección deben girar?",
                 "options": [
                     {
-                        "text": "Right (Derecha)",
+                        "text": "Derecha (Right)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Left (Izquierda)",
+                        "text": "Izquierda (Left)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Straight (Derecho)",
+                        "text": "Derecho (Straight)",
                         "isCorrect": false
                     }
                 ],
@@ -367,15 +367,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuánto tiempo se tarda en caminar hasta allí?",
                 "options": [
                     {
-                        "text": "About five minutes (Como cinco minutos)",
+                        "text": "Como cinco minutos (About five minutes)",
                         "isCorrect": true
                     },
                     {
-                        "text": "About ten minutes (Como diez minutos)",
+                        "text": "Como diez minutos (About ten minutes)",
                         "isCorrect": false
                     },
                     {
-                        "text": "About an hour (Como una hora)",
+                        "text": "Como una hora (About an hour)",
                         "isCorrect": false
                     }
                 ],
@@ -387,15 +387,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Está el lugar lejos o cerca?",
                 "options": [
                     {
-                        "text": "Far (Lejos)",
+                        "text": "Lejos (Far)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Near (Cerca)",
+                        "text": "Cerca (Near)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Very far (Muy lejos)",
+                        "text": "Muy lejos (Very far)",
                         "isCorrect": false
                     }
                 ],
@@ -484,15 +484,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A dónde quiere ir la persona?",
                 "options": [
                     {
-                        "text": "The park (El parque)",
+                        "text": "El parque (The park)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The airport (El aeropuerto)",
+                        "text": "El aeropuerto (The airport)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The store (La tienda)",
+                        "text": "La tienda (The store)",
                         "isCorrect": false
                     }
                 ],
@@ -504,15 +504,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A qué terminal van?",
                 "options": [
                     {
-                        "text": "Domestic Terminal (Terminal Doméstica)",
+                        "text": "Terminal Doméstica (Domestic Terminal)",
                         "isCorrect": false
                     },
                     {
-                        "text": "International Terminal (Terminal Internacional)",
+                        "text": "Terminal Internacional (International Terminal)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Cargo Terminal (Terminal de Carga)",
+                        "text": "Terminal de Carga (Cargo Terminal)",
                         "isCorrect": false
                     }
                 ],
@@ -524,15 +524,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A qué número de puerta van?",
                 "options": [
                     {
-                        "text": "Gate 1 (Puerta 1)",
+                        "text": "Puerta 1 (Gate 1)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Gate 5 (Puerta 5)",
+                        "text": "Puerta 5 (Gate 5)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Gate 10 (Puerta 10)",
+                        "text": "Puerta 10 (Gate 10)",
                         "isCorrect": false
                     }
                 ],
@@ -544,15 +544,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuánto costará el viaje?",
                 "options": [
                     {
-                        "text": "About $20 (Unos $20)",
+                        "text": "Unos $20 (About $20)",
                         "isCorrect": false
                     },
                     {
-                        "text": "About $35 (Unos $35)",
+                        "text": "Unos $35 (About $35)",
                         "isCorrect": true
                     },
                     {
-                        "text": "About $50 (Unos $50)",
+                        "text": "Unos $50 (About $50)",
                         "isCorrect": false
                     }
                 ],
@@ -641,15 +641,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tiene la persona?",
                 "options": [
                     {
-                        "text": "A key (Una llave)",
+                        "text": "Una llave (A key)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A reservation (Una reserva)",
+                        "text": "Una reserva (A reservation)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A question (Una pregunta)",
+                        "text": "Una pregunta (A question)",
                         "isCorrect": false
                     }
                 ],
@@ -661,15 +661,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué pide el/la recepcionista?",
                 "options": [
                     {
-                        "text": "Their passport (Su pasaporte)",
+                        "text": "Su pasaporte (Their passport)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Their ID (Su identificación)",
+                        "text": "Su identificación (Their ID)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Their money (Su dinero)",
+                        "text": "Su dinero (Their money)",
                         "isCorrect": false
                     }
                 ],
@@ -681,15 +681,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el número de la habitación?",
                 "options": [
                     {
-                        "text": "205 (Doscientos cinco)",
+                        "text": "Doscientos cinco (205)",
                         "isCorrect": true
                     },
                     {
-                        "text": "101 (Ciento uno)",
+                        "text": "Ciento uno (101)",
                         "isCorrect": false
                     },
                     {
-                        "text": "310 (Trescientos diez)",
+                        "text": "Trescientos diez (310)",
                         "isCorrect": false
                     }
                 ],
@@ -701,15 +701,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿En qué piso está la habitación?",
                 "options": [
                     {
-                        "text": "First floor (Primer piso)",
+                        "text": "Primer piso (First floor)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Second floor (Segundo piso)",
+                        "text": "Segundo piso (Second floor)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Third floor (Tercer piso)",
+                        "text": "Tercer piso (Third floor)",
                         "isCorrect": false
                     }
                 ],
@@ -802,15 +802,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está buscando la persona?",
                 "options": [
                     {
-                        "text": "Pants (Pantalones)",
+                        "text": "Pantalones (Pants)",
                         "isCorrect": false
                     },
                     {
-                        "text": "T-shirts (Camisetas)",
+                        "text": "Camisetas (T-shirts)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Shoes (Zapatos)",
+                        "text": "Zapatos (Shoes)",
                         "isCorrect": false
                     }
                 ],
@@ -822,15 +822,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde están ubicadas las camisetas?",
                 "options": [
                     {
-                        "text": "Women's section (Sección de mujeres)",
+                        "text": "Sección de mujeres (Women's section)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Men's section (Sección de hombres)",
+                        "text": "Sección de hombres (Men's section)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Children's section (Sección de niños)",
+                        "text": "Sección de niños (Children's section)",
                         "isCorrect": false
                     }
                 ],
@@ -842,15 +842,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere la persona?",
                 "options": [
                     {
-                        "text": "A bigger size (Una talla más grande)",
+                        "text": "Una talla más grande (A bigger size)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A smaller size (Una talla más pequeña)",
+                        "text": "Una talla más pequeña (A smaller size)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A different color (Un color diferente)",
+                        "text": "Un color diferente (A different color)",
                         "isCorrect": false
                     }
                 ],
@@ -862,15 +862,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué pregunta el/la empleado/a?",
                 "options": [
                     {
-                        "text": "What size are you looking for? (¿Qué talla está buscando?)",
+                        "text": "¿Qué talla está buscando? (What size are you looking for?)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Can I help you? (¿Puedo ayudarle?)",
+                        "text": "¿Puedo ayudarle? (Can I help you?)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Do you need a bag? (¿Necesita una bolsa?)",
+                        "text": "¿Necesita una bolsa? (Do you need a bag?)",
                         "isCorrect": false
                     }
                 ],
@@ -955,15 +955,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está comprando la persona?",
                 "options": [
                     {
-                        "text": "A car (Un carro)",
+                        "text": "Un carro (A car)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A book (Un libro)",
+                        "text": "Un libro (A book)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A house (Una casa)",
+                        "text": "Una casa (A house)",
                         "isCorrect": false
                     }
                 ],
@@ -975,15 +975,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuánto cuesta el objeto?",
                 "options": [
                     {
-                        "text": "Two dollars (Dos dólares)",
+                        "text": "Dos dólares (Two dollars)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Five dollars (Cinco dólares)",
+                        "text": "Cinco dólares (Five dollars)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Ten dollars (Diez dólares)",
+                        "text": "Diez dólares (Ten dollars)",
                         "isCorrect": false
                     }
                 ],
@@ -995,15 +995,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde están comprando el objeto?",
                 "options": [
                     {
-                        "text": "A restaurant (Un restaurante)",
+                        "text": "Un restaurante (A restaurant)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A garage sale (Una venta de garaje)",
+                        "text": "Una venta de garaje (A garage sale)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A grocery store (Una tienda de comestibles)",
+                        "text": "Una tienda de comestibles (A grocery store)",
                         "isCorrect": false
                     }
                 ],
@@ -1015,7 +1015,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿El comprador decide comprar el objeto?",
                 "options": [
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": true
                     },
                     {
@@ -1023,7 +1023,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Maybe (Quizás)",
+                        "text": "Quizás (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -1104,15 +1104,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de tienda están llamando?",
                 "options": [
                     {
-                        "text": "A restaurant (Un restaurante)",
+                        "text": "Un restaurante (A restaurant)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A bookstore (Una librería)",
+                        "text": "Una librería (A bookstore)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A clothing store (Una tienda de ropa)",
+                        "text": "Una tienda de ropa (A clothing store)",
                         "isCorrect": false
                     }
                 ],
@@ -1124,15 +1124,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere saber la persona que llama?",
                 "options": [
                     {
-                        "text": "The closing time (La hora de cierre)",
+                        "text": "La hora de cierre (The closing time)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The address (La dirección)",
+                        "text": "La dirección (The address)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The price of a book (El precio de un libro)",
+                        "text": "El precio de un libro (The price of a book)",
                         "isCorrect": false
                     }
                 ],
@@ -1164,7 +1164,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Está la persona agradecida después de obtener la información?",
                 "options": [
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": true
                     },
                     {
@@ -1172,7 +1172,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "I don't know (No sé)",
+                        "text": "No sé (I don't know)",
                         "isCorrect": false
                     }
                 ],
@@ -1261,15 +1261,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le pregunta María a David?",
                 "options": [
                     {
-                        "text": "His age (Su edad)",
+                        "text": "Su edad (His age)",
                         "isCorrect": false
                     },
                     {
-                        "text": "His name (Su nombre)",
+                        "text": "Su nombre (His name)",
                         "isCorrect": true
                     },
                     {
-                        "text": "His job (Su trabajo)",
+                        "text": "Su trabajo (His job)",
                         "isCorrect": false
                     }
                 ],
@@ -1281,15 +1281,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué dice David después de que María se presenta?",
                 "options": [
                     {
-                        "text": "Goodbye (Adiós)",
+                        "text": "Adiós (Goodbye)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Nice to meet you (Mucho gusto)",
+                        "text": "Mucho gusto (Nice to meet you)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Thank you (Gracias)",
+                        "text": "Gracias (Thank you)",
                         "isCorrect": false
                     }
                 ],
@@ -1301,7 +1301,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Es David nuevo en el lugar?",
                 "options": [
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": true
                     },
                     {
@@ -1309,7 +1309,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Maybe (Quizás)",
+                        "text": "Quizás (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -1321,15 +1321,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo se mudó David a este lugar?",
                 "options": [
                     {
-                        "text": "Last year (El año pasado)",
+                        "text": "El año pasado (Last year)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Last week (La semana pasada)",
+                        "text": "La semana pasada (Last week)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Yesterday (Ayer)",
+                        "text": "Ayer (Yesterday)",
                         "isCorrect": false
                     }
                 ],
@@ -1426,15 +1426,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué pregunta la primera persona?",
                 "options": [
                     {
-                        "text": "What time is it? (¿Qué hora es?)",
+                        "text": "¿Qué hora es? (What time is it?)",
                         "isCorrect": false
                     },
                     {
-                        "text": "What they like to do for fun? (¿Qué les gusta hacer para divertirse?)",
+                        "text": "¿Qué les gusta hacer para divertirse? (What they like to do for fun?)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Where they live? (¿Dónde viven?)",
+                        "text": "¿Dónde viven? (Where they live?)",
                         "isCorrect": false
                     }
                 ],
@@ -1446,15 +1446,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le gusta hacer a la segunda persona?",
                 "options": [
                     {
-                        "text": "Play video games (Jugar videojuegos)",
+                        "text": "Jugar videojuegos (Play video games)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Play soccer and read books (Jugar fútbol y leer libros)",
+                        "text": "Jugar fútbol y leer libros (Play soccer and read books)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Watch movies (Ver películas)",
+                        "text": "Ver películas (Watch movies)",
                         "isCorrect": false
                     }
                 ],
@@ -1466,15 +1466,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué pasatiempos menciona la primera persona?",
                 "options": [
                     {
-                        "text": "Painting and hiking (Pintar y hacer senderismo)",
+                        "text": "Pintar y hacer senderismo (Painting and hiking)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Reading and writing (Leer y escribir)",
+                        "text": "Leer y escribir (Reading and writing)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Cooking and cleaning (Cocinar y limpiar)",
+                        "text": "Cocinar y limpiar (Cooking and cleaning)",
                         "isCorrect": false
                     }
                 ],
@@ -1486,15 +1486,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué planean hacer juntos?",
                 "options": [
                     {
-                        "text": "Go to the movies (Ir al cine)",
+                        "text": "Ir al cine (Go to the movies)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Go hiking (Ir de excursión)",
+                        "text": "Ir de excursión (Go hiking)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Play soccer (Jugar fútbol)",
+                        "text": "Jugar fútbol (Play soccer)",
                         "isCorrect": false
                     }
                 ],
@@ -1587,15 +1587,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué están hablando?",
                 "options": [
                     {
-                        "text": "The weather (El clima)",
+                        "text": "El clima (The weather)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Food (Comida)",
+                        "text": "Comida (Food)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Sports (Deportes)",
+                        "text": "Deportes (Sports)",
                         "isCorrect": false
                     }
                 ],
@@ -1607,15 +1607,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo está el clima?",
                 "options": [
                     {
-                        "text": "Rainy and cold (Lluvioso y frío)",
+                        "text": "Lluvioso y frío (Rainy and cold)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Sunny and warm (Soleado y cálido)",
+                        "text": "Soleado y cálido (Sunny and warm)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Cloudy and windy (Nublado y ventoso)",
+                        "text": "Nublado y ventoso (Cloudy and windy)",
                         "isCorrect": false
                     }
                 ],
@@ -1627,15 +1627,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A dónde va la persona?",
                 "options": [
                     {
-                        "text": "To the beach (A la playa)",
+                        "text": "A la playa (To the beach)",
                         "isCorrect": false
                     },
                     {
-                        "text": "To the park (Al parque)",
+                        "text": "Al parque (To the park)",
                         "isCorrect": true
                     },
                     {
-                        "text": "To school (A la escuela)",
+                        "text": "A la escuela (To school)",
                         "isCorrect": false
                     }
                 ],
@@ -1647,15 +1647,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué no debe olvidar la persona?",
                 "options": [
                     {
-                        "text": "A hat (Un sombrero)",
+                        "text": "Un sombrero (A hat)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Sunscreen (Protector solar)",
+                        "text": "Protector solar (Sunscreen)",
                         "isCorrect": true
                     },
                     {
-                        "text": "An umbrella (Un paraguas)",
+                        "text": "Un paraguas (An umbrella)",
                         "isCorrect": false
                     }
                 ],
@@ -1748,15 +1748,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tiene la persona?",
                 "options": [
                     {
-                        "text": "A broken arm (Un brazo roto)",
+                        "text": "Un brazo roto (A broken arm)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A headache and a cough (Un dolor de cabeza y tos)",
+                        "text": "Un dolor de cabeza y tos (A headache and a cough)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A stomach ache (Un dolor de estómago)",
+                        "text": "Un dolor de estómago (A stomach ache)",
                         "isCorrect": false
                     }
                 ],
@@ -1768,15 +1768,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está la persona?",
                 "options": [
                     {
-                        "text": "At a bank (En un banco)",
+                        "text": "En un banco (At a bank)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At a store (En una tienda)",
+                        "text": "En una tienda (At a store)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At the doctor's (En el consultorio del doctor)",
+                        "text": "En el consultorio del doctor (At the doctor's)",
                         "isCorrect": true
                     }
                 ],
@@ -1788,15 +1788,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué hará el doctor?",
                 "options": [
                     {
-                        "text": "Give them medicine (Darles medicina)",
+                        "text": "Darles medicina (Give them medicine)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Take a look (Echar un vistazo)",
+                        "text": "Echar un vistazo (Take a look)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Send them home (Enviarlos a casa)",
+                        "text": "Enviarlos a casa (Send them home)",
                         "isCorrect": false
                     }
                 ],
@@ -1808,15 +1808,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué debe hacer la persona después?",
                 "options": [
                     {
-                        "text": "Sit down (Sentarse)",
+                        "text": "Sentarse (Sit down)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Leave (Salir)",
+                        "text": "Salir (Leave)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Dance (Bailar)",
+                        "text": "Bailar (Dance)",
                         "isCorrect": false
                     }
                 ],
@@ -1909,15 +1909,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere hacer la persona?",
                 "options": [
                     {
-                        "text": "Close a bank account (Cerrar una cuenta bancaria)",
+                        "text": "Cerrar una cuenta bancaria (Close a bank account)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Open a bank account (Abrir una cuenta bancaria)",
+                        "text": "Abrir una cuenta bancaria (Open a bank account)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Borrow money (Pedir dinero prestado)",
+                        "text": "Pedir dinero prestado (Borrow money)",
                         "isCorrect": false
                     }
                 ],
@@ -1929,15 +1929,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de cuenta está considerando la persona?",
                 "options": [
                     {
-                        "text": "A savings account (Una cuenta de ahorros)",
+                        "text": "Una cuenta de ahorros (A savings account)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A checking account (Una cuenta corriente)",
+                        "text": "Una cuenta corriente (A checking account)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A retirement account (Una cuenta de jubilación)",
+                        "text": "Una cuenta de jubilación (A retirement account)",
                         "isCorrect": false
                     }
                 ],
@@ -1949,15 +1949,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué necesita el banco de la persona?",
                 "options": [
                     {
-                        "text": "Identification and their address (Identificación y su dirección)",
+                        "text": "Identificación y su dirección (Identification and their address)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Their phone number (Su número de teléfono)",
+                        "text": "Su número de teléfono (Their phone number)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Their car (Su coche)",
+                        "text": "Su coche (Their car)",
                         "isCorrect": false
                     }
                 ],
@@ -1969,15 +1969,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está la persona?",
                 "options": [
                     {
-                        "text": "At a store (En una tienda)",
+                        "text": "En una tienda (At a store)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At the library (En la biblioteca)",
+                        "text": "En la biblioteca (At the library)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At a bank (En un banco)",
+                        "text": "En un banco (At a bank)",
                         "isCorrect": true
                     }
                 ],
@@ -2070,15 +2070,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A dónde quiere ir la persona?",
                 "options": [
                     {
-                        "text": "Uptown (A la parte alta de la ciudad)",
+                        "text": "A la parte alta de la ciudad (Uptown)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Downtown (Al centro de la ciudad)",
+                        "text": "Al centro de la ciudad (Downtown)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The airport (Al aeropuerto)",
+                        "text": "Al aeropuerto (The airport)",
                         "isCorrect": false
                     }
                 ],
@@ -2090,15 +2090,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de boleto quiere la persona?",
                 "options": [
                     {
-                        "text": "One-way (De ida)",
+                        "text": "De ida (One-way)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Round trip (De ida y vuelta)",
+                        "text": "De ida y vuelta (Round trip)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A monthly pass (Un pase mensual)",
+                        "text": "Un pase mensual (A monthly pass)",
                         "isCorrect": false
                     }
                 ],
@@ -2110,15 +2110,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuánto cuesta el boleto?",
                 "options": [
                     {
-                        "text": "Five dollars (Cinco dólares)",
+                        "text": "Cinco dólares (Five dollars)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Two dollars (Dos dólares)",
+                        "text": "Dos dólares (Two dollars)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Three dollars (Tres dólares)",
+                        "text": "Tres dólares (Three dollars)",
                         "isCorrect": true
                     }
                 ],
@@ -2130,15 +2130,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está la persona?",
                 "options": [
                     {
-                        "text": "At a movie theater (En un cine)",
+                        "text": "En un cine (At a movie theater)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At a train/subway station (En una estación de tren/metro)",
+                        "text": "En una estación de tren/metro (At a train/subway station)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At a restaurant (En un restaurante)",
+                        "text": "En un restaurante (At a restaurant)",
                         "isCorrect": false
                     }
                 ],
@@ -2231,15 +2231,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere ordenar la persona?",
                 "options": [
                     {
-                        "text": "A cappuccino (Un capuchino)",
+                        "text": "Un capuchino (A cappuccino)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A latte (Un latte)",
+                        "text": "Un latte (A latte)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A tea (Un té)",
+                        "text": "Un té (A tea)",
                         "isCorrect": false
                     }
                 ],
@@ -2251,15 +2251,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tamaño quiere la persona?",
                 "options": [
                     {
-                        "text": "Small (Pequeño)",
+                        "text": "Pequeño (Small)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Medium (Mediano)",
+                        "text": "Mediano (Medium)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Large (Grande)",
+                        "text": "Grande (Large)",
                         "isCorrect": false
                     }
                 ],
@@ -2271,15 +2271,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿La persona está bebiendo su café en el café?",
                 "options": [
                     {
-                        "text": "No, to go (No, para llevar)",
+                        "text": "No, para llevar (No, to go)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Yes, here (Sí, aquí)",
+                        "text": "Sí, aquí (Yes, here)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Maybe (Quizás)",
+                        "text": "Quizás (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -2291,15 +2291,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuánto cuesta el café?",
                 "options": [
                     {
-                        "text": "Three dollars (Tres dólares)",
+                        "text": "Tres dólares (Three dollars)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Four dollars (Cuatro dólares)",
+                        "text": "Cuatro dólares (Four dollars)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Five dollars (Cinco dólares)",
+                        "text": "Cinco dólares (Five dollars)",
                         "isCorrect": false
                     }
                 ],
@@ -2392,15 +2392,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tan grande es la familia de la persona?",
                 "options": [
                     {
-                        "text": "Big (Grande)",
+                        "text": "Grande (Big)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Small (Pequeña)",
+                        "text": "Pequeña (Small)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Average (Promedio)",
+                        "text": "Promedio (Average)",
                         "isCorrect": false
                     }
                 ],
@@ -2412,15 +2412,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Quién está en la familia de la persona?",
                 "options": [
                     {
-                        "text": "Parents and one brother (Padres y un hermano)",
+                        "text": "Padres y un hermano (Parents and one brother)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Parents and two sisters (Padres y dos hermanas)",
+                        "text": "Padres y dos hermanas (Parents and two sisters)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Just their parents (Solo sus padres)",
+                        "text": "Solo sus padres (Just their parents)",
                         "isCorrect": false
                     }
                 ],
@@ -2432,15 +2432,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo usualmente se ven?",
                 "options": [
                     {
-                        "text": "On Saturdays (Los sábados)",
+                        "text": "Los sábados (On Saturdays)",
                         "isCorrect": false
                     },
                     {
-                        "text": "On Sundays (Los domingos)",
+                        "text": "Los domingos (On Sundays)",
                         "isCorrect": true
                     },
                     {
-                        "text": "On Mondays (Los lunes)",
+                        "text": "Los lunes (On Mondays)",
                         "isCorrect": false
                     }
                 ],
@@ -2452,15 +2452,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo se siente la otra persona al respecto?",
                 "options": [
                     {
-                        "text": "It sounds boring (Suena aburrido)",
+                        "text": "Suena aburrido (It sounds boring)",
                         "isCorrect": false
                     },
                     {
-                        "text": "It sounds like fun (Suena divertido)",
+                        "text": "Suena divertido (It sounds like fun)",
                         "isCorrect": true
                     },
                     {
-                        "text": "It sounds difficult (Suena difícil)",
+                        "text": "Suena difícil (It sounds difficult)",
                         "isCorrect": false
                     }
                 ],
@@ -2553,15 +2553,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el trabajo de la persona?",
                 "options": [
                     {
-                        "text": "A teacher (Un maestro)",
+                        "text": "Un maestro (A teacher)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A software engineer (Un ingeniero de software)",
+                        "text": "Un ingeniero de software (A software engineer)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A doctor (Un doctor)",
+                        "text": "Un doctor (A doctor)",
                         "isCorrect": false
                     }
                 ],
@@ -2573,15 +2573,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde trabaja la persona?",
                 "options": [
                     {
-                        "text": "A hospital (Un hospital)",
+                        "text": "Un hospital (A hospital)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A tech company (Una empresa de tecnología)",
+                        "text": "Una empresa de tecnología (A tech company)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A school (Una escuela)",
+                        "text": "Una escuela (A school)",
                         "isCorrect": false
                     }
                 ],
@@ -2593,15 +2593,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿En qué tipo de proyectos trabaja la persona?",
                 "options": [
                     {
-                        "text": "Web applications and mobile apps (Aplicaciones web y aplicaciones móviles)",
+                        "text": "Aplicaciones web y aplicaciones móviles (Web applications and mobile apps)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Cars and trucks (Carros y camiones)",
+                        "text": "Carros y camiones (Cars and trucks)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Books and magazines (Libros y revistas)",
+                        "text": "Libros y revistas (Books and magazines)",
                         "isCorrect": false
                     }
                 ],
@@ -2617,11 +2617,11 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Maybe (Tal vez)",
+                        "text": "Tal vez (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -2714,15 +2714,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A qué está invitando la persona a la otra persona?",
                 "options": [
                     {
-                        "text": "Lunch (Al almuerzo)",
+                        "text": "Al almuerzo (Lunch)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Dinner (A la cena)",
+                        "text": "A la cena (Dinner)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Breakfast (Al desayuno)",
+                        "text": "Al desayuno (Breakfast)",
                         "isCorrect": false
                     }
                 ],
@@ -2734,15 +2734,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Para cuándo es la invitación?",
                 "options": [
                     {
-                        "text": "Next week (La semana que viene)",
+                        "text": "La semana que viene (Next week)",
                         "isCorrect": false
                     },
                     {
-                        "text": "This weekend (Este fin de semana)",
+                        "text": "Este fin de semana (This weekend)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Tomorrow (Mañana)",
+                        "text": "Mañana (Tomorrow)",
                         "isCorrect": false
                     }
                 ],
@@ -2754,15 +2754,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de restaurante se menciona?",
                 "options": [
                     {
-                        "text": "Mexican (Mexicano)",
+                        "text": "Mexicano (Mexican)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Italian (Italiano)",
+                        "text": "Italiano (Italian)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Chinese (Chino)",
+                        "text": "Chino (Chinese)",
                         "isCorrect": false
                     }
                 ],
@@ -2774,7 +2774,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Le gusta la comida italiana a la otra persona?",
                 "options": [
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": true
                     },
                     {
@@ -2782,7 +2782,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Maybe (Tal vez)",
+                        "text": "Tal vez (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -2875,15 +2875,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Por qué llegó tarde la persona?",
                 "options": [
                     {
-                        "text": "They overslept (Se quedaron dormidos)",
+                        "text": "Se quedaron dormidos (They overslept)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The traffic was bad (El tráfico estaba mal)",
+                        "text": "El tráfico estaba mal (The traffic was bad)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They forgot (Se les olvidó)",
+                        "text": "Se les olvidó (They forgot)",
                         "isCorrect": false
                     }
                 ],
@@ -2895,15 +2895,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo reaccionó la otra persona?",
                 "options": [
                     {
-                        "text": "They got angry (Se enojaron)",
+                        "text": "Se enojaron (They got angry)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They were understanding (Fueron comprensivos)",
+                        "text": "Fueron comprensivos (They were understanding)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They were sad (Estaban tristes)",
+                        "text": "Estaban tristes (They were sad)",
                         "isCorrect": false
                     }
                 ],
@@ -2915,7 +2915,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Tuvo la persona problemas para encontrar estacionamiento?",
                 "options": [
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": true
                     },
                     {
@@ -2923,7 +2923,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Maybe (Tal vez)",
+                        "text": "Tal vez (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -2935,15 +2935,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué van a hacer después?",
                 "options": [
                     {
-                        "text": "Start the meeting (Empezar la reunión)",
+                        "text": "Empezar la reunión (Start the meeting)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Leave (Irse)",
+                        "text": "Irse (Leave)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Eat lunch (Almorzar)",
+                        "text": "Almorzar (Eat lunch)",
                         "isCorrect": false
                     }
                 ],
@@ -3036,15 +3036,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué es lo que halaga la persona?",
                 "options": [
                     {
-                        "text": "The shoes (Los zapatos)",
+                        "text": "Los zapatos (The shoes)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The dress (El vestido)",
+                        "text": "El vestido (The dress)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The hair (El pelo)",
+                        "text": "El pelo (The hair)",
                         "isCorrect": false
                     }
                 ],
@@ -3056,15 +3056,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde compró la otra persona el artículo?",
                 "options": [
                     {
-                        "text": "Online (En línea)",
+                        "text": "En línea (Online)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At a boutique (En una boutique)",
+                        "text": "En una boutique (At a boutique)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At a department store (En una tienda departamental)",
+                        "text": "En una tienda departamental (At a department store)",
                         "isCorrect": false
                     }
                 ],
@@ -3076,15 +3076,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué dice la persona sobre el color del artículo?",
                 "options": [
                     {
-                        "text": "It's too bright (Es demasiado brillante)",
+                        "text": "Es demasiado brillante (It's too bright)",
                         "isCorrect": false
                     },
                     {
-                        "text": "It's perfect (Es perfecto)",
+                        "text": "Es perfecto (It's perfect)",
                         "isCorrect": true
                     },
                     {
-                        "text": "It doesn't match (No combina)",
+                        "text": "No combina (It doesn't match)",
                         "isCorrect": false
                     }
                 ],
@@ -3096,15 +3096,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo reacciona la otra persona al cumplido?",
                 "options": [
                     {
-                        "text": "They get angry (Se enojan)",
+                        "text": "Se enojan (They get angry)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They say thanks (Dan las gracias)",
+                        "text": "Dan las gracias (They say thanks)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They ignore it (Lo ignoran)",
+                        "text": "Lo ignoran (They ignore it)",
                         "isCorrect": false
                     }
                 ],
@@ -3197,15 +3197,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está haciendo la persona?",
                 "options": [
                     {
-                        "text": "Asking for directions (Pidiendo direcciones)",
+                        "text": "Pidiendo direcciones (Asking for directions)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Buying groceries (Comprando comestibles)",
+                        "text": "Comprando comestibles (Buying groceries)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Selling something (Vendiendo algo)",
+                        "text": "Vendiendo algo (Selling something)",
                         "isCorrect": false
                     }
                 ],
@@ -3217,15 +3217,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está buscando la persona?",
                 "options": [
                     {
-                        "text": "A restaurant (Un restaurante)",
+                        "text": "Un restaurante (A restaurant)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The post office (La oficina de correos)",
+                        "text": "La oficina de correos (The post office)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A bank (Un banco)",
+                        "text": "Un banco (A bank)",
                         "isCorrect": false
                     }
                 ],
@@ -3237,7 +3237,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Está el lugar lejos?",
                 "options": [
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": false
                     },
                     {
@@ -3245,7 +3245,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": true
                     },
                     {
-                        "text": "Maybe (Tal vez)",
+                        "text": "Tal vez (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -3257,15 +3257,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué debe hacer la persona para llegar allí?",
                 "options": [
                     {
-                        "text": "Go straight and turn left (Seguir derecho y girar a la izquierda)",
+                        "text": "Seguir derecho y girar a la izquierda (Go straight and turn left)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Turn right and go straight (Girar a la derecha y seguir derecho)",
+                        "text": "Girar a la derecha y seguir derecho (Turn right and go straight)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Turn around (Dar la vuelta)",
+                        "text": "Dar la vuelta (Turn around)",
                         "isCorrect": false
                     }
                 ],
@@ -3354,15 +3354,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué día planean ir al cine?",
                 "options": [
                     {
-                        "text": "Friday (Viernes)",
+                        "text": "Viernes (Friday)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Saturday (Sábado)",
+                        "text": "Sábado (Saturday)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Sunday (Domingo)",
+                        "text": "Domingo (Sunday)",
                         "isCorrect": false
                     }
                 ],
@@ -3374,15 +3374,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué están planeando hacer?",
                 "options": [
                     {
-                        "text": "Go to the park (Ir al parque)",
+                        "text": "Ir al parque (Go to the park)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Go to the movies (Ir al cine)",
+                        "text": "Ir al cine (Go to the movies)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Go shopping (Ir de compras)",
+                        "text": "Ir de compras (Go shopping)",
                         "isCorrect": false
                     }
                 ],
@@ -3511,15 +3511,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A dónde están planeando viajar?",
                 "options": [
                     {
-                        "text": "Canada (Canadá)",
+                        "text": "Canadá (Canada)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Mexico (México)",
+                        "text": "México (Mexico)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Spain (España)",
+                        "text": "España (Spain)",
                         "isCorrect": false
                     }
                 ],
@@ -3531,15 +3531,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo están planeando viajar?",
                 "options": [
                     {
-                        "text": "This month (Este mes)",
+                        "text": "Este mes (This month)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Next month (El próximo mes)",
+                        "text": "El próximo mes (Next month)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Next year (El próximo año)",
+                        "text": "El próximo año (Next year)",
                         "isCorrect": false
                     }
                 ],
@@ -3551,15 +3551,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué están discutiendo sobre el hotel?",
                 "options": [
                     {
-                        "text": "If it's already booked (Si ya está reservado)",
+                        "text": "Si ya está reservado (If it's already booked)",
                         "isCorrect": true
                     },
                     {
-                        "text": "If it has a swimming pool (Si tiene una piscina)",
+                        "text": "Si tiene una piscina (If it has a swimming pool)",
                         "isCorrect": false
                     },
                     {
-                        "text": "If it's expensive (Si es caro)",
+                        "text": "Si es caro (If it's expensive)",
                         "isCorrect": false
                     }
                 ],
@@ -3571,15 +3571,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde quiere uno de ellos que esté el hotel?",
                 "options": [
                     {
-                        "text": "Near the mountains (Cerca de las montañas)",
+                        "text": "Cerca de las montañas (Near the mountains)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Near the city center (Cerca del centro de la ciudad)",
+                        "text": "Cerca del centro de la ciudad (Near the city center)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Near the beach (Cerca de la playa)",
+                        "text": "Cerca de la playa (Near the beach)",
                         "isCorrect": true
                     }
                 ],
@@ -3672,15 +3672,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está tratando de hacer la persona?",
                 "options": [
                     {
-                        "text": "Buy a house (Comprar una casa)",
+                        "text": "Comprar una casa (Buy a house)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Rent an apartment (Alquilar un apartamento)",
+                        "text": "Alquilar un apartamento (Rent an apartment)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Sell their house (Vender su casa)",
+                        "text": "Vender su casa (Sell their house)",
                         "isCorrect": false
                     }
                 ],
@@ -3692,15 +3692,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el presupuesto de la persona?",
                 "options": [
                     {
-                        "text": "Around $1000 (Alrededor de $1000)",
+                        "text": "Alrededor de $1000 (Around $1000)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Around $1200 (Alrededor de $1200)",
+                        "text": "Alrededor de $1200 (Around $1200)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Around $1500 (Alrededor de $1500)",
+                        "text": "Alrededor de $1500 (Around $1500)",
                         "isCorrect": false
                     }
                 ],
@@ -3712,15 +3712,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuántas habitaciones necesita la persona?",
                 "options": [
                     {
-                        "text": "One bedroom (Una habitación)",
+                        "text": "Una habitación (One bedroom)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Two bedrooms (Dos habitaciones)",
+                        "text": "Dos habitaciones (Two bedrooms)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Three bedrooms (Tres habitaciones)",
+                        "text": "Tres habitaciones (Three bedrooms)",
                         "isCorrect": false
                     }
                 ],
@@ -3732,15 +3732,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Con quién está hablando la persona?",
                 "options": [
                     {
-                        "text": "A landlord (Un casero)",
+                        "text": "Un casero (A landlord)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A real estate agent (Un agente de bienes raíces)",
+                        "text": "Un agente de bienes raíces (A real estate agent)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A friend (Un amigo)",
+                        "text": "Un amigo (A friend)",
                         "isCorrect": false
                     }
                 ],
@@ -3833,15 +3833,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está la persona?",
                 "options": [
                     {
-                        "text": "At the supermarket (En el supermercado)",
+                        "text": "En el supermercado (At the supermarket)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At the hair salon (En la peluquería)",
+                        "text": "En la peluquería (At the hair salon)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At the bank (En el banco)",
+                        "text": "En el banco (At the bank)",
                         "isCorrect": false
                     }
                 ],
@@ -3853,15 +3853,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere la persona?",
                 "options": [
                     {
-                        "text": "A new hairstyle (Un nuevo peinado)",
+                        "text": "Un nuevo peinado (A new hairstyle)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A massage (Un masaje)",
+                        "text": "Un masaje (A massage)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A manicure (Una manicura)",
+                        "text": "Una manicura (A manicure)",
                         "isCorrect": false
                     }
                 ],
@@ -3873,15 +3873,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de corte de pelo quiere la persona?",
                 "options": [
                     {
-                        "text": "Just a trim (Solo un despunte)",
+                        "text": "Solo un despunte (Just a trim)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A completely new style (Un estilo completamente nuevo)",
+                        "text": "Un estilo completamente nuevo (A completely new style)",
                         "isCorrect": false
                     },
                     {
-                        "text": "To dye their hair (Teñirse el pelo)",
+                        "text": "Teñirse el pelo (To dye their hair)",
                         "isCorrect": false
                     }
                 ],
@@ -3893,15 +3893,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué dice el peluquero?",
                 "options": [
                     {
-                        "text": "Sounds good (Suena bien)",
+                        "text": "Suena bien (Sounds good)",
                         "isCorrect": true
                     },
                     {
-                        "text": "That's impossible (Eso es imposible)",
+                        "text": "Eso es imposible (That's impossible)",
                         "isCorrect": false
                     },
                     {
-                        "text": "I don't understand (No entiendo)",
+                        "text": "No entiendo (I don't understand)",
                         "isCorrect": false
                     }
                 ],
@@ -3994,15 +3994,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está la persona?",
                 "options": [
                     {
-                        "text": "At the supermarket (En el supermercado)",
+                        "text": "En el supermercado (At the supermarket)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At the post office (En la oficina de correos)",
+                        "text": "En la oficina de correos (At the post office)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At the airport (En el aeropuerto)",
+                        "text": "En el aeropuerto (At the airport)",
                         "isCorrect": false
                     }
                 ],
@@ -4014,15 +4014,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere hacer la persona?",
                 "options": [
                     {
-                        "text": "Send a letter (Enviar una carta)",
+                        "text": "Enviar una carta (Send a letter)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Send a package (Enviar un paquete)",
+                        "text": "Enviar un paquete (Send a package)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Receive a package (Recibir un paquete)",
+                        "text": "Recibir un paquete (Receive a package)",
                         "isCorrect": false
                     }
                 ],
@@ -4034,15 +4034,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A dónde va el paquete?",
                 "options": [
                     {
-                        "text": "To Argentina (A Argentina)",
+                        "text": "A Argentina (To Argentina)",
                         "isCorrect": true
                     },
                     {
-                        "text": "To Brazil (A Brasil)",
+                        "text": "A Brasil (To Brazil)",
                         "isCorrect": false
                     },
                     {
-                        "text": "To Chile (A Chile)",
+                        "text": "A Chile (To Chile)",
                         "isCorrect": false
                     }
                 ],
@@ -4155,15 +4155,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A ambos amigos les gustó la película?",
                 "options": [
                     {
-                        "text": "Yes, they both loved it. (Sí, a ambos les encantó.)",
+                        "text": "Sí, a ambos les encantó. (Yes, they both loved it.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "No, one liked it and the other didn't. (No, a uno le gustó y al otro no.)",
+                        "text": "No, a uno le gustó y al otro no. (No, one liked it and the other didn't.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They haven't seen the movie yet. (No han visto la película todavía.)",
+                        "text": "No han visto la película todavía. (They haven't seen the movie yet.)",
                         "isCorrect": false
                     }
                 ],
@@ -4175,15 +4175,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de película estaban discutiendo?",
                 "options": [
                     {
-                        "text": "A comedy. (Una comedia.)",
+                        "text": "Una comedia. (A comedy.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "An action movie. (Una película de acción.)",
+                        "text": "Una película de acción. (An action movie.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A documentary. (Un documental.)",
+                        "text": "Un documental. (A documentary.)",
                         "isCorrect": false
                     }
                 ],
@@ -4195,15 +4195,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué significa 'para gustos, los colores'?",
                 "options": [
                     {
-                        "text": "Everyone has different tastes. (Cada quien tiene gustos diferentes.)",
+                        "text": "Cada quien tiene gustos diferentes. (Everyone has different tastes.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Everyone should watch the same movies. (Todos deberían ver las mismas películas.)",
+                        "text": "Todos deberían ver las mismas películas. (Everyone should watch the same movies.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Movies are boring. (Las películas son aburridas.)",
+                        "text": "Las películas son aburridas. (Movies are boring.)",
                         "isCorrect": false
                     }
                 ],
@@ -4215,15 +4215,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué palabra describe la película desde la perspectiva de una persona?",
                 "options": [
                     {
-                        "text": "Exciting. (Emocionante.)",
+                        "text": "Emocionante. (Exciting.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Boring. (Aburrida.)",
+                        "text": "Aburrida. (Boring.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Funny. (Divertida.)",
+                        "text": "Divertida. (Funny.)",
                         "isCorrect": false
                     }
                 ],
@@ -4316,15 +4316,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le encanta hacer a la persona?",
                 "options": [
                     {
-                        "text": "Play the guitar. (Tocar la guitarra.)",
+                        "text": "Tocar la guitarra. (Play the guitar.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Wash the dishes. (Lavar los platos.)",
+                        "text": "Lavar los platos. (Wash the dishes.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Go to work. (Ir a trabajar.)",
+                        "text": "Ir a trabajar. (Go to work.)",
                         "isCorrect": false
                     }
                 ],
@@ -4336,15 +4336,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tarea doméstica le disgusta a la persona?",
                 "options": [
                     {
-                        "text": "Cleaning the house. (Limpiar la casa.)",
+                        "text": "Limpiar la casa. (Cleaning the house.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Doing the laundry. (Lavar la ropa.)",
+                        "text": "Lavar la ropa. (Doing the laundry.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Washing the dishes. (Lavar los platos.)",
+                        "text": "Lavar los platos. (Washing the dishes.)",
                         "isCorrect": true
                     }
                 ],
@@ -4356,15 +4356,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Por qué le gusta a la persona tocar la guitarra?",
                 "options": [
                     {
-                        "text": "It's boring. (Es aburrido.)",
+                        "text": "Es aburrido. (It's boring.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "It's relaxing. (Es relajante.)",
+                        "text": "Es relajante. (It's relaxing.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "It's difficult. (Es difícil.)",
+                        "text": "Es difícil. (It's difficult.)",
                         "isCorrect": false
                     }
                 ],
@@ -4376,15 +4376,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué piensan sobre lavar los platos?",
                 "options": [
                     {
-                        "text": "It's fun. (Es divertido.)",
+                        "text": "Es divertido. (It's fun.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "It's the worst. (Es lo peor.)",
+                        "text": "Es lo peor. (It's the worst.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "It's okay. (Está bien.)",
+                        "text": "Está bien. (It's okay.)",
                         "isCorrect": false
                     }
                 ],
@@ -4477,15 +4477,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de cabello tenía la persona?",
                 "options": [
                     {
-                        "text": "Short and straight. (Corto y lacio.)",
+                        "text": "Corto y lacio. (Short and straight.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Long and curly. (Largo y rizado.)",
+                        "text": "Largo y rizado. (Long and curly.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Bald. (Calvo.)",
+                        "text": "Calvo. (Bald.)",
                         "isCorrect": false
                     }
                 ],
@@ -4497,15 +4497,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué color era el pelo de la persona?",
                 "options": [
                     {
-                        "text": "Blonde. (Rubio.)",
+                        "text": "Rubio. (Blonde.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Brown. (Castaño.)",
+                        "text": "Castaño. (Brown.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Red. (Rojo.)",
+                        "text": "Rojo. (Red.)",
                         "isCorrect": false
                     }
                 ],
@@ -4517,7 +4517,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿La persona usaba gafas?",
                 "options": [
                     {
-                        "text": "Yes. (Sí.)",
+                        "text": "Sí. (Yes.)",
                         "isCorrect": true
                     },
                     {
@@ -4525,7 +4525,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Maybe. (Quizás.)",
+                        "text": "Quizás. (Maybe.)",
                         "isCorrect": false
                     }
                 ],
@@ -4537,15 +4537,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué vio la primera persona?",
                 "options": [
                     {
-                        "text": "A dog. (Un perro.)",
+                        "text": "Un perro. (A dog.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Someone interesting. (Alguien interesante.)",
+                        "text": "Alguien interesante. (Someone interesting.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A car. (Un carro.)",
+                        "text": "Un carro. (A car.)",
                         "isCorrect": false
                     }
                 ],
@@ -4638,15 +4638,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A qué hora se despierta normalmente la persona?",
                 "options": [
                     {
-                        "text": "Around 9 AM. (Alrededor de las 9 de la mañana.)",
+                        "text": "Alrededor de las 9 de la mañana. (Around 9 AM.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Around 7 AM. (Alrededor de las 7 de la mañana.)",
+                        "text": "Alrededor de las 7 de la mañana. (Around 7 AM.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Around 5 AM. (Alrededor de las 5 de la mañana.)",
+                        "text": "Alrededor de las 5 de la mañana. (Around 5 AM.)",
                         "isCorrect": false
                     }
                 ],
@@ -4658,15 +4658,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué hace la persona después de despertarse?",
                 "options": [
                     {
-                        "text": "Exercises. (Hace ejercicio.)",
+                        "text": "Hace ejercicio. (Exercises.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Has coffee and checks emails. (Toma café y revisa correos electrónicos.)",
+                        "text": "Toma café y revisa correos electrónicos. (Has coffee and checks emails.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Goes to sleep. (Se duerme.)",
+                        "text": "Se duerme. (Goes to sleep.)",
                         "isCorrect": false
                     }
                 ],
@@ -4678,15 +4678,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Adónde va la persona después de tomar café?",
                 "options": [
                     {
-                        "text": "To work. (Al trabajo.)",
+                        "text": "Al trabajo. (To work.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "To school. (A la escuela.)",
+                        "text": "A la escuela. (To school.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "To the park. (Al parque.)",
+                        "text": "Al parque. (To the park.)",
                         "isCorrect": false
                     }
                 ],
@@ -4698,15 +4698,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué hace la persona por la noche?",
                 "options": [
                     {
-                        "text": "Relaxes at home. (Se relaja en casa.)",
+                        "text": "Se relaja en casa. (Relaxes at home.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Goes to a party. (Va a una fiesta.)",
+                        "text": "Va a una fiesta. (Goes to a party.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Goes to the gym. (Va al gimnasio.)",
+                        "text": "Va al gimnasio. (Goes to the gym.)",
                         "isCorrect": false
                     }
                 ],
@@ -4799,15 +4799,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde tiene lugar esta conversación?",
                 "options": [
                     {
-                        "text": "At a restaurant. (En un restaurante.)",
+                        "text": "En un restaurante. (At a restaurant.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At the gym. (En el gimnasio.)",
+                        "text": "En el gimnasio. (At the gym.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At the library. (En la biblioteca.)",
+                        "text": "En la biblioteca. (At the library.)",
                         "isCorrect": false
                     }
                 ],
@@ -4819,15 +4819,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere la primera persona?",
                 "options": [
                     {
-                        "text": "Help. (Ayuda.)",
+                        "text": "Ayuda. (Help.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Food. (Comida.)",
+                        "text": "Comida. (Food.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Money. (Dinero.)",
+                        "text": "Dinero. (Money.)",
                         "isCorrect": false
                     }
                 ],
@@ -4839,15 +4839,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el problema?",
                 "options": [
                     {
-                        "text": "They don't know how to use the machine. (No saben cómo usar la máquina.)",
+                        "text": "No saben cómo usar la máquina. (They don't know how to use the machine.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They are tired. (Están cansados.)",
+                        "text": "Están cansados. (They are tired.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They are hungry. (Tienen hambre.)",
+                        "text": "Tienen hambre. (They are hungry.)",
                         "isCorrect": false
                     }
                 ],
@@ -4859,15 +4859,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué se ofrece a hacer la segunda persona?",
                 "options": [
                     {
-                        "text": "To show them how to use the machine. (Mostrarles cómo usar la máquina.)",
+                        "text": "Mostrarles cómo usar la máquina. (To show them how to use the machine.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "To use the machine for them. (Usar la máquina por ellos.)",
+                        "text": "Usar la máquina por ellos. (To use the machine for them.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "To ignore them. (Ignorarlos.)",
+                        "text": "Ignorarlos. (To ignore them.)",
                         "isCorrect": false
                     }
                 ],
@@ -4960,15 +4960,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está celebrando María?",
                 "options": [
                     {
-                        "text": "Her anniversary (Su aniversario)",
+                        "text": "Su aniversario (Her anniversary)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Her birthday (Su cumpleaños)",
+                        "text": "Su cumpleaños (Her birthday)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Her graduation (Su graduación)",
+                        "text": "Su graduación (Her graduation)",
                         "isCorrect": false
                     }
                 ],
@@ -4980,15 +4980,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le dio la persona a María?",
                 "options": [
                     {
-                        "text": "A new car (Un carro nuevo)",
+                        "text": "Un carro nuevo (A new car)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A new book (Un libro nuevo)",
+                        "text": "Un libro nuevo (A new book)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A new phone (Un teléfono nuevo)",
+                        "text": "Un teléfono nuevo (A new phone)",
                         "isCorrect": false
                     }
                 ],
@@ -5000,15 +5000,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué piensa María del regalo?",
                 "options": [
                     {
-                        "text": "She thinks it's boring. (Ella piensa que es aburrido.)",
+                        "text": "Ella piensa que es aburrido. (She thinks it's boring.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "She thinks it's thoughtful. (Ella piensa que es considerado.)",
+                        "text": "Ella piensa que es considerado. (She thinks it's thoughtful.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "She doesn't like it. (A ella no le gusta.)",
+                        "text": "A ella no le gusta. (She doesn't like it.)",
                         "isCorrect": false
                     }
                 ],
@@ -5020,15 +5020,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de libro es?",
                 "options": [
                     {
-                        "text": "A book by her favorite author (Un libro de su autor favorito)",
+                        "text": "Un libro de su autor favorito (A book by her favorite author)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A cookbook (Un libro de cocina)",
+                        "text": "Un libro de cocina (A cookbook)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A textbook (Un libro de texto)",
+                        "text": "Un libro de texto (A textbook)",
                         "isCorrect": false
                     }
                 ],
@@ -5121,15 +5121,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Quién se va a casar?",
                 "options": [
                     {
-                        "text": "Sarah and Tom (Sarah y Tom)",
+                        "text": "Sarah y Tom (Sarah and Tom)",
                         "isCorrect": true
                     },
                     {
-                        "text": "John and Mary (John y Mary)",
+                        "text": "John y Mary (John and Mary)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Lisa and Peter (Lisa y Peter)",
+                        "text": "Lisa y Peter (Lisa and Peter)",
                         "isCorrect": false
                     }
                 ],
@@ -5141,15 +5141,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Está la persona emocionada de ir a la boda?",
                 "options": [
                     {
-                        "text": "No, they are not (No, no lo están)",
+                        "text": "No, no lo están (No, they are not)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Yes, they are (Sí, lo están)",
+                        "text": "Sí, lo están (Yes, they are)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Maybe (Quizás)",
+                        "text": "Quizás (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -5161,15 +5161,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué es probable que la persona se ponga?",
                 "options": [
                     {
-                        "text": "A red dress (Un vestido rojo)",
+                        "text": "Un vestido rojo (A red dress)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A blue suit (Un traje azul)",
+                        "text": "Un traje azul (A blue suit)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Jeans and a t-shirt (Jeans y una camiseta)",
+                        "text": "Jeans y una camiseta (Jeans and a t-shirt)",
                         "isCorrect": false
                     }
                 ],
@@ -5181,15 +5181,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Por qué la persona usará un traje?",
                 "options": [
                     {
-                        "text": "Because it's comfortable (Porque es cómodo)",
+                        "text": "Porque es cómodo (Because it's comfortable)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Because it's formal (Porque es formal)",
+                        "text": "Porque es formal (Because it's formal)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Because it's cold (Porque hace frío)",
+                        "text": "Porque hace frío (Because it's cold)",
                         "isCorrect": false
                     }
                 ],
@@ -5282,15 +5282,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Con quién tienen una reunión?",
                 "options": [
                     {
-                        "text": "The clients (Los clientes)",
+                        "text": "Los clientes (The clients)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The boss (El jefe)",
+                        "text": "El jefe (The boss)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The secretary (El secretario)",
+                        "text": "El secretario (The secretary)",
                         "isCorrect": false
                     }
                 ],
@@ -5302,15 +5302,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Tiene la persona la información necesaria?",
                 "options": [
                     {
-                        "text": "Yes, they have all the data (Sí, tienen todos los datos)",
+                        "text": "Sí, tienen todos los datos (Yes, they have all the data)",
                         "isCorrect": true
                     },
                     {
-                        "text": "No, they don't (No, no la tienen)",
+                        "text": "No, no la tienen (No, they don't)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They are not sure (No están seguros)",
+                        "text": "No están seguros (They are not sure)",
                         "isCorrect": false
                     }
                 ],
@@ -5322,15 +5322,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué debe recordar hacer la persona?",
                 "options": [
                     {
-                        "text": "Speak clearly and concisely (Hablar clara y concisamente)",
+                        "text": "Hablar clara y concisamente (Speak clearly and concisely)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Speak loudly (Hablar en voz alta)",
+                        "text": "Hablar en voz alta (Speak loudly)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Be late (Llegar tarde)",
+                        "text": "Llegar tarde (Be late)",
                         "isCorrect": false
                     }
                 ],
@@ -5342,15 +5342,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Está la persona agradecida por el recordatorio?",
                 "options": [
                     {
-                        "text": "No, they are angry (No, están enojados)",
+                        "text": "No, están enojados (No, they are angry)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Yes, they are thankful (Sí, están agradecidos)",
+                        "text": "Sí, están agradecidos (Yes, they are thankful)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They don't care (No les importa)",
+                        "text": "No les importa (They don't care)",
                         "isCorrect": false
                     }
                 ],
@@ -5443,15 +5443,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué problema está teniendo la persona?",
                 "options": [
                     {
-                        "text": "Trouble with their TV (Problemas con su televisión)",
+                        "text": "Problemas con su televisión (Trouble with their TV)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Trouble with their internet (Problemas con su internet)",
+                        "text": "Problemas con su internet (Trouble with their internet)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Trouble with their phone (Problemas con su teléfono)",
+                        "text": "Problemas con su teléfono (Trouble with their phone)",
                         "isCorrect": false
                     }
                 ],
@@ -5463,15 +5463,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué pide la compañía?",
                 "options": [
                     {
-                        "text": "Their name (Su nombre)",
+                        "text": "Su nombre (Their name)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Their account number (Su número de cuenta)",
+                        "text": "Su número de cuenta (Their account number)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Their address (Su dirección)",
+                        "text": "Su dirección (Their address)",
                         "isCorrect": false
                     }
                 ],
@@ -5483,11 +5483,11 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo está el internet?",
                 "options": [
                     {
-                        "text": "Very fast (Muy rápido)",
+                        "text": "Muy rápido (Very fast)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Very slow (Muy lento)",
+                        "text": "Muy lento (Very slow)",
                         "isCorrect": true
                     },
                     {
@@ -5503,15 +5503,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué sugiere la compañía?",
                 "options": [
                     {
-                        "text": "Restart their modem (Reiniciar su módem)",
+                        "text": "Reiniciar su módem (Restart their modem)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Buy a new computer (Comprar una computadora nueva)",
+                        "text": "Comprar una computadora nueva (Buy a new computer)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Call a friend (Llamar a un amigo)",
+                        "text": "Llamar a un amigo (Call a friend)",
                         "isCorrect": false
                     }
                 ],
@@ -5604,15 +5604,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de profesional necesita la persona?",
                 "options": [
                     {
-                        "text": "A doctor (Un doctor)",
+                        "text": "Un doctor (A doctor)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A plumber (Un plomero)",
+                        "text": "Un plomero (A plumber)",
                         "isCorrect": true
                     },
                     {
-                        "text": "An electrician (Un electricista)",
+                        "text": "Un electricista (An electrician)",
                         "isCorrect": false
                     }
                 ],
@@ -5624,15 +5624,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está ubicado el problema?",
                 "options": [
                     {
-                        "text": "In the bedroom (En el dormitorio)",
+                        "text": "En el dormitorio (In the bedroom)",
                         "isCorrect": false
                     },
                     {
-                        "text": "In the kitchen (En la cocina)",
+                        "text": "En la cocina (In the kitchen)",
                         "isCorrect": true
                     },
                     {
-                        "text": "In the bathroom (En el baño)",
+                        "text": "En el baño (In the bathroom)",
                         "isCorrect": false
                     }
                 ],
@@ -5644,15 +5644,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el problema con el fregadero?",
                 "options": [
                     {
-                        "text": "It's leaking (Está goteando)",
+                        "text": "Está goteando (It's leaking)",
                         "isCorrect": false
                     },
                     {
-                        "text": "It's completely clogged (Está completamente atascado)",
+                        "text": "Está completamente atascado (It's completely clogged)",
                         "isCorrect": true
                     },
                     {
-                        "text": "It's too small (Es demasiado pequeño)",
+                        "text": "Es demasiado pequeño (It's too small)",
                         "isCorrect": false
                     }
                 ],
@@ -5664,15 +5664,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué información pide la compañía a continuación?",
                 "options": [
                     {
-                        "text": "Their name (Su nombre)",
+                        "text": "Su nombre (Their name)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Their address (Su dirección)",
+                        "text": "Su dirección (Their address)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Their phone number (Su número de teléfono)",
+                        "text": "Su número de teléfono (Their phone number)",
                         "isCorrect": false
                     }
                 ],
@@ -5793,15 +5793,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde perdió la persona su billetera?",
                 "options": [
                     {
-                        "text": "At the movies (En el cine)",
+                        "text": "En el cine (At the movies)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Near the food court (Cerca del patio de comidas)",
+                        "text": "Cerca del patio de comidas (Near the food court)",
                         "isCorrect": true
                     },
                     {
-                        "text": "In the parking lot (En el estacionamiento)",
+                        "text": "En el estacionamiento (In the parking lot)",
                         "isCorrect": false
                     }
                 ],
@@ -5813,15 +5813,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está reportando la persona?",
                 "options": [
                     {
-                        "text": "A lost phone (Un teléfono perdido)",
+                        "text": "Un teléfono perdido (A lost phone)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A lost wallet (Una billetera perdida)",
+                        "text": "Una billetera perdida (A lost wallet)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A lost key (Una llave perdida)",
+                        "text": "Una llave perdida (A lost key)",
                         "isCorrect": false
                     }
                 ],
@@ -5833,15 +5833,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Hace cuánto tiempo perdió la persona su billetera?",
                 "options": [
                     {
-                        "text": "About an hour ago (Hace una hora)",
+                        "text": "Hace una hora (About an hour ago)",
                         "isCorrect": true
                     },
                     {
-                        "text": "About a day ago (Hace un día)",
+                        "text": "Hace un día (About a day ago)",
                         "isCorrect": false
                     },
                     {
-                        "text": "About a week ago (Hace una semana)",
+                        "text": "Hace una semana (About a week ago)",
                         "isCorrect": false
                     }
                 ],
@@ -5853,15 +5853,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué hará la otra persona?",
                 "options": [
                     {
-                        "text": "Check if they found it (Revisar si la encontraron)",
+                        "text": "Revisar si la encontraron (Check if they found it)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Call the police (Llamar a la policía)",
+                        "text": "Llamar a la policía (Call the police)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Ignore the person (Ignorar a la persona)",
+                        "text": "Ignorar a la persona (Ignore the person)",
                         "isCorrect": false
                     }
                 ],
@@ -5978,11 +5978,11 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué moneda tiene la persona?",
                 "options": [
                     {
-                        "text": "Canadian dollars (Dólares canadienses)",
+                        "text": "Dólares canadienses (Canadian dollars)",
                         "isCorrect": false
                     },
                     {
-                        "text": "US dollars (Dólares estadounidenses)",
+                        "text": "Dólares estadounidenses (US dollars)",
                         "isCorrect": true
                     },
                     {
@@ -5998,15 +5998,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué moneda quiere la persona?",
                 "options": [
                     {
-                        "text": "Mexican pesos (Pesos mexicanos)",
+                        "text": "Pesos mexicanos (Mexican pesos)",
                         "isCorrect": true
                     },
                     {
-                        "text": "British pounds (Libras esterlinas)",
+                        "text": "Libras esterlinas (British pounds)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Japanese yen (Yenes japoneses)",
+                        "text": "Yenes japoneses (Japanese yen)",
                         "isCorrect": false
                     }
                 ],
@@ -6018,15 +6018,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuánto dinero tiene la persona?",
                 "options": [
                     {
-                        "text": "Two hundred dollars (Doscientos dólares)",
+                        "text": "Doscientos dólares (Two hundred dollars)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Five hundred dollars (Quinientos dólares)",
+                        "text": "Quinientos dólares (Five hundred dollars)",
                         "isCorrect": true
                     },
                     {
-                        "text": "One thousand dollars (Mil dólares)",
+                        "text": "Mil dólares (One thousand dollars)",
                         "isCorrect": false
                     }
                 ],
@@ -6038,15 +6038,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el tipo de cambio?",
                 "options": [
                     {
-                        "text": "Seventeen pesos per dollar (Diecisiete pesos por dólar)",
+                        "text": "Diecisiete pesos por dólar (Seventeen pesos per dollar)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Ten pesos per dollar (Diez pesos por dólar)",
+                        "text": "Diez pesos por dólar (Ten pesos per dollar)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Twenty pesos per dollar (Veinte pesos por dólar)",
+                        "text": "Veinte pesos por dólar (Twenty pesos per dollar)",
                         "isCorrect": false
                     }
                 ],
@@ -6167,15 +6167,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere comprar la persona?",
                 "options": [
                     {
-                        "text": "A map (Un mapa)",
+                        "text": "Un mapa (A map)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A ticket (Un boleto)",
+                        "text": "Un boleto (A ticket)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A book (Un libro)",
+                        "text": "Un libro (A book)",
                         "isCorrect": false
                     }
                 ],
@@ -6187,7 +6187,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Es la persona estudiante?",
                 "options": [
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": false
                     },
                     {
@@ -6195,7 +6195,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": true
                     },
                     {
-                        "text": "Maybe (Tal vez)",
+                        "text": "Tal vez (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -6207,7 +6207,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Es la persona mayor?",
                 "options": [
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": false
                     },
                     {
@@ -6215,7 +6215,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": true
                     },
                     {
-                        "text": "Maybe (Tal vez)",
+                        "text": "Tal vez (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -6227,15 +6227,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuánto cuesta el boleto?",
                 "options": [
                     {
-                        "text": "Five dollars (Cinco dólares)",
+                        "text": "Cinco dólares (Five dollars)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Fifteen dollars (Quince dólares)",
+                        "text": "Quince dólares (Fifteen dollars)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Fifty dollars (Cincuenta dólares)",
+                        "text": "Cincuenta dólares (Fifty dollars)",
                         "isCorrect": false
                     }
                 ],
@@ -6356,15 +6356,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué fiesta se menciona primero?",
                 "options": [
                     {
-                        "text": "Christmas (Navidad)",
+                        "text": "Navidad (Christmas)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Thanksgiving (Día de Acción de Gracias)",
+                        "text": "Día de Acción de Gracias (Thanksgiving)",
                         "isCorrect": true
                     },
                     {
-                        "text": "New Year's (Año Nuevo)",
+                        "text": "Año Nuevo (New Year's)",
                         "isCorrect": false
                     }
                 ],
@@ -6376,15 +6376,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está haciendo la primera persona para el Día de Acción de Gracias?",
                 "options": [
                     {
-                        "text": "Having a small party (Tener una fiesta pequeña)",
+                        "text": "Tener una fiesta pequeña (Having a small party)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Going to their family's house for a big dinner (Ir a la casa de su familia para una cena grande)",
+                        "text": "Ir a la casa de su familia para una cena grande (Going to their family's house for a big dinner)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Going on vacation (Ir de vacaciones)",
+                        "text": "Ir de vacaciones (Going on vacation)",
                         "isCorrect": false
                     }
                 ],
@@ -6396,15 +6396,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es la segunda fiesta que se menciona?",
                 "options": [
                     {
-                        "text": "Easter (Pascua)",
+                        "text": "Pascua (Easter)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Christmas (Navidad)",
+                        "text": "Navidad (Christmas)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Halloween (Noche de Brujas)",
+                        "text": "Noche de Brujas (Halloween)",
                         "isCorrect": false
                     }
                 ],
@@ -6416,15 +6416,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué podría hacer la segunda persona para Navidad?",
                 "options": [
                     {
-                        "text": "Travel somewhere warm (Viajar a algún lugar cálido)",
+                        "text": "Viajar a algún lugar cálido (Travel somewhere warm)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Stay home (Quedarse en casa)",
+                        "text": "Quedarse en casa (Stay home)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Work (Trabajar)",
+                        "text": "Trabajar (Work)",
                         "isCorrect": false
                     }
                 ],
@@ -6541,15 +6541,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está haciendo la persona?",
                 "options": [
                     {
-                        "text": "Ordering takeout (Pidiendo comida para llevar)",
+                        "text": "Pidiendo comida para llevar (Ordering takeout)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Cooking dinner (Cocinando la cena)",
+                        "text": "Cocinando la cena (Cooking dinner)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Grocery shopping (Comprando comida)",
+                        "text": "Comprando comida (Grocery shopping)",
                         "isCorrect": false
                     }
                 ],
@@ -6561,15 +6561,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo está pidiendo la comida?",
                 "options": [
                     {
-                        "text": "By phone (Por teléfono)",
+                        "text": "Por teléfono (By phone)",
                         "isCorrect": false
                     },
                     {
-                        "text": "In person (En persona)",
+                        "text": "En persona (In person)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Using an app (Usando una aplicación)",
+                        "text": "Usando una aplicación (Using an app)",
                         "isCorrect": true
                     }
                 ],
@@ -6581,15 +6581,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de restaurante eligió?",
                 "options": [
                     {
-                        "text": "Italian (Italiano)",
+                        "text": "Italiano (Italian)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Mexican (Mexicano)",
+                        "text": "Mexicano (Mexican)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Chinese (Chino)",
+                        "text": "Chino (Chinese)",
                         "isCorrect": false
                     }
                 ],
@@ -6601,15 +6601,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué necesita confirmar?",
                 "options": [
                     {
-                        "text": "Their address and payment method (Su dirección y método de pago)",
+                        "text": "Su dirección y método de pago (Their address and payment method)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Their name and phone number (Su nombre y número de teléfono)",
+                        "text": "Su nombre y número de teléfono (Their name and phone number)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Their order (Su orden)",
+                        "text": "Su orden (Their order)",
                         "isCorrect": false
                     }
                 ],
@@ -6702,15 +6702,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué se trata principalmente la conversación?",
                 "options": [
                     {
-                        "text": "Planning a vacation (Planear unas vacaciones)",
+                        "text": "Planear unas vacaciones (Planning a vacation)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Discussing the traffic (Hablando del tráfico)",
+                        "text": "Hablando del tráfico (Discussing the traffic)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Cooking dinner (Cocinando la cena)",
+                        "text": "Cocinando la cena (Cooking dinner)",
                         "isCorrect": false
                     }
                 ],
@@ -6722,15 +6722,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Por qué está tan pesado el tráfico?",
                 "options": [
                     {
-                        "text": "There was an accident (Hubo un accidente)",
+                        "text": "Hubo un accidente (There was an accident)",
                         "isCorrect": true
                     },
                     {
-                        "text": "It's raining (Está lloviendo)",
+                        "text": "Está lloviendo (It's raining)",
                         "isCorrect": false
                     },
                     {
-                        "text": "It's rush hour (Es hora pico)",
+                        "text": "Es hora pico (It's rush hour)",
                         "isCorrect": false
                     }
                 ],
@@ -6742,15 +6742,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le preocupa a uno de los hablantes?",
                 "options": [
                     {
-                        "text": "Being late for a meeting (Llegar tarde a una reunión)",
+                        "text": "Llegar tarde a una reunión (Being late for a meeting)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Missing the bus (Perder el autobús)",
+                        "text": "Perder el autobús (Missing the bus)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The weather (El clima)",
+                        "text": "El clima (The weather)",
                         "isCorrect": false
                     }
                 ],
@@ -6762,15 +6762,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde ocurrió el accidente?",
                 "options": [
                     {
-                        "text": "At the airport (En el aeropuerto)",
+                        "text": "En el aeropuerto (At the airport)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Downtown (En el centro)",
+                        "text": "En el centro (Downtown)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Near the school (Cerca de la escuela)",
+                        "text": "Cerca de la escuela (Near the school)",
                         "isCorrect": false
                     }
                 ],
@@ -6863,15 +6863,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué están hablando los hablantes?",
                 "options": [
                     {
-                        "text": "The weather (El clima)",
+                        "text": "El clima (The weather)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A dog (Un perro)",
+                        "text": "Un perro (A dog)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A cat (Un gato)",
+                        "text": "Un gato (A cat)",
                         "isCorrect": false
                     }
                 ],
@@ -6903,15 +6903,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuántos años tiene el perro?",
                 "options": [
                     {
-                        "text": "One year old (Un año)",
+                        "text": "Un año (One year old)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Two years old (Dos años)",
+                        "text": "Dos años (Two years old)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Three years old (Tres años)",
+                        "text": "Tres años (Three years old)",
                         "isCorrect": false
                     }
                 ],
@@ -6923,15 +6923,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le encanta hacer al perro?",
                 "options": [
                     {
-                        "text": "Sleep (Dormir)",
+                        "text": "Dormir (Sleep)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Play fetch (Jugar a buscar)",
+                        "text": "Jugar a buscar (Play fetch)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Eat (Comer)",
+                        "text": "Comer (Eat)",
                         "isCorrect": false
                     }
                 ],
@@ -7024,15 +7024,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué planean hacer los hablantes?",
                 "options": [
                     {
-                        "text": "Go to a restaurant (Ir a un restaurante)",
+                        "text": "Ir a un restaurante (Go to a restaurant)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Cook dinner (Cocinar la cena)",
+                        "text": "Cocinar la cena (Cook dinner)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Watch a movie (Ver una película)",
+                        "text": "Ver una película (Watch a movie)",
                         "isCorrect": false
                     }
                 ],
@@ -7044,15 +7044,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué comida están preparando?",
                 "options": [
                     {
-                        "text": "Lunch (Almuerzo)",
+                        "text": "Almuerzo (Lunch)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Dinner (Cena)",
+                        "text": "Cena (Dinner)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Breakfast (Desayuno)",
+                        "text": "Desayuno (Breakfast)",
                         "isCorrect": false
                     }
                 ],
@@ -7068,11 +7068,11 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Pasta with tomato sauce (Pasta con salsa de tomate)",
+                        "text": "Pasta con salsa de tomate (Pasta with tomato sauce)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Salad (Ensalada)",
+                        "text": "Ensalada (Salad)",
                         "isCorrect": false
                     }
                 ],
@@ -7084,15 +7084,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde compraron los ingredientes?",
                 "options": [
                     {
-                        "text": "At the market (En el mercado)",
+                        "text": "En el mercado (At the market)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At the store (En la tienda)",
+                        "text": "En la tienda (At the store)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Online (En línea)",
+                        "text": "En línea (Online)",
                         "isCorrect": false
                     }
                 ],
@@ -7185,15 +7185,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está ocurriendo la conversación?",
                 "options": [
                     {
-                        "text": "At a grocery store (En un supermercado)",
+                        "text": "En un supermercado (At a grocery store)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At a pharmacy (En una farmacia)",
+                        "text": "En una farmacia (At a pharmacy)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At a restaurant (En un restaurante)",
+                        "text": "En un restaurante (At a restaurant)",
                         "isCorrect": false
                     }
                 ],
@@ -7205,15 +7205,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué necesita el cliente?",
                 "options": [
                     {
-                        "text": "Something for a cough (Algo para la tos)",
+                        "text": "Algo para la tos (Something for a cough)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Something for a headache (Algo para el dolor de cabeza)",
+                        "text": "Algo para el dolor de cabeza (Something for a headache)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Something for a stomach ache (Algo para el dolor de estómago)",
+                        "text": "Algo para el dolor de estómago (Something for a stomach ache)",
                         "isCorrect": false
                     }
                 ],
@@ -7225,15 +7225,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué recomienda el farmacéutico?",
                 "options": [
                     {
-                        "text": "Aspirin (Aspirina)",
+                        "text": "Aspirina (Aspirin)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Ibuprofen pills (Pastillas de ibuprofeno)",
+                        "text": "Pastillas de ibuprofeno (Ibuprofen pills)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Band-aids (Curitas)",
+                        "text": "Curitas (Band-aids)",
                         "isCorrect": false
                     }
                 ],
@@ -7245,15 +7245,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Con qué frecuencia debe tomar el medicamento el cliente?",
                 "options": [
                     {
-                        "text": "Every twelve hours (Cada doce horas)",
+                        "text": "Cada doce horas (Every twelve hours)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Every four to six hours (Cada cuatro a seis horas)",
+                        "text": "Cada cuatro a seis horas (Every four to six hours)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Every day (Cada día)",
+                        "text": "Cada día (Every day)",
                         "isCorrect": false
                     }
                 ],
@@ -7346,15 +7346,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere hacer el cliente?",
                 "options": [
                     {
-                        "text": "Buy a new shirt (Comprar una camisa nueva)",
+                        "text": "Comprar una camisa nueva (Buy a new shirt)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Return a shirt (Devolver una camisa)",
+                        "text": "Devolver una camisa (Return a shirt)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Exchange a shirt (Cambiar una camisa)",
+                        "text": "Cambiar una camisa (Exchange a shirt)",
                         "isCorrect": false
                     }
                 ],
@@ -7366,15 +7366,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué pide el empleado?",
                 "options": [
                     {
-                        "text": "The customer's ID (La identificación del cliente)",
+                        "text": "La identificación del cliente (The customer's ID)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The receipt (El recibo)",
+                        "text": "El recibo (The receipt)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The customer's name (El nombre del cliente)",
+                        "text": "El nombre del cliente (The customer's name)",
                         "isCorrect": false
                     }
                 ],
@@ -7386,7 +7386,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Es nueva la camisa?",
                 "options": [
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": true
                     },
                     {
@@ -7394,7 +7394,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Maybe (Quizás)",
+                        "text": "Quizás (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -7406,15 +7406,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué hará el empleado?",
                 "options": [
                     {
-                        "text": "Process the refund (Procesar el reembolso)",
+                        "text": "Procesar el reembolso (Process the refund)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Call the manager (Llamar al gerente)",
+                        "text": "Llamar al gerente (Call the manager)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Offer a discount (Ofrecer un descuento)",
+                        "text": "Ofrecer un descuento (Offer a discount)",
                         "isCorrect": false
                     }
                 ],
@@ -7515,15 +7515,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué están hablando?",
                 "options": [
                     {
-                        "text": "Their homework (Su tarea)",
+                        "text": "Su tarea (Their homework)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Weekend plans (Planes para el fin de semana)",
+                        "text": "Planes para el fin de semana (Weekend plans)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Their favorite food (Su comida favorita)",
+                        "text": "Su comida favorita (Their favorite food)",
                         "isCorrect": false
                     }
                 ],
@@ -7535,15 +7535,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es una sugerencia para el fin de semana?",
                 "options": [
                     {
-                        "text": "Visiting a museum (Visitar un museo)",
+                        "text": "Visitar un museo (Visiting a museum)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Going to the park (Ir al parque)",
+                        "text": "Ir al parque (Going to the park)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Studying for a test (Estudiar para un examen)",
+                        "text": "Estudiar para un examen (Studying for a test)",
                         "isCorrect": false
                     }
                 ],
@@ -7555,15 +7555,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué deciden hacer?",
                 "options": [
                     {
-                        "text": "Stay home (Quedarse en casa)",
+                        "text": "Quedarse en casa (Stay home)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Go to the park (Ir al parque)",
+                        "text": "Ir al parque (Go to the park)",
                         "isCorrect": true
                     },
                     {
-                        "text": "See a movie (Ver una película)",
+                        "text": "Ver una película (See a movie)",
                         "isCorrect": false
                     }
                 ],
@@ -7575,15 +7575,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo responde la otra persona a la sugerencia?",
                 "options": [
                     {
-                        "text": "They don't like it. (No les gusta.)",
+                        "text": "No les gusta. (They don't like it.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They think it sounds fun. (Piensan que suena divertido.)",
+                        "text": "Piensan que suena divertido. (They think it sounds fun.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They are not sure. (No están seguros.)",
+                        "text": "No están seguros. (They are not sure.)",
                         "isCorrect": false
                     }
                 ],
@@ -7680,15 +7680,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué se trata la conversación?",
                 "options": [
                     {
-                        "text": "Favorite movies (Películas favoritas)",
+                        "text": "Películas favoritas (Favorite movies)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Favorite types of music (Tipos de música favoritos)",
+                        "text": "Tipos de música favoritos (Favorite types of music)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Favorite books (Libros favoritos)",
+                        "text": "Libros favoritos (Favorite books)",
                         "isCorrect": false
                     }
                 ],
@@ -7700,11 +7700,11 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de música le gusta a una persona?",
                 "options": [
                     {
-                        "text": "Pop and electronic (Pop y electrónica)",
+                        "text": "Pop y electrónica (Pop and electronic)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Classical (Clásica)",
+                        "text": "Clásica (Classical)",
                         "isCorrect": false
                     },
                     {
@@ -7740,15 +7740,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué sugieren hacer?",
                 "options": [
                     {
-                        "text": "Going to a concert (Ir a un concierto)",
+                        "text": "Ir a un concierto (Going to a concert)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Sharing songs (Compartir canciones)",
+                        "text": "Compartir canciones (Sharing songs)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Playing instruments (Tocar instrumentos)",
+                        "text": "Tocar instrumentos (Playing instruments)",
                         "isCorrect": false
                     }
                 ],
@@ -7837,15 +7837,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está describiendo la persona?",
                 "options": [
                     {
-                        "text": "Their favorite food (Su comida favorita)",
+                        "text": "Su comida favorita (Their favorite food)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Their hometown (Su ciudad natal)",
+                        "text": "Su ciudad natal (Their hometown)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Their job (Su trabajo)",
+                        "text": "Su trabajo (Their job)",
                         "isCorrect": false
                     }
                 ],
@@ -7857,15 +7857,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está ubicada su ciudad natal?",
                 "options": [
                     {
-                        "text": "Near the ocean (Cerca del océano)",
+                        "text": "Cerca del océano (Near the ocean)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Near the mountains (Cerca de las montañas)",
+                        "text": "Cerca de las montañas (Near the mountains)",
                         "isCorrect": true
                     },
                     {
-                        "text": "In a big city (En una gran ciudad)",
+                        "text": "En una gran ciudad (In a big city)",
                         "isCorrect": false
                     }
                 ],
@@ -7877,15 +7877,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo describen su ciudad natal?",
                 "options": [
                     {
-                        "text": "Loud and busy (Ruidosa y ocupada)",
+                        "text": "Ruidosa y ocupada (Loud and busy)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Quiet and peaceful (Tranquila y pacífica)",
+                        "text": "Tranquila y pacífica (Quiet and peaceful)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Exciting and modern (Emocionante y moderna)",
+                        "text": "Emocionante y moderna (Exciting and modern)",
                         "isCorrect": false
                     }
                 ],
@@ -7897,15 +7897,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué extrañan de su ciudad natal?",
                 "options": [
                     {
-                        "text": "The fresh air (El aire fresco)",
+                        "text": "El aire fresco (The fresh air)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The shopping malls (Los centros comerciales)",
+                        "text": "Los centros comerciales (The shopping malls)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The nightlife (La vida nocturna)",
+                        "text": "La vida nocturna (The nightlife)",
                         "isCorrect": false
                     }
                 ],
@@ -8006,15 +8006,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué están hablando los amigos?",
                 "options": [
                     {
-                        "text": "Their past experiences (Sus experiencias pasadas)",
+                        "text": "Sus experiencias pasadas (Their past experiences)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Their future goals (Sus metas futuras)",
+                        "text": "Sus metas futuras (Their future goals)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Their current jobs (Sus trabajos actuales)",
+                        "text": "Sus trabajos actuales (Their current jobs)",
                         "isCorrect": false
                     }
                 ],
@@ -8026,15 +8026,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere hacer una persona?",
                 "options": [
                     {
-                        "text": "Become a doctor (Convertirse en médico)",
+                        "text": "Convertirse en médico (Become a doctor)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Travel the world (Viajar por el mundo)",
+                        "text": "Viajar por el mundo (Travel the world)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Buy a house (Comprar una casa)",
+                        "text": "Comprar una casa (Buy a house)",
                         "isCorrect": false
                     }
                 ],
@@ -8046,15 +8046,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es la meta de la otra persona?",
                 "options": [
                     {
-                        "text": "Start a business (Comenzar un negocio)",
+                        "text": "Comenzar un negocio (Start a business)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Write a book (Escribir un libro)",
+                        "text": "Escribir un libro (Write a book)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Learn to cook (Aprender a cocinar)",
+                        "text": "Aprender a cocinar (Learn to cook)",
                         "isCorrect": false
                     }
                 ],
@@ -8066,15 +8066,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le desea un amigo al otro?",
                 "options": [
                     {
-                        "text": "Good luck (Buena suerte)",
+                        "text": "Buena suerte (Good luck)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A happy birthday (Un feliz cumpleaños)",
+                        "text": "Un feliz cumpleaños (A happy birthday)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A safe trip (Un viaje seguro)",
+                        "text": "Un viaje seguro (A safe trip)",
                         "isCorrect": false
                     }
                 ],
@@ -8163,15 +8163,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde están?",
                 "options": [
                     {
-                        "text": "At a restaurant (En un restaurante)",
+                        "text": "En un restaurante (At a restaurant)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At the library (En la biblioteca)",
+                        "text": "En la biblioteca (At the library)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At a park (En un parque)",
+                        "text": "En un parque (At a park)",
                         "isCorrect": false
                     }
                 ],
@@ -8183,15 +8183,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está buscando la persona?",
                 "options": [
                     {
-                        "text": "Books about science (Libros sobre ciencia)",
+                        "text": "Libros sobre ciencia (Books about science)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Books about history (Libros sobre historia)",
+                        "text": "Libros sobre historia (Books about history)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Books about art (Libros sobre arte)",
+                        "text": "Libros sobre arte (Books about art)",
                         "isCorrect": false
                     }
                 ],
@@ -8203,15 +8203,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde pueden encontrar los libros?",
                 "options": [
                     {
-                        "text": "On the first floor (En el primer piso)",
+                        "text": "En el primer piso (On the first floor)",
                         "isCorrect": false
                     },
                     {
-                        "text": "On the second floor (En el segundo piso)",
+                        "text": "En el segundo piso (On the second floor)",
                         "isCorrect": true
                     },
                     {
-                        "text": "In the basement (En el sótano)",
+                        "text": "En el sótano (In the basement)",
                         "isCorrect": false
                     }
                 ],
@@ -8223,15 +8223,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué ofrece el bibliotecario?",
                 "options": [
                     {
-                        "text": "More help if needed (Más ayuda si es necesario)",
+                        "text": "Más ayuda si es necesario (More help if needed)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A snack (Una merienda)",
+                        "text": "Una merienda (A snack)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A ride home (Un viaje a casa)",
+                        "text": "Un viaje a casa (A ride home)",
                         "isCorrect": false
                     }
                 ],
@@ -8324,15 +8324,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere hacer la primera persona?",
                 "options": [
                     {
-                        "text": "Borrow some money (Pedir prestado algo de dinero)",
+                        "text": "Pedir prestado algo de dinero (Borrow some money)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Lend some money (Prestar algo de dinero)",
+                        "text": "Prestar algo de dinero (Lend some money)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Buy a car (Comprar un coche)",
+                        "text": "Comprar un coche (Buy a car)",
                         "isCorrect": false
                     }
                 ],
@@ -8344,15 +8344,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuánto dinero necesita la persona?",
                 "options": [
                     {
-                        "text": "Ten dollars (Diez dólares)",
+                        "text": "Diez dólares (Ten dollars)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Twenty dollars (Veinte dólares)",
+                        "text": "Veinte dólares (Twenty dollars)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Fifty dollars (Cincuenta dólares)",
+                        "text": "Cincuenta dólares (Fifty dollars)",
                         "isCorrect": false
                     }
                 ],
@@ -8364,15 +8364,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo pagará la persona el dinero?",
                 "options": [
                     {
-                        "text": "Today (Hoy)",
+                        "text": "Hoy (Today)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Tomorrow (Mañana)",
+                        "text": "Mañana (Tomorrow)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Next week (La semana que viene)",
+                        "text": "La semana que viene (Next week)",
                         "isCorrect": false
                     }
                 ],
@@ -8384,15 +8384,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué dice la segunda persona al final?",
                 "options": [
                     {
-                        "text": "Don't forget! (¡No se te olvide!)",
+                        "text": "¡No se te olvide! (Don't forget!)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Thank you! (¡Gracias!)",
+                        "text": "¡Gracias! (Thank you!)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Goodbye! (¡Adiós!)",
+                        "text": "¡Adiós! (Goodbye!)",
                         "isCorrect": false
                     }
                 ],
@@ -8485,15 +8485,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere hacer la primera persona?",
                 "options": [
                     {
-                        "text": "Go to work (Ir a trabajar)",
+                        "text": "Ir a trabajar (Go to work)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Go to the movies (Ir al cine)",
+                        "text": "Ir al cine (Go to the movies)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Stay home (Quedarse en casa)",
+                        "text": "Quedarse en casa (Stay home)",
                         "isCorrect": false
                     }
                 ],
@@ -8505,15 +8505,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Por qué no puede ir la segunda persona?",
                 "options": [
                     {
-                        "text": "They are tired (Están cansados)",
+                        "text": "Están cansados (They are tired)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They have to work late (Tienen que trabajar hasta tarde)",
+                        "text": "Tienen que trabajar hasta tarde (They have to work late)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They don't like movies (No les gustan las películas)",
+                        "text": "No les gustan las películas (They don't like movies)",
                         "isCorrect": false
                     }
                 ],
@@ -8525,15 +8525,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo responde la segunda persona a la invitación?",
                 "options": [
                     {
-                        "text": "Politely (Amablemente)",
+                        "text": "Amablemente (Politely)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Rudely (Groseramente)",
+                        "text": "Groseramente (Rudely)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Angrily (Enojado)",
+                        "text": "Enojado (Angrily)",
                         "isCorrect": false
                     }
                 ],
@@ -8545,15 +8545,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué dice la segunda persona para reconocer la invitación?",
                 "options": [
                     {
-                        "text": "That sounds fun (Eso suena divertido)",
+                        "text": "Eso suena divertido (That sounds fun)",
                         "isCorrect": true
                     },
                     {
-                        "text": "I hate movies (Odio las películas)",
+                        "text": "Odio las películas (I hate movies)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Movies are boring (Las películas son aburridas)",
+                        "text": "Las películas son aburridas (Movies are boring)",
                         "isCorrect": false
                     }
                 ],
@@ -8650,15 +8650,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Sobre qué está preguntando la primera persona?",
                 "options": [
                     {
-                        "text": "The weather (El clima)",
+                        "text": "El clima (The weather)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Eating habits (Hábitos alimenticios)",
+                        "text": "Hábitos alimenticios (Eating habits)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Sports (Deportes)",
+                        "text": "Deportes (Sports)",
                         "isCorrect": false
                     }
                 ],
@@ -8670,15 +8670,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué dice la segunda persona sobre su país?",
                 "options": [
                     {
-                        "text": "They always use a fork and knife (Siempre usan tenedor y cuchillo)",
+                        "text": "Siempre usan tenedor y cuchillo (They always use a fork and knife)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They never use a fork (Nunca usan un tenedor)",
+                        "text": "Nunca usan un tenedor (They never use a fork)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They only eat with their hands (Solo comen con las manos)",
+                        "text": "Solo comen con las manos (They only eat with their hands)",
                         "isCorrect": false
                     }
                 ],
@@ -8690,15 +8690,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué usa normalmente la primera persona?",
                 "options": [
                     {
-                        "text": "A spoon (Una cuchara)",
+                        "text": "Una cuchara (A spoon)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A fork (Un tenedor)",
+                        "text": "Un tenedor (A fork)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A knife (Un cuchillo)",
+                        "text": "Un cuchillo (A knife)",
                         "isCorrect": false
                     }
                 ],
@@ -8710,15 +8710,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué dice la segunda persona sobre la cultura?",
                 "options": [
                     {
-                        "text": "Every culture is the same (Cada cultura es igual)",
+                        "text": "Cada cultura es igual (Every culture is the same)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Every culture is different (Cada cultura es diferente)",
+                        "text": "Cada cultura es diferente (Every culture is different)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Culture is boring (La cultura es aburrida)",
+                        "text": "La cultura es aburrida (Culture is boring)",
                         "isCorrect": false
                     }
                 ],
@@ -8815,15 +8815,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué se trata la conversación?",
                 "options": [
                     {
-                        "text": "Food (Comida)",
+                        "text": "Comida (Food)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Sports (Deportes)",
+                        "text": "Deportes (Sports)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Movies (Películas)",
+                        "text": "Películas (Movies)",
                         "isCorrect": false
                     }
                 ],
@@ -8835,15 +8835,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué deportes le gustan a la segunda persona?",
                 "options": [
                     {
-                        "text": "Basketball and Soccer (Baloncesto y Fútbol)",
+                        "text": "Baloncesto y Fútbol (Basketball and Soccer)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Swimming and Tennis (Natación y Tenis)",
+                        "text": "Natación y Tenis (Swimming and Tennis)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Baseball and Football (Béisbol y Fútbol Americano)",
+                        "text": "Béisbol y Fútbol Americano (Baseball and Football)",
                         "isCorrect": false
                     }
                 ],
@@ -8855,15 +8855,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué deportes prefiere la primera persona?",
                 "options": [
                     {
-                        "text": "Swimming and Tennis (Natación y Tenis)",
+                        "text": "Natación y Tenis (Swimming and Tennis)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Basketball and Soccer (Baloncesto y Fútbol)",
+                        "text": "Baloncesto y Fútbol (Basketball and Soccer)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Volleyball and Hockey (Voleibol y Hockey)",
+                        "text": "Voleibol y Hockey (Volleyball and Hockey)",
                         "isCorrect": false
                     }
                 ],
@@ -8875,15 +8875,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué es algo bueno de los deportes?",
                 "options": [
                     {
-                        "text": "They are boring (Son aburridos)",
+                        "text": "Son aburridos (They are boring)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They are expensive (Son caros)",
+                        "text": "Son caros (They are expensive)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They are a great way to stay healthy (Son una buena manera de mantenerse saludable)",
+                        "text": "Son una buena manera de mantenerse saludable (They are a great way to stay healthy)",
                         "isCorrect": true
                     }
                 ],
@@ -8976,15 +8976,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué están haciendo las personas?",
                 "options": [
                     {
-                        "text": "Studying (Estudiando)",
+                        "text": "Estudiando (Studying)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Cheering for a team (Animando a un equipo)",
+                        "text": "Animando a un equipo (Cheering for a team)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Cooking (Cocinando)",
+                        "text": "Cocinando (Cooking)",
                         "isCorrect": false
                     }
                 ],
@@ -8996,15 +8996,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quieren que haga el equipo?",
                 "options": [
                     {
-                        "text": "Score a goal (Marcar un gol)",
+                        "text": "Marcar un gol (Score a goal)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Give up (Rendirse)",
+                        "text": "Rendirse (Give up)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Sleep (Dormir)",
+                        "text": "Dormir (Sleep)",
                         "isCorrect": false
                     }
                 ],
@@ -9016,15 +9016,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué pasó al final?",
                 "options": [
                     {
-                        "text": "They lost (Perdieron)",
+                        "text": "Perdieron (They lost)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They tied (Empataron)",
+                        "text": "Empataron (They tied)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They won (Ganaron)",
+                        "text": "Ganaron (They won)",
                         "isCorrect": true
                     }
                 ],
@@ -9036,15 +9036,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo se sintieron sobre el juego?",
                 "options": [
                     {
-                        "text": "Bored (Aburridos)",
+                        "text": "Aburridos (Bored)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Awesome (Increíble)",
+                        "text": "Increíble (Awesome)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Sad (Tristes)",
+                        "text": "Tristes (Sad)",
                         "isCorrect": false
                     }
                 ],
@@ -9153,15 +9153,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué se está quejando la persona?",
                 "options": [
                     {
-                        "text": "The cold weather (El clima frío)",
+                        "text": "El clima frío (The cold weather)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The noise from the neighbor (El ruido del vecino)",
+                        "text": "El ruido del vecino (The noise from the neighbor)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The bad food (La mala comida)",
+                        "text": "La mala comida (The bad food)",
                         "isCorrect": false
                     }
                 ],
@@ -9173,15 +9173,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está haciendo el vecino?",
                 "options": [
                     {
-                        "text": "Having a party (Teniendo una fiesta)",
+                        "text": "Teniendo una fiesta (Having a party)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Having a small get-together (Teniendo una pequeña reunión)",
+                        "text": "Teniendo una pequeña reunión (Having a small get-together)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Sleeping (Durmiendo)",
+                        "text": "Durmiendo (Sleeping)",
                         "isCorrect": false
                     }
                 ],
@@ -9193,15 +9193,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le pide la persona al vecino que haga?",
                 "options": [
                     {
-                        "text": "To turn off the lights (Apagar las luces)",
+                        "text": "Apagar las luces (To turn off the lights)",
                         "isCorrect": false
                     },
                     {
-                        "text": "To keep it down a little (Bajarle un poco al volumen)",
+                        "text": "Bajarle un poco al volumen (To keep it down a little)",
                         "isCorrect": true
                     },
                     {
-                        "text": "To invite them over (Invitarlos a pasar)",
+                        "text": "Invitarlos a pasar (To invite them over)",
                         "isCorrect": false
                     }
                 ],
@@ -9213,15 +9213,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo responde el vecino?",
                 "options": [
                     {
-                        "text": "They refuse (Se niegan)",
+                        "text": "Se niegan (They refuse)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They agree to be quieter (Aceptan hacer menos ruido)",
+                        "text": "Aceptan hacer menos ruido (They agree to be quieter)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They get angry (Se enojan)",
+                        "text": "Se enojan (They get angry)",
                         "isCorrect": false
                     }
                 ],
@@ -9330,15 +9330,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está la persona preguntando por el WiFi?",
                 "options": [
                     {
-                        "text": "At a library (En una biblioteca)",
+                        "text": "En una biblioteca (At a library)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At a café (En un café)",
+                        "text": "En un café (At a café)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At a restaurant (En un restaurante)",
+                        "text": "En un restaurante (At a restaurant)",
                         "isCorrect": false
                     }
                 ],
@@ -9350,15 +9350,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es la contraseña del WiFi?",
                 "options": [
                     {
-                        "text": "'coffee123' (coffee123)",
+                        "text": "coffee123 ('coffee123')",
                         "isCorrect": true
                     },
                     {
-                        "text": "'password123' (password123)",
+                        "text": "password123 ('password123')",
                         "isCorrect": false
                     },
                     {
-                        "text": "'wifi123' (wifi123)",
+                        "text": "wifi123 ('wifi123')",
                         "isCorrect": false
                     }
                 ],
@@ -9370,15 +9370,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Por qué la persona pide que deletreen la contraseña?",
                 "options": [
                     {
-                        "text": "Because they can't hear well (Porque no pueden oír bien)",
+                        "text": "Porque no pueden oír bien (Because they can't hear well)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Because they want to make sure they understand correctly (Porque quieren asegurarse de entender correctamente)",
+                        "text": "Porque quieren asegurarse de entender correctamente (Because they want to make sure they understand correctly)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Because they don't know English (Porque no saben inglés)",
+                        "text": "Porque no saben inglés (Because they don't know English)",
                         "isCorrect": false
                     }
                 ],
@@ -9390,15 +9390,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo deletrea el empleado la contraseña?",
                 "options": [
                     {
-                        "text": "C-O-F-F-E-E one two three (C-O-F-F-E-E uno dos tres)",
+                        "text": "C-O-F-F-E-E uno dos tres (C-O-F-F-E-E one two three)",
                         "isCorrect": true
                     },
                     {
-                        "text": "W-I-F-I one two three (W-I-F-I uno dos tres)",
+                        "text": "W-I-F-I uno dos tres (W-I-F-I one two three)",
                         "isCorrect": false
                     },
                     {
-                        "text": "P-A-S-S-W-O-R-D one two three (P-A-S-S-W-O-R-D uno dos tres)",
+                        "text": "P-A-S-S-W-O-R-D uno dos tres (P-A-S-S-W-O-R-D one two three)",
                         "isCorrect": false
                     }
                 ],
@@ -9507,15 +9507,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué necesita hacer la persona?",
                 "options": [
                     {
-                        "text": "Set an alarm (Poner una alarma)",
+                        "text": "Poner una alarma (Set an alarm)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Make breakfast (Hacer el desayuno)",
+                        "text": "Hacer el desayuno (Make breakfast)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Go to sleep (Irse a dormir)",
+                        "text": "Irse a dormir (Go to sleep)",
                         "isCorrect": false
                     }
                 ],
@@ -9547,15 +9547,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde encuentra la persona la aplicación de alarma?",
                 "options": [
                     {
-                        "text": "On their computer (En su computadora)",
+                        "text": "En su computadora (On their computer)",
                         "isCorrect": false
                     },
                     {
-                        "text": "On their phone (En su teléfono)",
+                        "text": "En su teléfono (On their phone)",
                         "isCorrect": true
                     },
                     {
-                        "text": "On their watch (En su reloj)",
+                        "text": "En su reloj (On their watch)",
                         "isCorrect": false
                     }
                 ],
@@ -9567,15 +9567,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Por qué la persona pone la alarma?",
                 "options": [
                     {
-                        "text": "So they won't be late for their appointment (Para no llegar tarde a su cita)",
+                        "text": "Para no llegar tarde a su cita (So they won't be late for their appointment)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Because they are bored (Porque están aburridos)",
+                        "text": "Porque están aburridos (Because they are bored)",
                         "isCorrect": false
                     },
                     {
-                        "text": "To wake up their friend (Para despertar a su amigo)",
+                        "text": "Para despertar a su amigo (To wake up their friend)",
                         "isCorrect": false
                     }
                 ],
@@ -9684,15 +9684,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué compró la primera persona?",
                 "options": [
                     {
-                        "text": "A new phone (Un nuevo teléfono)",
+                        "text": "Un nuevo teléfono (A new phone)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A new smart watch (Un nuevo reloj inteligente)",
+                        "text": "Un nuevo reloj inteligente (A new smart watch)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A new tablet (Una nueva tableta)",
+                        "text": "Una nueva tableta (A new tablet)",
                         "isCorrect": false
                     }
                 ],
@@ -9704,15 +9704,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está pensando en comprar la segunda persona?",
                 "options": [
                     {
-                        "text": "A new laptop (Una nueva computadora portátil)",
+                        "text": "Una nueva computadora portátil (A new laptop)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A new tablet (Una nueva tableta)",
+                        "text": "Una nueva tableta (A new tablet)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A new smart watch (Un nuevo reloj inteligente)",
+                        "text": "Un nuevo reloj inteligente (A new smart watch)",
                         "isCorrect": false
                     }
                 ],
@@ -9724,15 +9724,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Para qué son buenas las tabletas?",
                 "options": [
                     {
-                        "text": "For cooking (Para cocinar)",
+                        "text": "Para cocinar (For cooking)",
                         "isCorrect": false
                     },
                     {
-                        "text": "For reading and watching movies (Para leer y ver películas)",
+                        "text": "Para leer y ver películas (For reading and watching movies)",
                         "isCorrect": true
                     },
                     {
-                        "text": "For playing sports (Para practicar deportes)",
+                        "text": "Para practicar deportes (For playing sports)",
                         "isCorrect": false
                     }
                 ],
@@ -9744,15 +9744,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Por qué la segunda persona quiere una tableta?",
                 "options": [
                     {
-                        "text": "For taking photos (Para tomar fotos)",
+                        "text": "Para tomar fotos (For taking photos)",
                         "isCorrect": false
                     },
                     {
-                        "text": "For reading, watching movies, and taking notes (Para leer, ver películas y tomar apuntes)",
+                        "text": "Para leer, ver películas y tomar apuntes (For reading, watching movies, and taking notes)",
                         "isCorrect": true
                     },
                     {
-                        "text": "For playing video games (Para jugar videojuegos)",
+                        "text": "Para jugar videojuegos (For playing video games)",
                         "isCorrect": false
                     }
                 ],
@@ -9865,15 +9865,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué están planeando las personas?",
                 "options": [
                     {
-                        "text": "A wedding (Una boda)",
+                        "text": "Una boda (A wedding)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A birthday party (Una fiesta de cumpleaños)",
+                        "text": "Una fiesta de cumpleaños (A birthday party)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A trip (Un viaje)",
+                        "text": "Un viaje (A trip)",
                         "isCorrect": false
                     }
                 ],
@@ -9885,15 +9885,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde se celebrará la fiesta?",
                 "options": [
                     {
-                        "text": "At a restaurant (En un restaurante)",
+                        "text": "En un restaurante (At a restaurant)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At someone's house (En la casa de alguien)",
+                        "text": "En la casa de alguien (At someone's house)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At a park (En un parque)",
+                        "text": "En un parque (At a park)",
                         "isCorrect": false
                     }
                 ],
@@ -9905,15 +9905,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Con qué decorarán?",
                 "options": [
                     {
-                        "text": "Flowers and lights (Flores y luces)",
+                        "text": "Flores y luces (Flowers and lights)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Balloons and streamers (Globos y serpentinas)",
+                        "text": "Globos y serpentinas (Balloons and streamers)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Posters and pictures (Pósters e imágenes)",
+                        "text": "Pósters e imágenes (Posters and pictures)",
                         "isCorrect": false
                     }
                 ],
@@ -9925,15 +9925,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué comida pedirán?",
                 "options": [
                     {
-                        "text": "Cake and pizza (Pastel y pizza)",
+                        "text": "Pastel y pizza (Cake and pizza)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Burgers and fries (Hamburguesas y papas fritas)",
+                        "text": "Hamburguesas y papas fritas (Burgers and fries)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Salad and sandwiches (Ensalada y sándwiches)",
+                        "text": "Ensalada y sándwiches (Salad and sandwiches)",
                         "isCorrect": false
                     }
                 ],
@@ -10034,15 +10034,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere comprar el cliente?",
                 "options": [
                     {
-                        "text": "One baguette and two croissants (Una baguette y dos croissants)",
+                        "text": "Una baguette y dos croissants (One baguette and two croissants)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Two baguettes and one croissant (Dos baguettes y un croissant)",
+                        "text": "Dos baguettes y un croissant (Two baguettes and one croissant)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Just a baguette (Solo una baguette)",
+                        "text": "Solo una baguette (Just a baguette)",
                         "isCorrect": false
                     }
                 ],
@@ -10054,15 +10054,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué hora del día es?",
                 "options": [
                     {
-                        "text": "Afternoon (Tarde)",
+                        "text": "Tarde (Afternoon)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Morning (Mañana)",
+                        "text": "Mañana (Morning)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Evening (Noche)",
+                        "text": "Noche (Evening)",
                         "isCorrect": false
                     }
                 ],
@@ -10074,15 +10074,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuánto cuesta la orden?",
                 "options": [
                     {
-                        "text": "$6.50 (Seis dólares con cincuenta centavos)",
+                        "text": "Seis dólares con cincuenta centavos ($6.50)",
                         "isCorrect": false
                     },
                     {
-                        "text": "$4.50 (Cuatro dólares con cincuenta centavos)",
+                        "text": "Cuatro dólares con cincuenta centavos ($4.50)",
                         "isCorrect": false
                     },
                     {
-                        "text": "$5.50 (Cinco dólares con cincuenta centavos)",
+                        "text": "Cinco dólares con cincuenta centavos ($5.50)",
                         "isCorrect": true
                     }
                 ],
@@ -10094,7 +10094,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿El cliente está comprando fruta?",
                 "options": [
                     {
-                        "text": "Maybe (Quizás)",
+                        "text": "Quizás (Maybe)",
                         "isCorrect": false
                     },
                     {
@@ -10102,7 +10102,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": true
                     },
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": false
                     }
                 ],
@@ -10195,15 +10195,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de comida ordena el cliente?",
                 "options": [
                     {
-                        "text": "Chicken tacos (Tacos de pollo)",
+                        "text": "Tacos de pollo (Chicken tacos)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Fish tacos (Tacos de pescado)",
+                        "text": "Tacos de pescado (Fish tacos)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Beef tacos (Tacos de carne)",
+                        "text": "Tacos de carne (Beef tacos)",
                         "isCorrect": false
                     }
                 ],
@@ -10215,15 +10215,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué pide el cliente para beber?",
                 "options": [
                     {
-                        "text": "Soda (Refresco)",
+                        "text": "Refresco (Soda)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Juice (Jugo)",
+                        "text": "Jugo (Juice)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Water (Agua)",
+                        "text": "Agua (Water)",
                         "isCorrect": true
                     }
                 ],
@@ -10235,15 +10235,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuánto paga el cliente?",
                 "options": [
                     {
-                        "text": "$7.50 (Siete dólares con cincuenta centavos)",
+                        "text": "Siete dólares con cincuenta centavos ($7.50)",
                         "isCorrect": false
                     },
                     {
-                        "text": "$8.50 (Ocho dólares con cincuenta centavos)",
+                        "text": "Ocho dólares con cincuenta centavos ($8.50)",
                         "isCorrect": true
                     },
                     {
-                        "text": "$9.50 (Nueve dólares con cincuenta centavos)",
+                        "text": "Nueve dólares con cincuenta centavos ($9.50)",
                         "isCorrect": false
                     }
                 ],
@@ -10255,15 +10255,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde están comprando comida?",
                 "options": [
                     {
-                        "text": "Restaurant (Restaurante)",
+                        "text": "Restaurante (Restaurant)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Food Truck (Camión de comida)",
+                        "text": "Camión de comida (Food Truck)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Supermarket (Supermercado)",
+                        "text": "Supermercado (Supermarket)",
                         "isCorrect": false
                     }
                 ],
@@ -10352,15 +10352,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está estudiando la persona?",
                 "options": [
                     {
-                        "text": "Math (Matemáticas)",
+                        "text": "Matemáticas (Math)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Computer Science (Ciencias de la Computación)",
+                        "text": "Ciencias de la Computación (Computer Science)",
                         "isCorrect": true
                     },
                     {
-                        "text": "History (Historia)",
+                        "text": "Historia (History)",
                         "isCorrect": false
                     }
                 ],
@@ -10372,15 +10372,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿En qué año de la universidad está la persona?",
                 "options": [
                     {
-                        "text": "First year (Primer año)",
+                        "text": "Primer año (First year)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Second year (Segundo año)",
+                        "text": "Segundo año (Second year)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Third year (Tercer año)",
+                        "text": "Tercer año (Third year)",
                         "isCorrect": false
                     }
                 ],
@@ -10396,11 +10396,11 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Maybe (Quizás)",
+                        "text": "Quizás (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -10412,15 +10412,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde están estudiando?",
                 "options": [
                     {
-                        "text": "School (Escuela)",
+                        "text": "Escuela (School)",
                         "isCorrect": false
                     },
                     {
-                        "text": "University (Universidad)",
+                        "text": "Universidad (University)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Home (Casa)",
+                        "text": "Casa (Home)",
                         "isCorrect": false
                     }
                 ],
@@ -10509,15 +10509,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué están hablando?",
                 "options": [
                     {
-                        "text": "A new restaurant (Un restaurante nuevo)",
+                        "text": "Un restaurante nuevo (A new restaurant)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A new park (Un parque nuevo)",
+                        "text": "Un parque nuevo (A new park)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A new movie (Una película nueva)",
+                        "text": "Una película nueva (A new movie)",
                         "isCorrect": false
                     }
                 ],
@@ -10529,15 +10529,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está ubicado lo nuevo?",
                 "options": [
                     {
-                        "text": "Uptown (En la parte alta de la ciudad)",
+                        "text": "En la parte alta de la ciudad (Uptown)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Downtown (En el centro)",
+                        "text": "En el centro (Downtown)",
                         "isCorrect": true
                     },
                     {
-                        "text": "In the suburbs (En los suburbios)",
+                        "text": "En los suburbios (In the suburbs)",
                         "isCorrect": false
                     }
                 ],
@@ -10549,15 +10549,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tiene el lugar nuevo?",
                 "options": [
                     {
-                        "text": "Only a playground (Solo un parque infantil)",
+                        "text": "Solo un parque infantil (Only a playground)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A playground and a dog park (Un parque infantil y un parque para perros)",
+                        "text": "Un parque infantil y un parque para perros (A playground and a dog park)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Only a dog park (Solo un parque para perros)",
+                        "text": "Solo un parque para perros (Only a dog park)",
                         "isCorrect": false
                     }
                 ],
@@ -10569,11 +10569,11 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Una de las personas quiere ir allí?",
                 "options": [
                     {
-                        "text": "Maybe (Quizás)",
+                        "text": "Quizás (Maybe)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": true
                     },
                     {
@@ -10666,15 +10666,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué están comprando?",
                 "options": [
                     {
-                        "text": "Popcorn (Palomitas de maíz)",
+                        "text": "Palomitas de maíz (Popcorn)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Movie tickets (Boletos de cine)",
+                        "text": "Boletos de cine (Movie tickets)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Soda (Refresco)",
+                        "text": "Refresco (Soda)",
                         "isCorrect": false
                     }
                 ],
@@ -10706,15 +10706,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuántos boletos están comprando?",
                 "options": [
                     {
-                        "text": "One (Uno)",
+                        "text": "Uno (One)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Two (Dos)",
+                        "text": "Dos (Two)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Three (Tres)",
+                        "text": "Tres (Three)",
                         "isCorrect": false
                     }
                 ],
@@ -10726,15 +10726,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuánto cuestan los boletos?",
                 "options": [
                     {
-                        "text": "$20 (Veinte dólares)",
+                        "text": "Veinte dólares ($20)",
                         "isCorrect": false
                     },
                     {
-                        "text": "$24 (Veinticuatro dólares)",
+                        "text": "Veinticuatro dólares ($24)",
                         "isCorrect": true
                     },
                     {
-                        "text": "$28 (Veintiocho dólares)",
+                        "text": "Veintiocho dólares ($28)",
                         "isCorrect": false
                     }
                 ],
@@ -10843,15 +10843,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere hacer la persona?",
                 "options": [
                     {
-                        "text": "Cancel a table. (Cancelar una mesa)",
+                        "text": "Cancelar una mesa (Cancel a table.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Reserve a table. (Reservar una mesa)",
+                        "text": "Reservar una mesa (Reserve a table.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Order food. (Ordenar comida)",
+                        "text": "Ordenar comida (Order food.)",
                         "isCorrect": false
                     }
                 ],
@@ -10863,15 +10863,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Para cuántas personas es la mesa?",
                 "options": [
                     {
-                        "text": "One (Uno)",
+                        "text": "Uno (One)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Two (Dos)",
+                        "text": "Dos (Two)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Three (Tres)",
+                        "text": "Tres (Three)",
                         "isCorrect": false
                     }
                 ],
@@ -10883,15 +10883,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Para qué día quiere la persona la reservación?",
                 "options": [
                     {
-                        "text": "Next Friday (El próximo viernes)",
+                        "text": "El próximo viernes (Next Friday)",
                         "isCorrect": false
                     },
                     {
-                        "text": "This Saturday (Este sábado)",
+                        "text": "Este sábado (This Saturday)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Tomorrow (Mañana)",
+                        "text": "Mañana (Tomorrow)",
                         "isCorrect": false
                     }
                 ],
@@ -10903,15 +10903,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué es lo último que pide el restaurante?",
                 "options": [
                     {
-                        "text": "The person's address (La dirección de la persona)",
+                        "text": "La dirección de la persona (The person's address)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The person's phone number (El número de teléfono de la persona)",
+                        "text": "El número de teléfono de la persona (The person's phone number)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The person's name (El nombre de la persona)",
+                        "text": "El nombre de la persona (The person's name)",
                         "isCorrect": true
                     }
                 ],
@@ -11012,15 +11012,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Para qué llama la persona?",
                 "options": [
                     {
-                        "text": "To make an appointment. (Para hacer una cita)",
+                        "text": "Para hacer una cita (To make an appointment.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "To cancel an appointment. (Para cancelar una cita)",
+                        "text": "Para cancelar una cita (To cancel an appointment.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "To reschedule an appointment. (Para reprogramar una cita)",
+                        "text": "Para reprogramar una cita (To reschedule an appointment.)",
                         "isCorrect": false
                     }
                 ],
@@ -11032,15 +11032,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Para cuándo estaba programada la cita?",
                 "options": [
                     {
-                        "text": "Today (Hoy)",
+                        "text": "Hoy (Today)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Tomorrow (Mañana)",
+                        "text": "Mañana (Tomorrow)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Yesterday (Ayer)",
+                        "text": "Ayer (Yesterday)",
                         "isCorrect": false
                     }
                 ],
@@ -11052,15 +11052,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué información pide la oficina?",
                 "options": [
                     {
-                        "text": "Name and phone number (Nombre y número de teléfono)",
+                        "text": "Nombre y número de teléfono (Name and phone number)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Name and date of birth (Nombre y fecha de nacimiento)",
+                        "text": "Nombre y fecha de nacimiento (Name and date of birth)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Address and email (Dirección y correo electrónico)",
+                        "text": "Dirección y correo electrónico (Address and email)",
                         "isCorrect": false
                     }
                 ],
@@ -11072,7 +11072,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿La cita está cancelada?",
                 "options": [
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": true
                     },
                     {
@@ -11080,7 +11080,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Maybe (Quizás)",
+                        "text": "Quizás (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -11201,15 +11201,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está pidiendo la persona?",
                 "options": [
                     {
-                        "text": "Directions to a restaurant. (Direcciones a un restaurante)",
+                        "text": "Direcciones a un restaurante (Directions to a restaurant.)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A restaurant recommendation. (Una recomendación de un restaurante)",
+                        "text": "Una recomendación de un restaurante (A restaurant recommendation.)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The menu of a restaurant. (El menú de un restaurante)",
+                        "text": "El menú de un restaurante (The menu of a restaurant.)",
                         "isCorrect": false
                     }
                 ],
@@ -11221,15 +11221,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de comida sirve 'El Sabor Latino'?",
                 "options": [
                     {
-                        "text": "Italian food (Comida italiana)",
+                        "text": "Comida italiana (Italian food)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Latin food (Comida latina)",
+                        "text": "Comida latina (Latin food)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Chinese food (Comida china)",
+                        "text": "Comida china (Chinese food)",
                         "isCorrect": false
                     }
                 ],
@@ -11241,15 +11241,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuáles son algunos ejemplos de platos que sirven?",
                 "options": [
                     {
-                        "text": "Burgers and fries (Hamburguesas y papas fritas)",
+                        "text": "Hamburguesas y papas fritas (Burgers and fries)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Tacos and arepas (Tacos y arepas)",
+                        "text": "Tacos y arepas (Tacos and arepas)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Pizza and pasta (Pizza y pasta)",
+                        "text": "Pizza y pasta (Pizza and pasta)",
                         "isCorrect": false
                     }
                 ],
@@ -11261,15 +11261,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo se siente la persona sobre la recomendación del restaurante?",
                 "options": [
                     {
-                        "text": "Excited (Emocionado/a)",
+                        "text": "Emocionado/a (Excited)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Angry (Enojado/a)",
+                        "text": "Enojado/a (Angry)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Sad (Triste)",
+                        "text": "Triste (Sad)",
                         "isCorrect": false
                     }
                 ],
@@ -11382,15 +11382,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el tema principal de su conversación?",
                 "options": [
                     {
-                        "text": "Happiness (Felicidad)",
+                        "text": "Felicidad (Happiness)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Stress (Estrés)",
+                        "text": "Estrés (Stress)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Vacations (Vacaciones)",
+                        "text": "Vacaciones (Vacations)",
                         "isCorrect": false
                     }
                 ],
@@ -11402,15 +11402,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo se siente la primera persona?",
                 "options": [
                     {
-                        "text": "Relaxed (Relajado/a)",
+                        "text": "Relajado/a (Relaxed)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Stressed (Estresado/a)",
+                        "text": "Estresado/a (Stressed)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Happy (Feliz)",
+                        "text": "Feliz (Happy)",
                         "isCorrect": false
                     }
                 ],
@@ -11422,15 +11422,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué sugiere la segunda persona para aliviar el estrés?",
                 "options": [
                     {
-                        "text": "Going for a walk (Ir a caminar)",
+                        "text": "Ir a caminar (Going for a walk)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Going for a run (Salir a correr)",
+                        "text": "Salir a correr (Going for a run)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Going to the movies (Ir al cine)",
+                        "text": "Ir al cine (Going to the movies)",
                         "isCorrect": false
                     }
                 ],
@@ -11442,15 +11442,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "Además de correr, ¿qué más ayuda a la segunda persona?",
                 "options": [
                     {
-                        "text": "Reading books (Leer libros)",
+                        "text": "Leer libros (Reading books)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Listening to music (Escuchar música)",
+                        "text": "Escuchar música (Listening to music)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Watching TV (Ver televisión)",
+                        "text": "Ver televisión (Watching TV)",
                         "isCorrect": false
                     }
                 ],
@@ -11555,15 +11555,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere hacer la persona después del trabajo?",
                 "options": [
                     {
-                        "text": "Relax (Relajarse)",
+                        "text": "Relajarse (Relax)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Work more (Trabajar más)",
+                        "text": "Trabajar más (Work more)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Go out (Salir)",
+                        "text": "Salir (Go out)",
                         "isCorrect": false
                     }
                 ],
@@ -11575,15 +11575,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué es lo primero que hace la persona para relajarse?",
                 "options": [
                     {
-                        "text": "Takes a shower (Toma una ducha)",
+                        "text": "Toma una ducha (Takes a shower)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Eats dinner (Cena)",
+                        "text": "Cena (Eats dinner)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Watches TV (Ve televisión)",
+                        "text": "Ve televisión (Watches TV)",
                         "isCorrect": false
                     }
                 ],
@@ -11595,15 +11595,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué bebe la persona después de ducharse?",
                 "options": [
                     {
-                        "text": "Coffee (Café)",
+                        "text": "Café (Coffee)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Tea (Té)",
+                        "text": "Té (Tea)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Juice (Jugo)",
+                        "text": "Jugo (Juice)",
                         "isCorrect": false
                     }
                 ],
@@ -11615,15 +11615,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué lee la persona?",
                 "options": [
                     {
-                        "text": "A newspaper (Un periódico)",
+                        "text": "Un periódico (A newspaper)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A book (Un libro)",
+                        "text": "Un libro (A book)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A magazine (Una revista)",
+                        "text": "Una revista (A magazine)",
                         "isCorrect": false
                     }
                 ],
@@ -11732,15 +11732,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Con qué soñó la persona?",
                 "options": [
                     {
-                        "text": "Flying over a city of cheese (Volando sobre una ciudad de queso)",
+                        "text": "Volando sobre una ciudad de queso (Flying over a city of cheese)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Eating a lot of cheese (Comiendo mucho queso)",
+                        "text": "Comiendo mucho queso (Eating a lot of cheese)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Visiting a cheese factory (Visitando una fábrica de queso)",
+                        "text": "Visitando una fábrica de queso (Visiting a cheese factory)",
                         "isCorrect": false
                     }
                 ],
@@ -11752,15 +11752,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué estaba persiguiendo a la persona en el sueño?",
                 "options": [
                     {
-                        "text": "A small mouse (Un ratón pequeño)",
+                        "text": "Un ratón pequeño (A small mouse)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A giant cat (Un gato gigante)",
+                        "text": "Un gato gigante (A giant cat)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A friendly dog (Un perro amigable)",
+                        "text": "Un perro amigable (A friendly dog)",
                         "isCorrect": false
                     }
                 ],
@@ -11772,15 +11772,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo se sintió la persona cuando se despertó?",
                 "options": [
                     {
-                        "text": "Sad (Triste)",
+                        "text": "Triste (Sad)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Scared (Asustado/a)",
+                        "text": "Asustado/a (Scared)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Laughing (Riendo)",
+                        "text": "Riendo (Laughing)",
                         "isCorrect": true
                     }
                 ],
@@ -11792,15 +11792,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo tuvo la persona este sueño?",
                 "options": [
                     {
-                        "text": "Yesterday (Ayer)",
+                        "text": "Ayer (Yesterday)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Last night (Anoche)",
+                        "text": "Anoche (Last night)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A week ago (Hace una semana)",
+                        "text": "Hace una semana (A week ago)",
                         "isCorrect": false
                     }
                 ],
@@ -11905,15 +11905,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué hacía la primera persona de niño/a?",
                 "options": [
                     {
-                        "text": "Play video games (Jugar videojuegos)",
+                        "text": "Jugar videojuegos (Play video games)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Climb trees (Trepar árboles)",
+                        "text": "Trepar árboles (Climb trees)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Read books (Leer libros)",
+                        "text": "Leer libros (Read books)",
                         "isCorrect": false
                     }
                 ],
@@ -11925,15 +11925,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué hacía la segunda persona de niño/a?",
                 "options": [
                     {
-                        "text": "Climb trees (Trepar árboles)",
+                        "text": "Trepar árboles (Climb trees)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Play video games (Jugar videojuegos)",
+                        "text": "Jugar videojuegos (Play video games)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Play outside (Jugar afuera)",
+                        "text": "Jugar afuera (Play outside)",
                         "isCorrect": false
                     }
                 ],
@@ -11945,15 +11945,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es la relación entre las dos personas?",
                 "options": [
                     {
-                        "text": "Strangers (Desconocidos)",
+                        "text": "Desconocidos (Strangers)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Classmates (Compañeros de clase)",
+                        "text": "Compañeros de clase (Classmates)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Best friends (Mejores amigos)",
+                        "text": "Mejores amigos (Best friends)",
                         "isCorrect": true
                     }
                 ],
@@ -11965,15 +11965,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Eran similares o diferentes de niños/as?",
                 "options": [
                     {
-                        "text": "Similar (Similares)",
+                        "text": "Similares (Similar)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Different (Diferentes)",
+                        "text": "Diferentes (Different)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They didn't say (No dijeron)",
+                        "text": "No dijeron (They didn't say)",
                         "isCorrect": false
                     }
                 ],
@@ -12066,15 +12066,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está preguntando la primera persona?",
                 "options": [
                     {
-                        "text": "The best book to buy (El mejor libro para comprar)",
+                        "text": "El mejor libro para comprar (The best book to buy)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The other person's favorite book (El libro favorito de la otra persona)",
+                        "text": "El libro favorito de la otra persona (The other person's favorite book)",
                         "isCorrect": true
                     },
                     {
-                        "text": "If the other person likes to read (Si a la otra persona le gusta leer)",
+                        "text": "Si a la otra persona le gusta leer (If the other person likes to read)",
                         "isCorrect": false
                     }
                 ],
@@ -12086,15 +12086,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué libro le gusta a la segunda persona?",
                 "options": [
                     {
-                        "text": "'One Hundred Years of Solitude' ('Cien Años de Soledad')",
+                        "text": "'Cien Años de Soledad' ('One Hundred Years of Solitude')",
                         "isCorrect": true
                     },
                     {
-                        "text": "They don't mention a book (No mencionan un libro)",
+                        "text": "No mencionan un libro (They don't mention a book)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A book about animals (Un libro sobre animales)",
+                        "text": "Un libro sobre animales (A book about animals)",
                         "isCorrect": false
                     }
                 ],
@@ -12106,7 +12106,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Ha leído la primera persona el libro?",
                 "options": [
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": false
                     },
                     {
@@ -12114,7 +12114,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": true
                     },
                     {
-                        "text": "Maybe (Quizás)",
+                        "text": "Quizás (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -12126,15 +12126,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué se trata el libro?",
                 "options": [
                     {
-                        "text": "A family in Colombia (Una familia en Colombia)",
+                        "text": "Una familia en Colombia (A family in Colombia)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A city made of cheese (Una ciudad hecha de queso)",
+                        "text": "Una ciudad hecha de queso (A city made of cheese)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Learning to drive (Aprendiendo a conducir)",
+                        "text": "Aprendiendo a conducir (Learning to drive)",
                         "isCorrect": false
                     }
                 ],
@@ -12239,15 +12239,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde están los dos amigos?",
                 "options": [
                     {
-                        "text": "At the park (En el parque)",
+                        "text": "En el parque (At the park)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At the zoo (En el zoológico)",
+                        "text": "En el zoológico (At the zoo)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At the movies (En el cine)",
+                        "text": "En el cine (At the movies)",
                         "isCorrect": false
                     }
                 ],
@@ -12259,15 +12259,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué animal señala la primera persona?",
                 "options": [
                     {
-                        "text": "A monkey (Un mono)",
+                        "text": "Un mono (A monkey)",
                         "isCorrect": false
                     },
                     {
-                        "text": "An elephant (Un elefante)",
+                        "text": "Un elefante (An elephant)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A penguin (Un pingüino)",
+                        "text": "Un pingüino (A penguin)",
                         "isCorrect": false
                     }
                 ],
@@ -12279,15 +12279,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué animal dice la segunda persona que es juguetón?",
                 "options": [
                     {
-                        "text": "The monkeys (Los monos)",
+                        "text": "Los monos (The monkeys)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The elephants (Los elefantes)",
+                        "text": "Los elefantes (The elephants)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The penguins (Los pingüinos)",
+                        "text": "Los pingüinos (The penguins)",
                         "isCorrect": false
                     }
                 ],
@@ -12299,15 +12299,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué animal quieren ver los dos ahora?",
                 "options": [
                     {
-                        "text": "The lions (Los leones)",
+                        "text": "Los leones (The lions)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The penguins (Los pingüinos)",
+                        "text": "Los pingüinos (The penguins)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The giraffes (Las jirafas)",
+                        "text": "Las jirafas (The giraffes)",
                         "isCorrect": false
                     }
                 ],
@@ -12404,15 +12404,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué están haciendo?",
                 "options": [
                     {
-                        "text": "Learning to cook (Aprendiendo a cocinar)",
+                        "text": "Aprendiendo a cocinar (Learning to cook)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Learning to drive (Aprendiendo a conducir)",
+                        "text": "Aprendiendo a conducir (Learning to drive)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Learning to swim (Aprendiendo a nadar)",
+                        "text": "Aprendiendo a nadar (Learning to swim)",
                         "isCorrect": false
                     }
                 ],
@@ -12424,15 +12424,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué es lo primero que la persona necesita hacer?",
                 "options": [
                     {
-                        "text": "Start the engine (Encender el motor)",
+                        "text": "Encender el motor (Start the engine)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Put on the seatbelt (Ponerse el cinturón de seguridad)",
+                        "text": "Ponerse el cinturón de seguridad (Put on the seatbelt)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Put the car in drive (Poner el coche en marcha)",
+                        "text": "Poner el coche en marcha (Put the car in drive)",
                         "isCorrect": false
                     }
                 ],
@@ -12444,15 +12444,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué necesita hacer la persona después de ponerse el cinturón de seguridad?",
                 "options": [
                     {
-                        "text": "Start the engine (Encender el motor)",
+                        "text": "Encender el motor (Start the engine)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Honk the horn (Tocar la bocina)",
+                        "text": "Tocar la bocina (Honk the horn)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Turn on the lights (Encender las luces)",
+                        "text": "Encender las luces (Turn on the lights)",
                         "isCorrect": false
                     }
                 ],
@@ -12464,15 +12464,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo se siente la persona acerca de conducir?",
                 "options": [
                     {
-                        "text": "Excited (Emocionado/a)",
+                        "text": "Emocionado/a (Excited)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Nervous (Nervioso/a)",
+                        "text": "Nervioso/a (Nervous)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Bored (Aburrido/a)",
+                        "text": "Aburrido/a (Bored)",
                         "isCorrect": false
                     }
                 ],
@@ -12565,15 +12565,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el problema principal del que están hablando?",
                 "options": [
                     {
-                        "text": "The weather (El clima)",
+                        "text": "El clima (The weather)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The pollution (La contaminación)",
+                        "text": "La contaminación (The pollution)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Traffic (El tráfico)",
+                        "text": "El tráfico (Traffic)",
                         "isCorrect": false
                     }
                 ],
@@ -12585,15 +12585,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué no puede hacer el hablante?",
                 "options": [
                     {
-                        "text": "Barely breathe (Apenas respirar)",
+                        "text": "Apenas respirar (Barely breathe)",
                         "isCorrect": true
                     },
                     {
-                        "text": "See clearly (Ver claramente)",
+                        "text": "Ver claramente (See clearly)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Talk loudly (Hablar fuerte)",
+                        "text": "Hablar fuerte (Talk loudly)",
                         "isCorrect": false
                     }
                 ],
@@ -12605,15 +12605,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué sugieren hacer para mejorar la situación?",
                 "options": [
                     {
-                        "text": "Driving less (Manejar menos)",
+                        "text": "Manejar menos (Driving less)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Using public transport (Usar transporte público)",
+                        "text": "Usar transporte público (Using public transport)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Moving to the country (Mudarse al campo)",
+                        "text": "Mudarse al campo (Moving to the country)",
                         "isCorrect": false
                     }
                 ],
@@ -12625,15 +12625,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Están de acuerdo en que la contaminación es mala?",
                 "options": [
                     {
-                        "text": "No, they don't (No, no lo están)",
+                        "text": "No, no lo están (No, they don't)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Only one person thinks it's bad (Solo una persona piensa que es mala)",
+                        "text": "Solo una persona piensa que es mala (Only one person thinks it's bad)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Yes, they agree (Sí, están de acuerdo)",
+                        "text": "Sí, están de acuerdo (Yes, they agree)",
                         "isCorrect": true
                     }
                 ],
@@ -12726,15 +12726,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está tratando de hacer la primera persona?",
                 "options": [
                     {
-                        "text": "Buy something (Comprar algo)",
+                        "text": "Comprar algo (Buy something)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Recycle bottles (Reciclar botellas)",
+                        "text": "Reciclar botellas (Recycle bottles)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Clean the park (Limpiar el parque)",
+                        "text": "Limpiar el parque (Clean the park)",
                         "isCorrect": false
                     }
                 ],
@@ -12746,15 +12746,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está ubicado el contenedor de reciclaje?",
                 "options": [
                     {
-                        "text": "Inside the house (Dentro de la casa)",
+                        "text": "Dentro de la casa (Inside the house)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Around the corner, by the park (A la vuelta de la esquina, cerca del parque)",
+                        "text": "A la vuelta de la esquina, cerca del parque (Around the corner, by the park)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Next to the black bin (Al lado del contenedor negro)",
+                        "text": "Al lado del contenedor negro (Next to the black bin)",
                         "isCorrect": false
                     }
                 ],
@@ -12766,15 +12766,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué color es el contenedor de basura mencionado?",
                 "options": [
                     {
-                        "text": "Green (Verde)",
+                        "text": "Verde (Green)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Blue (Azul)",
+                        "text": "Azul (Blue)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Black (Negro)",
+                        "text": "Negro (Black)",
                         "isCorrect": true
                     }
                 ],
@@ -12786,15 +12786,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está ubicado el contenedor de basura?",
                 "options": [
                     {
-                        "text": "Outside (Afuera)",
+                        "text": "Afuera (Outside)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Inside (Adentro)",
+                        "text": "Adentro (Inside)",
                         "isCorrect": false
                     },
                     {
-                        "text": "In the park (En el parque)",
+                        "text": "En el parque (In the park)",
                         "isCorrect": false
                     }
                 ],
@@ -12887,15 +12887,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A quién están hablando de visitar?",
                 "options": [
                     {
-                        "text": "A friend (Un amigo)",
+                        "text": "Un amigo (A friend)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Their grandma (Su abuela)",
+                        "text": "Su abuela (Their grandma)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A neighbor (Un vecino)",
+                        "text": "Un vecino (A neighbor)",
                         "isCorrect": false
                     }
                 ],
@@ -12907,15 +12907,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le están llevando a la persona que están visitando?",
                 "options": [
                     {
-                        "text": "Flowers and cookies (Flores y galletas)",
+                        "text": "Flores y galletas (Flowers and cookies)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Cake and fruit (Pastel y fruta)",
+                        "text": "Pastel y fruta (Cake and fruit)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Books and games (Libros y juegos)",
+                        "text": "Libros y juegos (Books and games)",
                         "isCorrect": false
                     }
                 ],
@@ -12927,15 +12927,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo se siente la otra persona sobre la visita?",
                 "options": [
                     {
-                        "text": "They think it's a bad idea (Piensan que es una mala idea)",
+                        "text": "Piensan que es una mala idea (They think it's a bad idea)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They think it's nice (Piensan que es amable)",
+                        "text": "Piensan que es amable (They think it's nice)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They don't care (No les importa)",
+                        "text": "No les importa (They don't care)",
                         "isCorrect": false
                     }
                 ],
@@ -12947,15 +12947,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿El hablante ha visto a su familiar recientemente?",
                 "options": [
                     {
-                        "text": "Yes, very recently (Sí, muy recientemente)",
+                        "text": "Sí, muy recientemente (Yes, very recently)",
                         "isCorrect": false
                     },
                     {
-                        "text": "No, not in a while (No, no en un tiempo)",
+                        "text": "No, no en un tiempo (No, not in a while)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They didn't say (No dijeron)",
+                        "text": "No dijeron (They didn't say)",
                         "isCorrect": false
                     }
                 ],
@@ -13048,15 +13048,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le pregunta la primera persona a la otra persona?",
                 "options": [
                     {
-                        "text": "If they need money (Si necesitan dinero)",
+                        "text": "Si necesitan dinero (If they need money)",
                         "isCorrect": false
                     },
                     {
-                        "text": "If they are lost (Si están perdidos)",
+                        "text": "Si están perdidos (If they are lost)",
                         "isCorrect": true
                     },
                     {
-                        "text": "If they want food (Si quieren comida)",
+                        "text": "Si quieren comida (If they want food)",
                         "isCorrect": false
                     }
                 ],
@@ -13068,15 +13068,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está buscando la segunda persona?",
                 "options": [
                     {
-                        "text": "A bus stop (Una parada de autobús)",
+                        "text": "Una parada de autobús (A bus stop)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A restaurant (Un restaurante)",
+                        "text": "Un restaurante (A restaurant)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The train station (La estación de tren)",
+                        "text": "La estación de tren (The train station)",
                         "isCorrect": true
                     }
                 ],
@@ -13088,15 +13088,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A qué distancia está el lugar que están buscando?",
                 "options": [
                     {
-                        "text": "About two blocks (Como dos cuadras)",
+                        "text": "Como dos cuadras (About two blocks)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Right next to them (Justo al lado de ellos)",
+                        "text": "Justo al lado de ellos (Right next to them)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Very far away (Muy lejos)",
+                        "text": "Muy lejos (Very far away)",
                         "isCorrect": false
                     }
                 ],
@@ -13108,15 +13108,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo se siente la persona que estaba perdida?",
                 "options": [
                     {
-                        "text": "Annoyed (Molesto)",
+                        "text": "Molesto (Annoyed)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Grateful (Agradecido)",
+                        "text": "Agradecido (Grateful)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Confused (Confundido)",
+                        "text": "Confundido (Confused)",
                         "isCorrect": false
                     }
                 ],
@@ -13209,15 +13209,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le pregunta la primera persona a la otra persona?",
                 "options": [
                     {
-                        "text": "What's their favorite color? (Cuál es su color favorito?)",
+                        "text": "Cuál es su color favorito? (What's their favorite color?)",
                         "isCorrect": false
                     },
                     {
-                        "text": "What's their zodiac sign? (Cuál es su signo zodiacal?)",
+                        "text": "Cuál es su signo zodiacal? (What's their zodiac sign?)",
                         "isCorrect": true
                     },
                     {
-                        "text": "What's their job? (Cuál es su trabajo?)",
+                        "text": "Cuál es su trabajo? (What's their job?)",
                         "isCorrect": false
                     }
                 ],
@@ -13229,15 +13229,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el signo zodiacal de la segunda persona?",
                 "options": [
                     {
-                        "text": "Taurus (Tauro)",
+                        "text": "Tauro (Taurus)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Gemini (Géminis)",
+                        "text": "Géminis (Gemini)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Cancer (Cáncer)",
+                        "text": "Cáncer (Cancer)",
                         "isCorrect": false
                     }
                 ],
@@ -13249,15 +13249,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo se supone que son las personas de ese signo zodiacal?",
                 "options": [
                     {
-                        "text": "Brave and strong (Valientes y fuertes)",
+                        "text": "Valientes y fuertes (Brave and strong)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Curious and adaptable (Curiosos y adaptables)",
+                        "text": "Curiosos y adaptables (Curious and adaptable)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Kind and generous (Amables y generosos)",
+                        "text": "Amables y generosos (Kind and generous)",
                         "isCorrect": false
                     }
                 ],
@@ -13269,15 +13269,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Deberías tomar la astrología demasiado en serio?",
                 "options": [
                     {
-                        "text": "Yes, absolutely! (Sí, absolutamente!)",
+                        "text": "Sí, absolutamente! (Yes, absolutely!)",
                         "isCorrect": false
                     },
                     {
-                        "text": "No, it's just for fun (No, es solo por diversión)",
+                        "text": "No, es solo por diversión (No, it's just for fun)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Only sometimes (Solo a veces)",
+                        "text": "Solo a veces (Only sometimes)",
                         "isCorrect": false
                     }
                 ],
@@ -13370,15 +13370,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde están ubicadas las habitaciones?",
                 "options": [
                     {
-                        "text": "Downstairs (Abajo)",
+                        "text": "Abajo (Downstairs)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Upstairs (Arriba)",
+                        "text": "Arriba (Upstairs)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Next to the kitchen (Al lado de la cocina)",
+                        "text": "Al lado de la cocina (Next to the kitchen)",
                         "isCorrect": false
                     }
                 ],
@@ -13394,11 +13394,11 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Yes, a big one (Sí, uno grande)",
+                        "text": "Sí, uno grande (Yes, a big one)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Yes, a small one (Sí, uno pequeño)",
+                        "text": "Sí, uno pequeño (Yes, a small one)",
                         "isCorrect": true
                     }
                 ],
@@ -13410,15 +13410,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está al lado de la cocina?",
                 "options": [
                     {
-                        "text": "The bedroom (El dormitorio)",
+                        "text": "El dormitorio (The bedroom)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The living room (La sala)",
+                        "text": "La sala (The living room)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The bathroom (El baño)",
+                        "text": "El baño (The bathroom)",
                         "isCorrect": false
                     }
                 ],
@@ -13430,15 +13430,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está ubicado el baño pequeño?",
                 "options": [
                     {
-                        "text": "Near the kitchen (Cerca de la cocina)",
+                        "text": "Cerca de la cocina (Near the kitchen)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Near the bedrooms (Cerca de las habitaciones)",
+                        "text": "Cerca de las habitaciones (Near the bedrooms)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Near the entrance (Cerca de la entrada)",
+                        "text": "Cerca de la entrada (Near the entrance)",
                         "isCorrect": true
                     }
                 ],
@@ -13531,15 +13531,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué hará la persona la próxima semana?",
                 "options": [
                     {
-                        "text": "Traveling (Viajar)",
+                        "text": "Viajar (Traveling)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Moving (Mudarse)",
+                        "text": "Mudarse (Moving)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Working (Trabajar)",
+                        "text": "Trabajar (Working)",
                         "isCorrect": false
                     }
                 ],
@@ -13551,15 +13551,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Con qué necesita ayuda la persona?",
                 "options": [
                     {
-                        "text": "Cleaning (Limpiar)",
+                        "text": "Limpiar (Cleaning)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Packing boxes (Empacar cajas)",
+                        "text": "Empacar cajas (Packing boxes)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Cooking (Cocinar)",
+                        "text": "Cocinar (Cooking)",
                         "isCorrect": false
                     }
                 ],
@@ -13571,15 +13571,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo ayudará el amigo?",
                 "options": [
                     {
-                        "text": "Saturday morning (El sábado por la mañana)",
+                        "text": "El sábado por la mañana (Saturday morning)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Sunday afternoon (El domingo por la tarde)",
+                        "text": "El domingo por la tarde (Sunday afternoon)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Friday evening (El viernes por la noche)",
+                        "text": "El viernes por la noche (Friday evening)",
                         "isCorrect": false
                     }
                 ],
@@ -13591,15 +13591,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A dónde se muda la persona?",
                 "options": [
                     {
-                        "text": "A new house (Una casa nueva)",
+                        "text": "Una casa nueva (A new house)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A new apartment (Un apartamento nuevo)",
+                        "text": "Un apartamento nuevo (A new apartment)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A new city (Una ciudad nueva)",
+                        "text": "Una ciudad nueva (A new city)",
                         "isCorrect": false
                     }
                 ],
@@ -13692,15 +13692,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere hacer la persona este fin de semana?",
                 "options": [
                     {
-                        "text": "Clean their kitchen (Limpiar su cocina)",
+                        "text": "Limpiar su cocina (Clean their kitchen)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Repaint their bedroom (Volver a pintar su habitación)",
+                        "text": "Volver a pintar su habitación (Repaint their bedroom)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Buy new furniture (Comprar muebles nuevos)",
+                        "text": "Comprar muebles nuevos (Buy new furniture)",
                         "isCorrect": false
                     }
                 ],
@@ -13712,15 +13712,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué color está considerando la persona?",
                 "options": [
                     {
-                        "text": "Red or orange (Rojo o naranja)",
+                        "text": "Rojo o naranja (Red or orange)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Black or white (Negro o blanco)",
+                        "text": "Negro o blanco (Black or white)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Light blue or green (Azul claro o verde)",
+                        "text": "Azul claro o verde (Light blue or green)",
                         "isCorrect": true
                     }
                 ],
@@ -13732,15 +13732,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es la característica de los colores mencionados?",
                 "options": [
                     {
-                        "text": "They are very bright (Son muy brillantes)",
+                        "text": "Son muy brillantes (They are very bright)",
                         "isCorrect": false
                     },
                     {
-                        "text": "They are very relaxing (Son muy relajantes)",
+                        "text": "Son muy relajantes (They are very relaxing)",
                         "isCorrect": true
                     },
                     {
-                        "text": "They are very expensive (Son muy caros)",
+                        "text": "Son muy caros (They are very expensive)",
                         "isCorrect": false
                     }
                 ],
@@ -13752,15 +13752,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo va a volver a pintar la habitación la persona?",
                 "options": [
                     {
-                        "text": "Next week (La próxima semana)",
+                        "text": "La próxima semana (Next week)",
                         "isCorrect": false
                     },
                     {
-                        "text": "This weekend (Este fin de semana)",
+                        "text": "Este fin de semana (This weekend)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Next month (El próximo mes)",
+                        "text": "El próximo mes (Next month)",
                         "isCorrect": false
                     }
                 ],
@@ -13853,15 +13853,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué le encanta hacer a la persona?",
                 "options": [
                     {
-                        "text": "Spending time in the garden (Pasar tiempo en el jardín)",
+                        "text": "Pasar tiempo en el jardín (Spending time in the garden)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Cooking dinner (Cocinar la cena)",
+                        "text": "Cocinar la cena (Cooking dinner)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Watching TV (Ver televisión)",
+                        "text": "Ver televisión (Watching TV)",
                         "isCorrect": false
                     }
                 ],
@@ -13873,15 +13873,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuáles son las plantas que tiene la persona?",
                 "options": [
                     {
-                        "text": "Apples, bananas, and grapes (Manzanas, plátanos y uvas)",
+                        "text": "Manzanas, plátanos y uvas (Apples, bananas, and grapes)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Roses, tomatoes, and herbs (Rosas, tomates y hierbas)",
+                        "text": "Rosas, tomates y hierbas (Roses, tomatoes, and herbs)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Lettuce, carrots, and onions (Lechuga, zanahorias y cebollas)",
+                        "text": "Lechuga, zanahorias y cebollas (Lettuce, carrots, and onions)",
                         "isCorrect": false
                     }
                 ],
@@ -13893,15 +13893,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué es lo mejor según la otra persona?",
                 "options": [
                     {
-                        "text": "Fresh herbs (Hierbas frescas)",
+                        "text": "Hierbas frescas (Fresh herbs)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Fresh tomatoes (Tomates frescos)",
+                        "text": "Tomates frescos (Fresh tomatoes)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Beautiful roses (Rosas hermosas)",
+                        "text": "Rosas hermosas (Beautiful roses)",
                         "isCorrect": false
                     }
                 ],
@@ -13913,15 +13913,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué menciona la persona que tiene en su jardín?",
                 "options": [
                     {
-                        "text": "Only flowers (Solo flores)",
+                        "text": "Solo flores (Only flowers)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Only vegetables (Solo vegetales)",
+                        "text": "Solo vegetales (Only vegetables)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Flowers, vegetables, and herbs (Flores, vegetales y hierbas)",
+                        "text": "Flores, vegetales y hierbas (Flowers, vegetables, and herbs)",
                         "isCorrect": true
                     }
                 ],
@@ -14014,15 +14014,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué actividad se está discutiendo?",
                 "options": [
                     {
-                        "text": "Playing sports (Practicar deportes)",
+                        "text": "Practicar deportes (Playing sports)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Playing video games (Jugar videojuegos)",
+                        "text": "Jugar videojuegos (Playing video games)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Watching movies (Ver películas)",
+                        "text": "Ver películas (Watching movies)",
                         "isCorrect": false
                     }
                 ],
@@ -14034,15 +14034,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo juega videojuegos la persona?",
                 "options": [
                     {
-                        "text": "Every day (Todos los días)",
+                        "text": "Todos los días (Every day)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Every weekend (Todos los fines de semana)",
+                        "text": "Todos los fines de semana (Every weekend)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Once a month (Una vez al mes)",
+                        "text": "Una vez al mes (Once a month)",
                         "isCorrect": false
                     }
                 ],
@@ -14054,15 +14054,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de juego le gusta a la persona?",
                 "options": [
                     {
-                        "text": "A new racing game (Un nuevo juego de carreras)",
+                        "text": "Un nuevo juego de carreras (A new racing game)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A strategy game (Un juego de estrategia)",
+                        "text": "Un juego de estrategia (A strategy game)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A puzzle game (Un juego de rompecabezas)",
+                        "text": "Un juego de rompecabezas (A puzzle game)",
                         "isCorrect": false
                     }
                 ],
@@ -14074,7 +14074,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Le gustan los videojuegos a la persona?",
                 "options": [
                     {
-                        "text": "Yes (Sí)",
+                        "text": "Sí (Yes)",
                         "isCorrect": true
                     },
                     {
@@ -14082,7 +14082,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Maybe (Tal vez)",
+                        "text": "Tal vez (Maybe)",
                         "isCorrect": false
                     }
                 ],
@@ -14171,15 +14171,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué están hablando?",
                 "options": [
                     {
-                        "text": "Following each other on Instagram (Seguirse en Instagram)",
+                        "text": "Seguirse en Instagram (Following each other on Instagram)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Going to the movies (Ir al cine)",
+                        "text": "Ir al cine (Going to the movies)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Having dinner (Cenar)",
+                        "text": "Cenar (Having dinner)",
                         "isCorrect": false
                     }
                 ],
@@ -14191,15 +14191,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el nombre de usuario de Instagram de la primera persona?",
                 "options": [
                     {
-                        "text": "@YourName (Tu Nombre)",
+                        "text": "Tu Nombre (@YourName)",
                         "isCorrect": false
                     },
                     {
-                        "text": "@MyCoolPhotos (Mis Fotos Geniales)",
+                        "text": "Mis Fotos Geniales (@MyCoolPhotos)",
                         "isCorrect": true
                     },
                     {
-                        "text": "@CoolPictures (Fotos Geniales)",
+                        "text": "Fotos Geniales (@CoolPictures)",
                         "isCorrect": false
                     }
                 ],
@@ -14211,15 +14211,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué dice la segunda persona que hará?",
                 "options": [
                     {
-                        "text": "Unfollow the first person (Dejar de seguir a la primera persona)",
+                        "text": "Dejar de seguir a la primera persona (Unfollow the first person)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Follow the first person (Seguir a la primera persona)",
+                        "text": "Seguir a la primera persona (Follow the first person)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Block the first person (Bloquear a la primera persona)",
+                        "text": "Bloquear a la primera persona (Block the first person)",
                         "isCorrect": false
                     }
                 ],
@@ -14231,15 +14231,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo seguirá la segunda persona a la primera persona?",
                 "options": [
                     {
-                        "text": "Tomorrow (Mañana)",
+                        "text": "Mañana (Tomorrow)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Right now (Ahora mismo)",
+                        "text": "Ahora mismo (Right now)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Next week (La semana que viene)",
+                        "text": "La semana que viene (Next week)",
                         "isCorrect": false
                     }
                 ],
@@ -14328,15 +14328,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué están hablando?",
                 "options": [
                     {
-                        "text": "Photography (Fotografía)",
+                        "text": "Fotografía (Photography)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Cooking (Cocinar)",
+                        "text": "Cocinar (Cooking)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Gardening (Jardinería)",
+                        "text": "Jardinería (Gardening)",
                         "isCorrect": false
                     }
                 ],
@@ -14348,15 +14348,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo se tomó la foto?",
                 "options": [
                     {
-                        "text": "Last winter (El invierno pasado)",
+                        "text": "El invierno pasado (Last winter)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Last summer (El verano pasado)",
+                        "text": "El verano pasado (Last summer)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Last spring (La primavera pasada)",
+                        "text": "La primavera pasada (Last spring)",
                         "isCorrect": false
                     }
                 ],
@@ -14368,15 +14368,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde se tomó la foto?",
                 "options": [
                     {
-                        "text": "At home (En casa)",
+                        "text": "En casa (At home)",
                         "isCorrect": false
                     },
                     {
-                        "text": "On vacation (De vacaciones)",
+                        "text": "De vacaciones (On vacation)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At work (En el trabajo)",
+                        "text": "En el trabajo (At work)",
                         "isCorrect": false
                     }
                 ],
@@ -14388,15 +14388,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tipo de cámara usa la persona?",
                 "options": [
                     {
-                        "text": "A phone camera (Una cámara de teléfono)",
+                        "text": "Una cámara de teléfono (A phone camera)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A DSLR (Una DSLR)",
+                        "text": "Una DSLR (A DSLR)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A disposable camera (Una cámara desechable)",
+                        "text": "Una cámara desechable (A disposable camera)",
                         "isCorrect": false
                     }
                 ],
@@ -14489,15 +14489,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué están planeando hacer?",
                 "options": [
                     {
-                        "text": "Go swimming (Ir a nadar)",
+                        "text": "Ir a nadar (Go swimming)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Go for a hike (Ir de excursión)",
+                        "text": "Ir de excursión (Go for a hike)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Go to the beach (Ir a la playa)",
+                        "text": "Ir a la playa (Go to the beach)",
                         "isCorrect": false
                     }
                 ],
@@ -14509,15 +14509,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo están planeando hacerlo?",
                 "options": [
                     {
-                        "text": "This weekend (Este fin de semana)",
+                        "text": "Este fin de semana (This weekend)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Next week (La semana que viene)",
+                        "text": "La semana que viene (Next week)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Next month (El mes que viene)",
+                        "text": "El mes que viene (Next month)",
                         "isCorrect": false
                     }
                 ],
@@ -14529,15 +14529,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A dónde están planeando ir?",
                 "options": [
                     {
-                        "text": "To the beach (A la playa)",
+                        "text": "A la playa (To the beach)",
                         "isCorrect": false
                     },
                     {
-                        "text": "To the mountains (A las montañas)",
+                        "text": "A las montañas (To the mountains)",
                         "isCorrect": true
                     },
                     {
-                        "text": "To the park (Al parque)",
+                        "text": "Al parque (To the park)",
                         "isCorrect": false
                     }
                 ],
@@ -14549,15 +14549,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué empacará uno de ellos?",
                 "options": [
                     {
-                        "text": "Sunscreen (Protector solar)",
+                        "text": "Protector solar (Sunscreen)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Snacks and water (Bocadillos y agua)",
+                        "text": "Bocadillos y agua (Snacks and water)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A tent (Una tienda de campaña)",
+                        "text": "Una tienda de campaña (A tent)",
                         "isCorrect": false
                     }
                 ],
@@ -14650,15 +14650,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Por qué están emocionados?",
                 "options": [
                     {
-                        "text": "A beach vacation (Unas vacaciones en la playa)",
+                        "text": "Unas vacaciones en la playa (A beach vacation)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A camping trip (Un viaje de camping)",
+                        "text": "Un viaje de camping (A camping trip)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A road trip (Un viaje por carretera)",
+                        "text": "Un viaje por carretera (A road trip)",
                         "isCorrect": false
                     }
                 ],
@@ -14670,15 +14670,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo es el viaje de camping?",
                 "options": [
                     {
-                        "text": "This week (Esta semana)",
+                        "text": "Esta semana (This week)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Next week (La semana que viene)",
+                        "text": "La semana que viene (Next week)",
                         "isCorrect": true
                     },
                     {
-                        "text": "In two weeks (En dos semanas)",
+                        "text": "En dos semanas (In two weeks)",
                         "isCorrect": false
                     }
                 ],
@@ -14690,15 +14690,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué compró una persona?",
                 "options": [
                     {
-                        "text": "Firewood (Leña)",
+                        "text": "Leña (Firewood)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A tent (Una tienda de campaña)",
+                        "text": "Una tienda de campaña (A tent)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Sleeping bags (Sacos de dormir)",
+                        "text": "Sacos de dormir (Sleeping bags)",
                         "isCorrect": false
                     }
                 ],
@@ -14710,7 +14710,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué consiguió la otra persona?",
                 "options": [
                     {
-                        "text": "Marshmallows (Malvaviscos)",
+                        "text": "Malvaviscos (Marshmallows)",
                         "isCorrect": true
                     },
                     {
@@ -14718,7 +14718,7 @@ export const SPANISH_STORIES: SpanishStory[] = [
                         "isCorrect": false
                     },
                     {
-                        "text": "Crackers (Galletas)",
+                        "text": "Galletas (Crackers)",
                         "isCorrect": false
                     }
                 ],
@@ -14807,15 +14807,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué están esperando con ansias?",
                 "options": [
                     {
-                        "text": "A ski trip (Un viaje de esquí)",
+                        "text": "Un viaje de esquí (A ski trip)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A beach vacation (Unas vacaciones en la playa)",
+                        "text": "Unas vacaciones en la playa (A beach vacation)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A city tour (Un recorrido por la ciudad)",
+                        "text": "Un recorrido por la ciudad (A city tour)",
                         "isCorrect": false
                     }
                 ],
@@ -14827,15 +14827,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué empacó una persona?",
                 "options": [
                     {
-                        "text": "A swimsuit (Un traje de baño)",
+                        "text": "Un traje de baño (A swimsuit)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A winter coat (Un abrigo de invierno)",
+                        "text": "Un abrigo de invierno (A winter coat)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A sweater (Un suéter)",
+                        "text": "Un suéter (A sweater)",
                         "isCorrect": false
                     }
                 ],
@@ -14847,15 +14847,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué más empacó esa persona?",
                 "options": [
                     {
-                        "text": "Sunscreen (Protector solar)",
+                        "text": "Protector solar (Sunscreen)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Snow boots (Botas para la nieve)",
+                        "text": "Botas para la nieve (Snow boots)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Gloves (Guantes)",
+                        "text": "Guantes (Gloves)",
                         "isCorrect": false
                     }
                 ],
@@ -14867,15 +14867,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué van a hacer?",
                 "options": [
                     {
-                        "text": "Go skiing (Ir a esquiar)",
+                        "text": "Ir a esquiar (Go skiing)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Have fun in the sun (Divertirse bajo el sol)",
+                        "text": "Divertirse bajo el sol (Have fun in the sun)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Go ice skating (Ir a patinar sobre hielo)",
+                        "text": "Ir a patinar sobre hielo (Go ice skating)",
                         "isCorrect": false
                     }
                 ],
@@ -14968,15 +14968,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué planean hacer los amigos?",
                 "options": [
                     {
-                        "text": "Go hiking (Ir de excursión)",
+                        "text": "Ir de excursión (Go hiking)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Go skiing (Ir a esquiar)",
+                        "text": "Ir a esquiar (Go skiing)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Go swimming (Ir a nadar)",
+                        "text": "Ir a nadar (Go swimming)",
                         "isCorrect": false
                     }
                 ],
@@ -14988,15 +14988,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué necesita hacer uno de los amigos?",
                 "options": [
                     {
-                        "text": "Buy a new car (Comprar un coche nuevo)",
+                        "text": "Comprar un coche nuevo (Buy a new car)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Rent skis (Alquilar esquíes)",
+                        "text": "Alquilar esquíes (Rent skis)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Buy a house (Comprar una casa)",
+                        "text": "Comprar una casa (Buy a house)",
                         "isCorrect": false
                     }
                 ],
@@ -15008,15 +15008,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde está ubicado el lugar de alquiler?",
                 "options": [
                     {
-                        "text": "Near the beach (Cerca de la playa)",
+                        "text": "Cerca de la playa (Near the beach)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Near the mountain (Cerca de la montaña)",
+                        "text": "Cerca de la montaña (Near the mountain)",
                         "isCorrect": true
                     },
                     {
-                        "text": "In the city center (En el centro de la ciudad)",
+                        "text": "En el centro de la ciudad (In the city center)",
                         "isCorrect": false
                     }
                 ],
@@ -15028,15 +15028,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuándo planean reunirse?",
                 "options": [
                     {
-                        "text": "Saturday morning (Sábado por la mañana)",
+                        "text": "Sábado por la mañana (Saturday morning)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Sunday afternoon (Domingo por la tarde)",
+                        "text": "Domingo por la tarde (Sunday afternoon)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Friday night (Viernes por la noche)",
+                        "text": "Viernes por la noche (Friday night)",
                         "isCorrect": false
                     }
                 ],
@@ -15129,15 +15129,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué se trata la conversación?",
                 "options": [
                     {
-                        "text": "Food allergies (Alergias alimentarias)",
+                        "text": "Alergias alimentarias (Food allergies)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Favorite foods (Comidas favoritas)",
+                        "text": "Comidas favoritas (Favorite foods)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Cooking recipes (Recetas de cocina)",
+                        "text": "Recetas de cocina (Cooking recipes)",
                         "isCorrect": false
                     }
                 ],
@@ -15149,15 +15149,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿A qué es alérgica la persona?",
                 "options": [
                     {
-                        "text": "Milk and eggs (Leche y huevos)",
+                        "text": "Leche y huevos (Milk and eggs)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Peanuts and shellfish (Maní y mariscos)",
+                        "text": "Maní y mariscos (Peanuts and shellfish)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Wheat and soy (Trigo y soya)",
+                        "text": "Trigo y soya (Wheat and soy)",
                         "isCorrect": false
                     }
                 ],
@@ -15169,15 +15169,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Por qué la persona necesita tener cuidado?",
                 "options": [
                     {
-                        "text": "Because they are sick (Porque están enfermos)",
+                        "text": "Porque están enfermos (Because they are sick)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Because they have food allergies (Porque tienen alergias alimentarias)",
+                        "text": "Porque tienen alergias alimentarias (Because they have food allergies)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Because they are on a diet (Porque están a dieta)",
+                        "text": "Porque están a dieta (Because they are on a diet)",
                         "isCorrect": false
                     }
                 ],
@@ -15189,15 +15189,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué hará la otra persona?",
                 "options": [
                     {
-                        "text": "Ignore the allergies (Ignorar las alergias)",
+                        "text": "Ignorar las alergias (Ignore the allergies)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Make sure there's nothing like that in the food (Asegurarse de que no haya nada de eso en la comida)",
+                        "text": "Asegurarse de que no haya nada de eso en la comida (Make sure there's nothing like that in the food)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Offer medicine (Ofrecer medicina)",
+                        "text": "Ofrecer medicina (Offer medicine)",
                         "isCorrect": false
                     }
                 ],
@@ -15290,15 +15290,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde es probable que tenga lugar esta conversación?",
                 "options": [
                     {
-                        "text": "At a hospital (En un hospital)",
+                        "text": "En un hospital (At a hospital)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At a restaurant (En un restaurante)",
+                        "text": "En un restaurante (At a restaurant)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At a grocery store (En una tienda de comestibles)",
+                        "text": "En una tienda de comestibles (At a grocery store)",
                         "isCorrect": false
                     }
                 ],
@@ -15310,15 +15310,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuáles son las restricciones alimentarias de la persona?",
                 "options": [
                     {
-                        "text": "Vegetarian and gluten-free (Vegetariano y sin gluten)",
+                        "text": "Vegetariano y sin gluten (Vegetarian and gluten-free)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Vegetarian and dairy-free (Vegetariano y sin lácteos)",
+                        "text": "Vegetariano y sin lácteos (Vegetarian and dairy-free)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Vegan and sugar-free (Vegano y sin azúcar)",
+                        "text": "Vegano y sin azúcar (Vegan and sugar-free)",
                         "isCorrect": false
                     }
                 ],
@@ -15330,15 +15330,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué significa 'dairy'?",
                 "options": [
                     {
-                        "text": "Meat products (Productos cárnicos)",
+                        "text": "Productos cárnicos (Meat products)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Products made from milk (Productos hechos de leche)",
+                        "text": "Productos hechos de leche (Products made from milk)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Grain products (Productos de grano)",
+                        "text": "Productos de grano (Grain products)",
                         "isCorrect": false
                     }
                 ],
@@ -15350,15 +15350,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué hará el camarero?",
                 "options": [
                     {
-                        "text": "Recommend only meat dishes (Recomendar solo platos de carne)",
+                        "text": "Recomendar solo platos de carne (Recommend only meat dishes)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Point out the dairy-free dishes (Señalar los platos sin lácteos)",
+                        "text": "Señalar los platos sin lácteos (Point out the dairy-free dishes)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Bring the person a glass of milk (Traerle a la persona un vaso de leche)",
+                        "text": "Traerle a la persona un vaso de leche (Bring the person a glass of milk)",
                         "isCorrect": false
                     }
                 ],
@@ -15451,15 +15451,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué está aprendiendo la persona?",
                 "options": [
                     {
-                        "text": "How to cook (Cómo cocinar)",
+                        "text": "Cómo cocinar (How to cook)",
                         "isCorrect": false
                     },
                     {
-                        "text": "How to play the guitar (Cómo tocar la guitarra)",
+                        "text": "Cómo tocar la guitarra (How to play the guitar)",
                         "isCorrect": true
                     },
                     {
-                        "text": "How to dance (Cómo bailar)",
+                        "text": "Cómo bailar (How to dance)",
                         "isCorrect": false
                     }
                 ],
@@ -15471,15 +15471,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el primer acorde que están aprendiendo?",
                 "options": [
                     {
-                        "text": "The A chord (El acorde de La)",
+                        "text": "El acorde de La (The A chord)",
                         "isCorrect": false
                     },
                     {
-                        "text": "The C chord (El acorde de Do)",
+                        "text": "El acorde de Do (The C chord)",
                         "isCorrect": true
                     },
                     {
-                        "text": "The G chord (El acorde de Sol)",
+                        "text": "El acorde de Sol (The G chord)",
                         "isCorrect": false
                     }
                 ],
@@ -15491,15 +15491,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué dice la otra persona que se necesita?",
                 "options": [
                     {
-                        "text": "Talent (Talento)",
+                        "text": "Talento (Talent)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Practice (Práctica)",
+                        "text": "Práctica (Practice)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Money (Dinero)",
+                        "text": "Dinero (Money)",
                         "isCorrect": false
                     }
                 ],
@@ -15511,15 +15511,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué recomienda la otra persona para empezar?",
                 "options": [
                     {
-                        "text": "Difficult songs (Canciones difíciles)",
+                        "text": "Canciones difíciles (Difficult songs)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Simple chords (Acordes simples)",
+                        "text": "Acordes simples (Simple chords)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Complex rhythms (Ritmos complejos)",
+                        "text": "Ritmos complejos (Complex rhythms)",
                         "isCorrect": false
                     }
                 ],
@@ -15612,15 +15612,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué están hablando?",
                 "options": [
                     {
-                        "text": "Using a new car (Usando un coche nuevo)",
+                        "text": "Usando un coche nuevo (Using a new car)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Using an app (Usando una aplicación)",
+                        "text": "Usando una aplicación (Using an app)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Using a new computer (Usando una computadora nueva)",
+                        "text": "Usando una computadora nueva (Using a new computer)",
                         "isCorrect": false
                     }
                 ],
@@ -15632,15 +15632,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el primer paso?",
                 "options": [
                     {
-                        "text": "Enter your password (Ingresar tu contraseña)",
+                        "text": "Ingresar tu contraseña (Enter your password)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Tap the icon (Tocar el icono)",
+                        "text": "Tocar el icono (Tap the icon)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Turn on the phone (Encender el teléfono)",
+                        "text": "Encender el teléfono (Turn on the phone)",
                         "isCorrect": false
                     }
                 ],
@@ -15652,15 +15652,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué debes ingresar después de tocar el icono?",
                 "options": [
                     {
-                        "text": "Your email (Tu correo electrónico)",
+                        "text": "Tu correo electrónico (Your email)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Your password (Tu contraseña)",
+                        "text": "Tu contraseña (Your password)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Your username (Tu nombre de usuario)",
+                        "text": "Tu nombre de usuario (Your username)",
                         "isCorrect": false
                     }
                 ],
@@ -15672,15 +15672,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo se siente la persona al final?",
                 "options": [
                     {
-                        "text": "Confused (Confundido)",
+                        "text": "Confundido (Confused)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Understanding (Entendiendo)",
+                        "text": "Entendiendo (Understanding)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Angry (Enojado)",
+                        "text": "Enojado (Angry)",
                         "isCorrect": false
                     }
                 ],
@@ -15781,15 +15781,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuál es el tema principal de la conversación?",
                 "options": [
                     {
-                        "text": "Saving money (Ahorrar dinero)",
+                        "text": "Ahorrar dinero (Saving money)",
                         "isCorrect": false
                     },
                     {
-                        "text": "High prices (Precios altos)",
+                        "text": "Precios altos (High prices)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Buying milk (Comprando leche)",
+                        "text": "Comprando leche (Buying milk)",
                         "isCorrect": false
                     }
                 ],
@@ -15801,15 +15801,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cuánto más gasta la persona en comida ahora?",
                 "options": [
                     {
-                        "text": "Almost $30 more (Casi $30 más)",
+                        "text": "Casi $30 más (Almost $30 more)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Exactly $50 more (Exactamente $50 más)",
+                        "text": "Exactamente $50 más (Exactly $50 more)",
                         "isCorrect": false
                     },
                     {
-                        "text": "About $10 more (Alrededor de $10 más)",
+                        "text": "Alrededor de $10 más (About $10 more)",
                         "isCorrect": false
                     }
                 ],
@@ -15821,15 +15821,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué producto específico se mencionó que ha aumentado de precio?",
                 "options": [
                     {
-                        "text": "Eggs (Huevos)",
+                        "text": "Huevos (Eggs)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Bread (Pan)",
+                        "text": "Pan (Bread)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Milk (Leche)",
+                        "text": "Leche (Milk)",
                         "isCorrect": true
                     }
                 ],
@@ -15841,15 +15841,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué necesitan hacer como resultado de la inflación?",
                 "options": [
                     {
-                        "text": "Buy more milk (Comprar más leche)",
+                        "text": "Comprar más leche (Buy more milk)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Find ways to save money (Encontrar formas de ahorrar dinero)",
+                        "text": "Encontrar formas de ahorrar dinero (Find ways to save money)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Spend more money (Gastar más dinero)",
+                        "text": "Gastar más dinero (Spend more money)",
                         "isCorrect": false
                     }
                 ],
@@ -15942,15 +15942,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿De qué están hablando?",
                 "options": [
                     {
-                        "text": "A movie (Una película)",
+                        "text": "Una película (A movie)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A book (Un libro)",
+                        "text": "Un libro (A book)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A TV show (Un programa de televisión)",
+                        "text": "Un programa de televisión (A TV show)",
                         "isCorrect": true
                     }
                 ],
@@ -15962,15 +15962,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué pensaron del giro de la trama?",
                 "options": [
                     {
-                        "text": "It was expected (Fue esperado)",
+                        "text": "Fue esperado (It was expected)",
                         "isCorrect": false
                     },
                     {
-                        "text": "It was boring (Fue aburrido)",
+                        "text": "Fue aburrido (It was boring)",
                         "isCorrect": false
                     },
                     {
-                        "text": "It was unexpected (Fue inesperado)",
+                        "text": "Fue inesperado (It was unexpected)",
                         "isCorrect": true
                     }
                 ],
@@ -15982,15 +15982,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Quién es la Capitana Eva?",
                 "options": [
                     {
-                        "text": "A main character (Un personaje principal)",
+                        "text": "Un personaje principal (A main character)",
                         "isCorrect": true
                     },
                     {
-                        "text": "A director (Un director)",
+                        "text": "Un director (A director)",
                         "isCorrect": false
                     },
                     {
-                        "text": "A place (Un lugar)",
+                        "text": "Un lugar (A place)",
                         "isCorrect": false
                     }
                 ],
@@ -16002,15 +16002,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Cómo se sienten sobre el próximo episodio?",
                 "options": [
                     {
-                        "text": "Bored (Aburridos)",
+                        "text": "Aburridos (Bored)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Excited (Emocionados)",
+                        "text": "Emocionados (Excited)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Worried (Preocupados)",
+                        "text": "Preocupados (Worried)",
                         "isCorrect": false
                     }
                 ],
@@ -16107,15 +16107,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Dónde están?",
                 "options": [
                     {
-                        "text": "At the train station (En la estación de tren)",
+                        "text": "En la estación de tren (At the train station)",
                         "isCorrect": false
                     },
                     {
-                        "text": "At the airport (En el aeropuerto)",
+                        "text": "En el aeropuerto (At the airport)",
                         "isCorrect": true
                     },
                     {
-                        "text": "At the bus station (En la estación de autobús)",
+                        "text": "En la estación de autobús (At the bus station)",
                         "isCorrect": false
                     }
                 ],
@@ -16127,15 +16127,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué hará la persona cuando aterrice?",
                 "options": [
                     {
-                        "text": "Send a letter (Enviar una carta)",
+                        "text": "Enviar una carta (Send a letter)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Call (Llamar)",
+                        "text": "Llamar (Call)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Send a text message (Enviar un mensaje de texto)",
+                        "text": "Enviar un mensaje de texto (Send a text message)",
                         "isCorrect": false
                     }
                 ],
@@ -16147,15 +16147,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué quiere la otra persona que haga?",
                 "options": [
                     {
-                        "text": "Send money (Enviar dinero)",
+                        "text": "Enviar dinero (Send money)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Send food (Enviar comida)",
+                        "text": "Enviar comida (Send food)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Send pictures (Enviar fotos)",
+                        "text": "Enviar fotos (Send pictures)",
                         "isCorrect": true
                     }
                 ],
@@ -16167,15 +16167,15 @@ export const SPANISH_STORIES: SpanishStory[] = [
                 "questionSpanish": "¿Qué tiene que hacer la persona antes de su vuelo?",
                 "options": [
                     {
-                        "text": "Go through security (Pasar por seguridad)",
+                        "text": "Pasar por seguridad (Go through security)",
                         "isCorrect": true
                     },
                     {
-                        "text": "Buy a ticket (Comprar un boleto)",
+                        "text": "Comprar un boleto (Buy a ticket)",
                         "isCorrect": false
                     },
                     {
-                        "text": "Eat lunch (Almorzar)",
+                        "text": "Almorzar (Eat lunch)",
                         "isCorrect": false
                     }
                 ],

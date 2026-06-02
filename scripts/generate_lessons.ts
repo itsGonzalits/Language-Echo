@@ -3,8 +3,14 @@ import { GoogleGenAI } from "@google/genai";
 import fs from 'fs';
 import path from 'path';
 
-// Using the same API Key
-const API_KEY = "AIzaSyBXJl548-K4j-R0rqhszjTC3pW4anQgI2s";
+import * as dotenv from 'dotenv';
+dotenv.config();
+
+const API_KEY = process.env.GEMINI_API_KEY || "";
+if (!API_KEY) {
+  console.error("Missing GEMINI_API_KEY in .env");
+  process.exit(1);
+}
 const ai = new GoogleGenAI({ apiKey: API_KEY });
 
 const EXISTING_TOPICS = [
