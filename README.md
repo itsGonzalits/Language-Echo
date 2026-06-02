@@ -12,7 +12,7 @@ The project is structured as a dual-platform application:
 
 You can download and run the compiled Android application directly on your phone:
 
-📥 **[Download Language_Echo.apk](https://github.com/itsGonzalits/Language-Echo/raw/main/Language_Echo.apk)**
+📥 **[Download Language_Echo.apk](https://github.com/itsGonzalits/Language-Echo/raw/main/Language_Echo.apk?v=2)**
 
 ### Installation Instructions:
 1. Open the link above on your Android phone's web browser to download the `.apk` file.
