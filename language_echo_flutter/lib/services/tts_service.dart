@@ -8,8 +8,19 @@ import 'package:http/http.dart' as http;
 import 'package:just_audio/just_audio.dart';
 import 'package:path_provider/path_provider.dart';
 
-const _apiKey = String.fromEnvironment('GEMINI_API_KEY', defaultValue: '');
+String _getApiKey() {
+  const base64Key = String.fromEnvironment('GEMINI_API_KEY_BASE64', defaultValue: '');
+  if (base64Key.isNotEmpty) {
+    try {
+      return utf8.decode(base64.decode(base64Key.trim()));
+    } catch (_) {}
+  }
+  return const String.fromEnvironment('GEMINI_API_KEY', defaultValue: '');
+}
+
+final String _apiKey = _getApiKey();
 const _model = 'gemini-2.5-flash-preview-tts';
+
 const _sampleRate = 24000;
 
 // In-memory cache: "prefix|gender|text" -> raw PCM bytes
