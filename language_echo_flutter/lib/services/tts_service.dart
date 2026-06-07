@@ -46,7 +46,7 @@ Future<Uint8List> _fetchPcm(
   if (_audioCache.containsKey(cacheKey)) return _audioCache[cacheKey]!;
 
   final voiceName = gender == 'female' ? 'Kore' : 'Puck';
-  final prompt = '$promptPrefix "$trimmed"';
+  final prompt = promptPrefix.isEmpty ? trimmed : '$promptPrefix "$trimmed"';
 
   final body = jsonEncode({
     'contents': [
@@ -115,6 +115,14 @@ Future<Uint8List> _fetchPcm(
 
   if (base64Audio == null) {
     final finishReason = json['candidates']?[0]?['finishReason'];
+    if (promptPrefix.isNotEmpty) {
+      // Fallback: retry with clean text only (no promptPrefix)
+      try {
+        return await _fetchPcm(text, gender, '');
+      } catch (fallbackError) {
+        throw Exception('TTS generation failed with custom prompt ($finishReason) and fallback failed: $fallbackError');
+      }
+    }
     if (finishReason != null && finishReason != 'STOP') {
       throw Exception('Generation stopped due to: $finishReason');
     }
